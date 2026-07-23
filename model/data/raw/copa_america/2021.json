@@ -1,0 +1,394 @@
+{
+  "name": "Copa Am\u00e9rica 2021",
+  "competition": "copa_america",
+  "edition": 2021,
+  "source_years": [
+    2021
+  ],
+  "matches": [
+    {
+      "date": "2021-06-13",
+      "team1": "Colombia",
+      "team2": "Ecuador",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Cuiab\u00e1, Brazil"
+    },
+    {
+      "date": "2021-06-13",
+      "team1": "Brazil",
+      "team2": "Venezuela",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Bras\u00edlia, Brazil"
+    },
+    {
+      "date": "2021-06-14",
+      "team1": "Paraguay",
+      "team2": "Bolivia",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Goi\u00e2nia, Brazil"
+    },
+    {
+      "date": "2021-06-14",
+      "team1": "Argentina",
+      "team2": "Chile",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Rio de Janeiro, Brazil"
+    },
+    {
+      "date": "2021-06-17",
+      "team1": "Brazil",
+      "team2": "Peru",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Rio de Janeiro, Brazil"
+    },
+    {
+      "date": "2021-06-17",
+      "team1": "Colombia",
+      "team2": "Venezuela",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Goi\u00e2nia, Brazil"
+    },
+    {
+      "date": "2021-06-18",
+      "team1": "Chile",
+      "team2": "Bolivia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Cuiab\u00e1, Brazil"
+    },
+    {
+      "date": "2021-06-18",
+      "team1": "Argentina",
+      "team2": "Uruguay",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Bras\u00edlia, Brazil"
+    },
+    {
+      "date": "2021-06-20",
+      "team1": "Colombia",
+      "team2": "Peru",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Goi\u00e2nia, Brazil"
+    },
+    {
+      "date": "2021-06-20",
+      "team1": "Venezuela",
+      "team2": "Ecuador",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Rio de Janeiro, Brazil"
+    },
+    {
+      "date": "2021-06-21",
+      "team1": "Argentina",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Bras\u00edlia, Brazil"
+    },
+    {
+      "date": "2021-06-21",
+      "team1": "Uruguay",
+      "team2": "Chile",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Cuiab\u00e1, Brazil"
+    },
+    {
+      "date": "2021-06-23",
+      "team1": "Brazil",
+      "team2": "Colombia",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Rio de Janeiro, Brazil"
+    },
+    {
+      "date": "2021-06-23",
+      "team1": "Ecuador",
+      "team2": "Peru",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Goi\u00e2nia, Brazil"
+    },
+    {
+      "date": "2021-06-24",
+      "team1": "Bolivia",
+      "team2": "Uruguay",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Cuiab\u00e1, Brazil"
+    },
+    {
+      "date": "2021-06-24",
+      "team1": "Chile",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Bras\u00edlia, Brazil"
+    },
+    {
+      "date": "2021-06-27",
+      "team1": "Venezuela",
+      "team2": "Peru",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Bras\u00edlia, Brazil"
+    },
+    {
+      "date": "2021-06-27",
+      "team1": "Brazil",
+      "team2": "Ecuador",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Goi\u00e2nia, Brazil"
+    },
+    {
+      "date": "2021-06-28",
+      "team1": "Uruguay",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Rio de Janeiro, Brazil"
+    },
+    {
+      "date": "2021-06-28",
+      "team1": "Argentina",
+      "team2": "Bolivia",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "round": "Group",
+      "group": "Group",
+      "ground": "Cuiab\u00e1, Brazil"
+    },
+    {
+      "date": "2021-07-02",
+      "team1": "Peru",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Goi\u00e2nia, Brazil"
+    },
+    {
+      "date": "2021-07-02",
+      "team1": "Brazil",
+      "team2": "Chile",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Rio de Janeiro, Brazil"
+    },
+    {
+      "date": "2021-07-03",
+      "team1": "Uruguay",
+      "team2": "Colombia",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Bras\u00edlia, Brazil"
+    },
+    {
+      "date": "2021-07-03",
+      "team1": "Argentina",
+      "team2": "Ecuador",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Goi\u00e2nia, Brazil"
+    },
+    {
+      "date": "2021-07-05",
+      "team1": "Brazil",
+      "team2": "Peru",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Rio de Janeiro, Brazil"
+    },
+    {
+      "date": "2021-07-06",
+      "team1": "Argentina",
+      "team2": "Colombia",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Bras\u00edlia, Brazil"
+    },
+    {
+      "date": "2021-07-09",
+      "team1": "Peru",
+      "team2": "Colombia",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "round": "Third place playoff",
+      "ground": "Bras\u00edlia, Brazil"
+    },
+    {
+      "date": "2021-07-10",
+      "team1": "Brazil",
+      "team2": "Argentina",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Final",
+      "ground": "Rio de Janeiro, Brazil"
+    }
+  ]
+}

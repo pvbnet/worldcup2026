@@ -1,0 +1,635 @@
+{
+  "name": "African Cup of Nations 2025",
+  "competition": "afcon",
+  "edition": 2025,
+  "source_years": [
+    2025,
+    2026
+  ],
+  "matches": [
+    {
+      "date": "2025-12-21",
+      "team1": "Morocco",
+      "team2": "Comoros",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2025-12-22",
+      "team1": "Mali",
+      "team2": "Zambia",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Casablanca, Morocco"
+    },
+    {
+      "date": "2025-12-22",
+      "team1": "South Africa",
+      "team2": "Angola",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Marrakesh, Morocco"
+    },
+    {
+      "date": "2025-12-22",
+      "team1": "Egypt",
+      "team2": "Zimbabwe",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Agadir, Morocco"
+    },
+    {
+      "date": "2025-12-23",
+      "team1": "Nigeria",
+      "team2": "Tanzania",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Fez, Morocco"
+    },
+    {
+      "date": "2025-12-23",
+      "team1": "Tunisia",
+      "team2": "Uganda",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2025-12-23",
+      "team1": "DR Congo",
+      "team2": "Benin",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2025-12-23",
+      "team1": "Senegal",
+      "team2": "Botswana",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Tangier, Morocco"
+    },
+    {
+      "date": "2025-12-24",
+      "team1": "Burkina Faso",
+      "team2": "Equatorial Guinea",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Casablanca, Morocco"
+    },
+    {
+      "date": "2025-12-24",
+      "team1": "Algeria",
+      "team2": "Sudan",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2025-12-24",
+      "team1": "Ivory Coast",
+      "team2": "Mozambique",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Marrakesh, Morocco"
+    },
+    {
+      "date": "2025-12-24",
+      "team1": "Cameroon",
+      "team2": "Gabon",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Agadir, Morocco"
+    },
+    {
+      "date": "2025-12-26",
+      "team1": "Zambia",
+      "team2": "Comoros",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Casablanca, Morocco"
+    },
+    {
+      "date": "2025-12-26",
+      "team1": "Morocco",
+      "team2": "Mali",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2025-12-26",
+      "team1": "Angola",
+      "team2": "Zimbabwe",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Marrakesh, Morocco"
+    },
+    {
+      "date": "2025-12-26",
+      "team1": "Egypt",
+      "team2": "South Africa",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Agadir, Morocco"
+    },
+    {
+      "date": "2025-12-27",
+      "team1": "Uganda",
+      "team2": "Tanzania",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2025-12-27",
+      "team1": "Nigeria",
+      "team2": "Tunisia",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "ground": "Fez, Morocco"
+    },
+    {
+      "date": "2025-12-27",
+      "team1": "Benin",
+      "team2": "Botswana",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2025-12-27",
+      "team1": "Senegal",
+      "team2": "DR Congo",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Tangier, Morocco"
+    },
+    {
+      "date": "2025-12-28",
+      "team1": "Equatorial Guinea",
+      "team2": "Sudan",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Casablanca, Morocco"
+    },
+    {
+      "date": "2025-12-28",
+      "team1": "Algeria",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2025-12-28",
+      "team1": "Gabon",
+      "team2": "Mozambique",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "ground": "Agadir, Morocco"
+    },
+    {
+      "date": "2025-12-28",
+      "team1": "Ivory Coast",
+      "team2": "Cameroon",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Marrakesh, Morocco"
+    },
+    {
+      "date": "2025-12-29",
+      "team1": "Morocco",
+      "team2": "Zambia",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2025-12-29",
+      "team1": "Comoros",
+      "team2": "Mali",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Casablanca, Morocco"
+    },
+    {
+      "date": "2025-12-29",
+      "team1": "Angola",
+      "team2": "Egypt",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Agadir, Morocco"
+    },
+    {
+      "date": "2025-12-29",
+      "team1": "Zimbabwe",
+      "team2": "South Africa",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "ground": "Marrakesh, Morocco"
+    },
+    {
+      "date": "2025-12-30",
+      "team1": "Uganda",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "ground": "Fez, Morocco"
+    },
+    {
+      "date": "2025-12-30",
+      "team1": "Tanzania",
+      "team2": "Tunisia",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2025-12-30",
+      "team1": "Benin",
+      "team2": "Senegal",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "ground": "Tangier, Morocco"
+    },
+    {
+      "date": "2025-12-30",
+      "team1": "Botswana",
+      "team2": "DR Congo",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2025-12-31",
+      "team1": "Equatorial Guinea",
+      "team2": "Algeria",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2025-12-31",
+      "team1": "Sudan",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Casablanca, Morocco"
+    },
+    {
+      "date": "2025-12-31",
+      "team1": "Gabon",
+      "team2": "Ivory Coast",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "ground": "Marrakesh, Morocco"
+    },
+    {
+      "date": "2025-12-31",
+      "team1": "Mozambique",
+      "team2": "Cameroon",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Agadir, Morocco"
+    },
+    {
+      "date": "2026-01-03",
+      "team1": "Senegal",
+      "team2": "Sudan",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Tangier, Morocco"
+    },
+    {
+      "date": "2026-01-03",
+      "team1": "Mali",
+      "team2": "Tunisia",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Casablanca, Morocco"
+    },
+    {
+      "date": "2026-01-04",
+      "team1": "Morocco",
+      "team2": "Tanzania",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2026-01-04",
+      "team1": "South Africa",
+      "team2": "Cameroon",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2026-01-05",
+      "team1": "Egypt",
+      "team2": "Benin",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Agadir, Morocco"
+    },
+    {
+      "date": "2026-01-05",
+      "team1": "Nigeria",
+      "team2": "Mozambique",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "ground": "Fez, Morocco"
+    },
+    {
+      "date": "2026-01-06",
+      "team1": "Algeria",
+      "team2": "DR Congo",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2026-01-06",
+      "team1": "Ivory Coast",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Marrakesh, Morocco"
+    },
+    {
+      "date": "2026-01-09",
+      "team1": "Mali",
+      "team2": "Senegal",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Tangier, Morocco"
+    },
+    {
+      "date": "2026-01-09",
+      "team1": "Morocco",
+      "team2": "Cameroon",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2026-01-10",
+      "team1": "Algeria",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Marrakesh, Morocco"
+    },
+    {
+      "date": "2026-01-10",
+      "team1": "Egypt",
+      "team2": "Ivory Coast",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "ground": "Agadir, Morocco"
+    },
+    {
+      "date": "2026-01-14",
+      "team1": "Senegal",
+      "team2": "Egypt",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Tangier, Morocco"
+    },
+    {
+      "date": "2026-01-14",
+      "team1": "Morocco",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    },
+    {
+      "date": "2026-01-17",
+      "team1": "Egypt",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Casablanca, Morocco"
+    },
+    {
+      "date": "2026-01-18",
+      "team1": "Morocco",
+      "team2": "Senegal",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Rabat, Morocco"
+    }
+  ]
+}

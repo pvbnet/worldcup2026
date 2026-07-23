@@ -1,0 +1,439 @@
+{
+  "strength": "fifa",
+  "simulations": 2000,
+  "n_teams": 48,
+  "teams": [
+    {
+      "team": "France",
+      "p_win": 0.1305,
+      "p_final": 0.1925,
+      "rating": 1714.8276400484206,
+      "active_rating": 2100.0,
+      "group": "Group I",
+      "rank": 1
+    },
+    {
+      "team": "Spain",
+      "p_win": 0.088,
+      "p_final": 0.1365,
+      "rating": 1755.6914079046153,
+      "active_rating": 2075.0,
+      "group": "Group H",
+      "rank": 2
+    },
+    {
+      "team": "Argentina",
+      "p_win": 0.081,
+      "p_final": 0.1355,
+      "rating": 1737.2280410691628,
+      "active_rating": 2060.375937481971,
+      "group": "Group J",
+      "rank": 3
+    },
+    {
+      "team": "Portugal",
+      "p_win": 0.0765,
+      "p_final": 0.1305,
+      "rating": 1606.4831606027103,
+      "active_rating": 2041.951797627816,
+      "group": "Group K",
+      "rank": 4
+    },
+    {
+      "team": "England",
+      "p_win": 0.066,
+      "p_final": 0.1105,
+      "rating": 1728.6357993287706,
+      "active_rating": 2050.0,
+      "group": "Group L",
+      "rank": 5
+    },
+    {
+      "team": "Brazil",
+      "p_win": 0.0625,
+      "p_final": 0.1085,
+      "rating": 1643.8182080881986,
+      "active_rating": 2035.375937481971,
+      "group": "Group C",
+      "rank": 6
+    },
+    {
+      "team": "Germany",
+      "p_win": 0.0585,
+      "p_final": 0.1345,
+      "rating": 1615.5002277241294,
+      "active_rating": 2016.951797627816,
+      "group": "Group E",
+      "rank": 7
+    },
+    {
+      "team": "Croatia",
+      "p_win": 0.0565,
+      "p_final": 0.1495,
+      "rating": 1617.1247559738686,
+      "active_rating": 2013.5142095340675,
+      "group": "Group L",
+      "rank": 8
+    },
+    {
+      "team": "Belgium",
+      "p_win": 0.053,
+      "p_final": 0.1275,
+      "rating": 1640.3316698670515,
+      "active_rating": 2020.751874963942,
+      "group": "Group G",
+      "rank": 9
+    },
+    {
+      "team": "Morocco",
+      "p_win": 0.0505,
+      "p_final": 0.092,
+      "rating": 1689.647959072136,
+      "active_rating": 2025.0,
+      "group": "Group C",
+      "rank": 10
+    },
+    {
+      "team": "Netherlands",
+      "p_win": 0.05,
+      "p_final": 0.094,
+      "rating": 1670.1466126480195,
+      "active_rating": 2029.81612694856,
+      "group": "Group F",
+      "rank": 11
+    },
+    {
+      "team": "Japan",
+      "p_win": 0.048,
+      "p_final": 0.121,
+      "rating": 1661.9095800978964,
+      "active_rating": 1995.751874963942,
+      "group": "Group F",
+      "rank": 12
+    },
+    {
+      "team": "United States",
+      "p_win": 0.0475,
+      "p_final": 0.128,
+      "rating": 1550.8785161359037,
+      "active_rating": 2000.0,
+      "group": "Group D",
+      "rank": 13
+    },
+    {
+      "team": "Switzerland",
+      "p_win": 0.047,
+      "p_final": 0.1145,
+      "rating": 1648.4937948610004,
+      "active_rating": 1993.8018121639104,
+      "group": "Group B",
+      "rank": 14
+    },
+    {
+      "team": "Mexico",
+      "p_win": 0.043,
+      "p_final": 0.109,
+      "rating": 1602.648720248867,
+      "active_rating": 2002.327735109787,
+      "group": "Group A",
+      "rank": 15
+    },
+    {
+      "team": "Colombia",
+      "p_win": 0.0415,
+      "p_final": 0.116,
+      "rating": 1615.9239079347844,
+      "active_rating": 2007.4890070464726,
+      "group": "Group K",
+      "rank": 16
+    },
+    {
+      "team": "Norway",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1654.9375257043616,
+      "active_rating": 1976.145092240328,
+      "group": "Group I",
+      "rank": 17
+    },
+    {
+      "team": "Senegal",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1652.0604028847577,
+      "active_rating": 2004.81612694856,
+      "group": "Group I",
+      "rank": 18
+    },
+    {
+      "team": "Iran",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1641.0434453416178,
+      "active_rating": 1990.192064430531,
+      "group": "Group G",
+      "rank": 19
+    },
+    {
+      "team": "Ivory Coast",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1630.9578962277124,
+      "active_rating": 1972.8134289687416,
+      "group": "Group E",
+      "rank": 20
+    },
+    {
+      "team": "Australia",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1624.9684299970006,
+      "active_rating": 1981.1278124459134,
+      "group": "Group D",
+      "rank": 21
+    },
+    {
+      "team": "Egypt",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1621.7990716045642,
+      "active_rating": 1978.5504751218107,
+      "group": "Group G",
+      "rank": 22
+    },
+    {
+      "team": "South Korea",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1614.9398100319845,
+      "active_rating": 1983.903595255632,
+      "group": "Group A",
+      "rank": 23
+    },
+    {
+      "team": "Cape Verde",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1598.9358089666664,
+      "active_rating": 1951.7315665609278,
+      "group": "Group H",
+      "rank": 24
+    },
+    {
+      "team": "Saudi Arabia",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1580.4408296696568,
+      "active_rating": 1959.6322538971199,
+      "group": "Group H",
+      "rank": 25
+    },
+    {
+      "team": "Algeria",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1580.229765419292,
+      "active_rating": 1979.81612694856,
+      "group": "Group J",
+      "rank": 26
+    },
+    {
+      "team": "DR Congo",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1578.1800856326036,
+      "active_rating": 1951.145092240328,
+      "group": "Group K",
+      "rank": 27
+    },
+    {
+      "team": "New Zealand",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1558.482474845603,
+      "active_rating": 1952.327735109787,
+      "group": "Group G",
+      "rank": 28
+    },
+    {
+      "team": "Uruguay",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1558.159646599914,
+      "active_rating": 1997.8134289687416,
+      "group": "Group H",
+      "rank": 29
+    },
+    {
+      "team": "Turkey",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1556.9215118356235,
+      "active_rating": 1988.5142095340675,
+      "group": "Group D",
+      "rank": 30
+    },
+    {
+      "team": "Iraq",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1556.604621857489,
+      "active_rating": 1954.81612694856,
+      "group": "Group I",
+      "rank": 31
+    },
+    {
+      "team": "Ecuador",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1555.6425995511106,
+      "active_rating": 1986.9109510985747,
+      "group": "Group E",
+      "rank": 32
+    },
+    {
+      "team": "Uzbekistan",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1553.6758380713309,
+      "active_rating": 1954.1777496458815,
+      "group": "Group K",
+      "rank": 33
+    },
+    {
+      "team": "Cura\u00e7ao",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1548.9044286279152,
+      "active_rating": 1950.568001912502,
+      "group": "Group E",
+      "rank": 34
+    },
+    {
+      "team": "Austria",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1547.071422774633,
+      "active_rating": 1985.375937481971,
+      "group": "Group J",
+      "rank": 35
+    },
+    {
+      "team": "Canada",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1546.7184427339675,
+      "active_rating": 1977.327735109787,
+      "group": "Group B",
+      "rank": 36
+    },
+    {
+      "team": "Ghana",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1546.6326496865574,
+      "active_rating": 1958.1893664507127,
+      "group": "Group L",
+      "rank": 37
+    },
+    {
+      "team": "South Africa",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1544.1639890637307,
+      "active_rating": 1955.4660071618835,
+      "group": "Group A",
+      "rank": 38
+    },
+    {
+      "team": "Tunisia",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1541.8624672221247,
+      "active_rating": 1963.5142095340675,
+      "group": "Group F",
+      "rank": 39
+    },
+    {
+      "team": "Panama",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1539.9325880800966,
+      "active_rating": 1958.903595255632,
+      "group": "Group L",
+      "rank": 40
+    },
+    {
+      "team": "Qatar",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1530.988159884006,
+      "active_rating": 1960.375937481971,
+      "group": "Group B",
+      "rank": 41
+    },
+    {
+      "team": "Jordan",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1526.7776586579018,
+      "active_rating": 1953.5504751218107,
+      "group": "Group J",
+      "rank": 42
+    },
+    {
+      "team": "Scotland",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1526.0621787887935,
+      "active_rating": 1965.192064430531,
+      "group": "Group C",
+      "rank": 43
+    },
+    {
+      "team": "Sweden",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1524.3390616113563,
+      "active_rating": 1968.8018121639104,
+      "group": "Group F",
+      "rank": 44
+    },
+    {
+      "team": "Bosnia & Herzegovina",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1512.5038321953696,
+      "active_rating": 1949.4408046742888,
+      "group": "Group B",
+      "rank": 45
+    },
+    {
+      "team": "Haiti",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1510.524496728218,
+      "active_rating": 1952.933923765954,
+      "group": "Group C",
+      "rank": 46
+    },
+    {
+      "team": "Paraguay",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1505.1536155179867,
+      "active_rating": 1961.135278708059,
+      "group": "Group D",
+      "rank": 47
+    },
+    {
+      "team": "Czech Republic",
+      "p_win": 0.0,
+      "p_final": 0.0,
+      "rating": 1495.3053767496783,
+      "active_rating": 1966.061199884548,
+      "group": "Group A",
+      "rank": 48
+    }
+  ]
+}

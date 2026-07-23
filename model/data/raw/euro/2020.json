@@ -1,0 +1,709 @@
+{
+  "name": "UEFA Euro 2020",
+  "competition": "euro",
+  "edition": 2020,
+  "source_years": [
+    2021
+  ],
+  "matches": [
+    {
+      "date": "2021-06-11",
+      "team1": "Italy",
+      "team2": "Turkey",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Rome, Italy"
+    },
+    {
+      "date": "2021-06-12",
+      "team1": "Wales",
+      "team2": "Switzerland",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Cardiff, Wales"
+    },
+    {
+      "date": "2021-06-16",
+      "team1": "Italy",
+      "team2": "Switzerland",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Rome, Italy"
+    },
+    {
+      "date": "2021-06-16",
+      "team1": "Turkey",
+      "team2": "Wales",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Baku, Azerbaijan"
+    },
+    {
+      "date": "2021-06-20",
+      "team1": "Italy",
+      "team2": "Wales",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Rome, Italy"
+    },
+    {
+      "date": "2021-06-20",
+      "team1": "Switzerland",
+      "team2": "Turkey",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Baku, Azerbaijan"
+    },
+    {
+      "date": "2021-06-12",
+      "team1": "Denmark",
+      "team2": "Finland",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Copenhagen, Denmark"
+    },
+    {
+      "date": "2021-06-12",
+      "team1": "Russia",
+      "team2": "Belgium",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Saint Petersburg, Russia"
+    },
+    {
+      "date": "2021-06-16",
+      "team1": "Russia",
+      "team2": "Finland",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Saint Petersburg, Russia"
+    },
+    {
+      "date": "2021-06-17",
+      "team1": "Denmark",
+      "team2": "Belgium",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Copenhagen, Denmark"
+    },
+    {
+      "date": "2021-06-21",
+      "team1": "Denmark",
+      "team2": "Russia",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Copenhagen, Denmark"
+    },
+    {
+      "date": "2021-06-21",
+      "team1": "Finland",
+      "team2": "Belgium",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Saint Petersburg, Russia"
+    },
+    {
+      "date": "2021-06-13",
+      "team1": "Netherlands",
+      "team2": "Ukraine",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Amsterdam, Netherlands"
+    },
+    {
+      "date": "2021-06-13",
+      "team1": "Austria",
+      "team2": "North Macedonia",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Bucharest, Romania"
+    },
+    {
+      "date": "2021-06-17",
+      "team1": "Ukraine",
+      "team2": "North Macedonia",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Bucharest, Romania"
+    },
+    {
+      "date": "2021-06-17",
+      "team1": "Netherlands",
+      "team2": "Austria",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Amsterdam, Netherlands"
+    },
+    {
+      "date": "2021-06-21",
+      "team1": "Ukraine",
+      "team2": "Austria",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Bucharest, Romania"
+    },
+    {
+      "date": "2021-06-21",
+      "team1": "Netherlands",
+      "team2": "North Macedonia",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Amsterdam, Netherlands"
+    },
+    {
+      "date": "2021-06-13",
+      "team1": "England",
+      "team2": "Croatia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "London, England"
+    },
+    {
+      "date": "2021-06-14",
+      "team1": "Scotland",
+      "team2": "Czech Republic",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Glasgow, Scotland"
+    },
+    {
+      "date": "2021-06-18",
+      "team1": "Croatia",
+      "team2": "Czech Republic",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Glasgow, Scotland"
+    },
+    {
+      "date": "2021-06-18",
+      "team1": "England",
+      "team2": "Scotland",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "London, England"
+    },
+    {
+      "date": "2021-06-22",
+      "team1": "Scotland",
+      "team2": "Croatia",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Glasgow, Scotland"
+    },
+    {
+      "date": "2021-06-22",
+      "team1": "England",
+      "team2": "Czech Republic",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "London, England"
+    },
+    {
+      "date": "2021-06-14",
+      "team1": "Spain",
+      "team2": "Sweden",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Seville, Spain"
+    },
+    {
+      "date": "2021-06-14",
+      "team1": "Poland",
+      "team2": "Slovakia",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Saint Petersburg, Russia"
+    },
+    {
+      "date": "2021-06-18",
+      "team1": "Sweden",
+      "team2": "Slovakia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Saint Petersburg, Russia"
+    },
+    {
+      "date": "2021-06-19",
+      "team1": "Spain",
+      "team2": "Poland",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Seville, Spain"
+    },
+    {
+      "date": "2021-06-23",
+      "team1": "Sweden",
+      "team2": "Poland",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Saint Petersburg, Russia"
+    },
+    {
+      "date": "2021-06-23",
+      "team1": "Spain",
+      "team2": "Slovakia",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Seville, Spain"
+    },
+    {
+      "date": "2021-06-15",
+      "team1": "Hungary",
+      "team2": "Portugal",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Budapest, Hungary"
+    },
+    {
+      "date": "2021-06-15",
+      "team1": "Germany",
+      "team2": "France",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Munich, Germany"
+    },
+    {
+      "date": "2021-06-19",
+      "team1": "Hungary",
+      "team2": "France",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Budapest, Hungary"
+    },
+    {
+      "date": "2021-06-19",
+      "team1": "Germany",
+      "team2": "Portugal",
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Munich, Germany"
+    },
+    {
+      "date": "2021-06-23",
+      "team1": "Germany",
+      "team2": "Hungary",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Munich, Germany"
+    },
+    {
+      "date": "2021-06-23",
+      "team1": "Portugal",
+      "team2": "France",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Budapest, Hungary"
+    },
+    {
+      "date": "2021-06-26",
+      "team1": "Italy",
+      "team2": "Austria",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "London, England"
+    },
+    {
+      "date": "2021-06-26",
+      "team1": "Wales",
+      "team2": "Denmark",
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Amsterdam, Netherlands"
+    },
+    {
+      "date": "2021-06-27",
+      "team1": "Netherlands",
+      "team2": "Czech Republic",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Budapest, Hungary"
+    },
+    {
+      "date": "2021-06-27",
+      "team1": "Belgium",
+      "team2": "Portugal",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Seville, Spain"
+    },
+    {
+      "date": "2021-06-28",
+      "team1": "Croatia",
+      "team2": "Spain",
+      "score": {
+        "ft": [
+          3,
+          5
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Copenhagen, Denmark"
+    },
+    {
+      "date": "2021-06-28",
+      "team1": "France",
+      "team2": "Switzerland",
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Bucharest, Romania"
+    },
+    {
+      "date": "2021-06-29",
+      "team1": "England",
+      "team2": "Germany",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "London, England"
+    },
+    {
+      "date": "2021-06-29",
+      "team1": "Sweden",
+      "team2": "Ukraine",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Glasgow, Scotland"
+    },
+    {
+      "date": "2021-07-02",
+      "team1": "Switzerland",
+      "team2": "Spain",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Saint Petersburg, Russia"
+    },
+    {
+      "date": "2021-07-02",
+      "team1": "Belgium",
+      "team2": "Italy",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Munich, Germany"
+    },
+    {
+      "date": "2021-07-03",
+      "team1": "Czech Republic",
+      "team2": "Denmark",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Baku, Azerbaijan"
+    },
+    {
+      "date": "2021-07-03",
+      "team1": "Ukraine",
+      "team2": "England",
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Rome, Italy"
+    },
+    {
+      "date": "2021-07-06",
+      "team1": "Italy",
+      "team2": "Spain",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "London, England"
+    },
+    {
+      "date": "2021-07-07",
+      "team1": "England",
+      "team2": "Denmark",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "London, England"
+    },
+    {
+      "date": "2021-07-11",
+      "team1": "England",
+      "team2": "Italy",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Final",
+      "ground": "London, England"
+    }
+  ]
+}

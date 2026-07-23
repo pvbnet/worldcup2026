@@ -1,0 +1,450 @@
+{
+  "name": "Copa Am\u00e9rica 2024",
+  "competition": "copa_america",
+  "edition": 2024,
+  "source_years": [
+    2024
+  ],
+  "matches": [
+    {
+      "date": "2024-06-20",
+      "team1": "Argentina",
+      "team2": "Canada",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Atlanta, United States"
+    },
+    {
+      "date": "2024-06-21",
+      "team1": "Peru",
+      "team2": "Chile",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Arlington, United States"
+    },
+    {
+      "date": "2024-06-25",
+      "team1": "Chile",
+      "team2": "Argentina",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "East Rutherford, United States"
+    },
+    {
+      "date": "2024-06-25",
+      "team1": "Peru",
+      "team2": "Canada",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Kansas City, United States"
+    },
+    {
+      "date": "2024-06-29",
+      "team1": "Argentina",
+      "team2": "Peru",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Miami Gardens, United States"
+    },
+    {
+      "date": "2024-06-29",
+      "team1": "Canada",
+      "team2": "Chile",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Orlando, United States"
+    },
+    {
+      "date": "2024-06-22",
+      "team1": "Ecuador",
+      "team2": "Venezuela",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Santa Clara, United States"
+    },
+    {
+      "date": "2024-06-22",
+      "team1": "Mexico",
+      "team2": "Jamaica",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2024-06-26",
+      "team1": "Ecuador",
+      "team2": "Jamaica",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Las Vegas, United States"
+    },
+    {
+      "date": "2024-06-26",
+      "team1": "Venezuela",
+      "team2": "Mexico",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Inglewood, United States"
+    },
+    {
+      "date": "2024-06-30",
+      "team1": "Mexico",
+      "team2": "Ecuador",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Glendale, United States"
+    },
+    {
+      "date": "2024-06-30",
+      "team1": "Jamaica",
+      "team2": "Venezuela",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Austin, United States"
+    },
+    {
+      "date": "2024-06-23",
+      "team1": "Uruguay",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Miami Gardens, United States"
+    },
+    {
+      "date": "2024-06-23",
+      "team1": "United States",
+      "team2": "Bolivia",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Arlington, United States"
+    },
+    {
+      "date": "2024-06-27",
+      "team1": "United States",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Atlanta, United States"
+    },
+    {
+      "date": "2024-06-27",
+      "team1": "Uruguay",
+      "team2": "Bolivia",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "East Rutherford, United States"
+    },
+    {
+      "date": "2024-07-01",
+      "team1": "United States",
+      "team2": "Uruguay",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Kansas City, United States"
+    },
+    {
+      "date": "2024-07-01",
+      "team1": "Bolivia",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Orlando, United States"
+    },
+    {
+      "date": "2024-06-24",
+      "team1": "Brazil",
+      "team2": "Costa Rica",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Inglewood, United States"
+    },
+    {
+      "date": "2024-06-24",
+      "team1": "Colombia",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2024-06-28",
+      "team1": "Colombia",
+      "team2": "Costa Rica",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Glendale, United States"
+    },
+    {
+      "date": "2024-06-28",
+      "team1": "Paraguay",
+      "team2": "Brazil",
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Las Vegas, United States"
+    },
+    {
+      "date": "2024-07-02",
+      "team1": "Costa Rica",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Austin, United States"
+    },
+    {
+      "date": "2024-07-02",
+      "team1": "Brazil",
+      "team2": "Colombia",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Santa Clara, United States"
+    },
+    {
+      "date": "2024-07-04",
+      "team1": "Argentina",
+      "team2": "Ecuador",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2024-07-05",
+      "team1": "Venezuela",
+      "team2": "Canada",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Arlington, United States"
+    },
+    {
+      "date": "2024-07-06",
+      "team1": "Uruguay",
+      "team2": "Brazil",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Las Vegas, United States"
+    },
+    {
+      "date": "2024-07-06",
+      "team1": "Colombia",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Glendale, United States"
+    },
+    {
+      "date": "2024-07-09",
+      "team1": "Argentina",
+      "team2": "Canada",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "East Rutherford, United States"
+    },
+    {
+      "date": "2024-07-10",
+      "team1": "Uruguay",
+      "team2": "Colombia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Charlotte, United States"
+    },
+    {
+      "date": "2024-07-13",
+      "team1": "Canada",
+      "team2": "Uruguay",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Third place playoff",
+      "ground": "Charlotte, United States"
+    },
+    {
+      "date": "2024-07-14",
+      "team1": "Argentina",
+      "team2": "Colombia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Final",
+      "ground": "Miami Gardens, United States"
+    }
+  ]
+}

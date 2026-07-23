@@ -1,0 +1,722 @@
+{
+  "name": "African Cup of Nations 2023",
+  "competition": "afcon",
+  "edition": 2023,
+  "source_years": [
+    2024
+  ],
+  "matches": [
+    {
+      "date": "2024-01-13",
+      "team1": "Ivory Coast",
+      "team2": "Guinea-Bissau",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Ebimp\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-01-14",
+      "team1": "Nigeria",
+      "team2": "Equatorial Guinea",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Ebimp\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-01-18",
+      "team1": "Ivory Coast",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Ebimp\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-01-18",
+      "team1": "Equatorial Guinea",
+      "team2": "Guinea-Bissau",
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Ebimp\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-01-22",
+      "team1": "Guinea-Bissau",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Abidjan, Ivory Coast"
+    },
+    {
+      "date": "2024-01-22",
+      "team1": "Ivory Coast",
+      "team2": "Equatorial Guinea",
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Ebimp\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-01-14",
+      "team1": "Ghana",
+      "team2": "Cape Verde",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Abidjan, Ivory Coast"
+    },
+    {
+      "date": "2024-01-14",
+      "team1": "Egypt",
+      "team2": "Mozambique",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Abidjan, Ivory Coast"
+    },
+    {
+      "date": "2024-01-18",
+      "team1": "Egypt",
+      "team2": "Ghana",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Abidjan, Ivory Coast"
+    },
+    {
+      "date": "2024-01-19",
+      "team1": "Cape Verde",
+      "team2": "Mozambique",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Abidjan, Ivory Coast"
+    },
+    {
+      "date": "2024-01-22",
+      "team1": "Cape Verde",
+      "team2": "Egypt",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Abidjan, Ivory Coast"
+    },
+    {
+      "date": "2024-01-22",
+      "team1": "Mozambique",
+      "team2": "Ghana",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Ebimp\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-01-15",
+      "team1": "Senegal",
+      "team2": "Gambia",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Yamoussoukro, Ivory Coast"
+    },
+    {
+      "date": "2024-01-15",
+      "team1": "Cameroon",
+      "team2": "Guinea",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Yamoussoukro, Ivory Coast"
+    },
+    {
+      "date": "2024-01-19",
+      "team1": "Senegal",
+      "team2": "Cameroon",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Yamoussoukro, Ivory Coast"
+    },
+    {
+      "date": "2024-01-19",
+      "team1": "Guinea",
+      "team2": "Gambia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Yamoussoukro, Ivory Coast"
+    },
+    {
+      "date": "2024-01-23",
+      "team1": "Guinea",
+      "team2": "Senegal",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Yamoussoukro, Ivory Coast"
+    },
+    {
+      "date": "2024-01-23",
+      "team1": "Gambia",
+      "team2": "Cameroon",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Bouak\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-01-15",
+      "team1": "Algeria",
+      "team2": "Angola",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Bouak\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-01-16",
+      "team1": "Burkina Faso",
+      "team2": "Mauritania",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Bouak\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-01-20",
+      "team1": "Mauritania",
+      "team2": "Angola",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Bouak\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-01-20",
+      "team1": "Algeria",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Bouak\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-01-23",
+      "team1": "Mauritania",
+      "team2": "Algeria",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Bouak\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-01-23",
+      "team1": "Angola",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Yamoussoukro, Ivory Coast"
+    },
+    {
+      "date": "2024-01-16",
+      "team1": "Mali",
+      "team2": "South Africa",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Korhogo, Ivory Coast"
+    },
+    {
+      "date": "2024-01-16",
+      "team1": "Tunisia",
+      "team2": "Namibia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Korhogo, Ivory Coast"
+    },
+    {
+      "date": "2024-01-20",
+      "team1": "Tunisia",
+      "team2": "Mali",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Korhogo, Ivory Coast"
+    },
+    {
+      "date": "2024-01-21",
+      "team1": "South Africa",
+      "team2": "Namibia",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Korhogo, Ivory Coast"
+    },
+    {
+      "date": "2024-01-24",
+      "team1": "South Africa",
+      "team2": "Tunisia",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Korhogo, Ivory Coast"
+    },
+    {
+      "date": "2024-01-24",
+      "team1": "Namibia",
+      "team2": "Mali",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "San-P\u00e9dro, Ivory Coast"
+    },
+    {
+      "date": "2024-01-17",
+      "team1": "Morocco",
+      "team2": "Tanzania",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "San-P\u00e9dro, Ivory Coast"
+    },
+    {
+      "date": "2024-01-17",
+      "team1": "DR Congo",
+      "team2": "Zambia",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "San-P\u00e9dro, Ivory Coast"
+    },
+    {
+      "date": "2024-01-21",
+      "team1": "Morocco",
+      "team2": "DR Congo",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "San-P\u00e9dro, Ivory Coast"
+    },
+    {
+      "date": "2024-01-21",
+      "team1": "Zambia",
+      "team2": "Tanzania",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "San-P\u00e9dro, Ivory Coast"
+    },
+    {
+      "date": "2024-01-24",
+      "team1": "Zambia",
+      "team2": "Morocco",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "San-P\u00e9dro, Ivory Coast"
+    },
+    {
+      "date": "2024-01-24",
+      "team1": "Tanzania",
+      "team2": "DR Congo",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Korhogo, Ivory Coast"
+    },
+    {
+      "date": "2024-01-27",
+      "team1": "Angola",
+      "team2": "Namibia",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Bouak\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-01-27",
+      "team1": "Nigeria",
+      "team2": "Cameroon",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Abidjan, Ivory Coast"
+    },
+    {
+      "date": "2024-01-28",
+      "team1": "Egypt",
+      "team2": "DR Congo",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "San-P\u00e9dro, Ivory Coast"
+    },
+    {
+      "date": "2024-01-28",
+      "team1": "Equatorial Guinea",
+      "team2": "Guinea",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Ebimp\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-01-29",
+      "team1": "Cape Verde",
+      "team2": "Mauritania",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Abidjan, Ivory Coast"
+    },
+    {
+      "date": "2024-01-29",
+      "team1": "Ivory Coast",
+      "team2": "Senegal",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Yamoussoukro, Ivory Coast"
+    },
+    {
+      "date": "2024-01-30",
+      "team1": "Mali",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Korhogo, Ivory Coast"
+    },
+    {
+      "date": "2024-01-30",
+      "team1": "Morocco",
+      "team2": "South Africa",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "San-P\u00e9dro, Ivory Coast"
+    },
+    {
+      "date": "2024-02-02",
+      "team1": "DR Congo",
+      "team2": "Guinea",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Ebimp\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-02-02",
+      "team1": "Nigeria",
+      "team2": "Angola",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Abidjan, Ivory Coast"
+    },
+    {
+      "date": "2024-02-03",
+      "team1": "Cape Verde",
+      "team2": "South Africa",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Yamoussoukro, Ivory Coast"
+    },
+    {
+      "date": "2024-02-03",
+      "team1": "Ivory Coast",
+      "team2": "Mali",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Bouak\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-02-07",
+      "team1": "Ivory Coast",
+      "team2": "DR Congo",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Ebimp\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-02-07",
+      "team1": "Nigeria",
+      "team2": "South Africa",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Bouak\u00e9, Ivory Coast"
+    },
+    {
+      "date": "2024-02-10",
+      "team1": "South Africa",
+      "team2": "DR Congo",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Third place playoff",
+      "ground": "Abidjan, Ivory Coast"
+    },
+    {
+      "date": "2024-02-11",
+      "team1": "Ivory Coast",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Final",
+      "ground": "Ebimp\u00e9, Ivory Coast"
+    }
+  ]
+}

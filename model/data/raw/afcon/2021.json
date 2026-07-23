@@ -1,0 +1,722 @@
+{
+  "name": "African Cup of Nations 2021",
+  "competition": "afcon",
+  "edition": 2021,
+  "source_years": [
+    2022
+  ],
+  "matches": [
+    {
+      "date": "2022-01-09",
+      "team1": "Ethiopia",
+      "team2": "Cape Verde",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-09",
+      "team1": "Cameroon",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-13",
+      "team1": "Cape Verde",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-13",
+      "team1": "Cameroon",
+      "team2": "Ethiopia",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-17",
+      "team1": "Burkina Faso",
+      "team2": "Ethiopia",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Bafoussam, Cameroon"
+    },
+    {
+      "date": "2022-01-17",
+      "team1": "Cameroon",
+      "team2": "Cape Verde",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-10",
+      "team1": "Guinea",
+      "team2": "Malawi",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Bafoussam, Cameroon"
+    },
+    {
+      "date": "2022-01-10",
+      "team1": "Senegal",
+      "team2": "Zimbabwe",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Bafoussam, Cameroon"
+    },
+    {
+      "date": "2022-01-14",
+      "team1": "Senegal",
+      "team2": "Guinea",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Bafoussam, Cameroon"
+    },
+    {
+      "date": "2022-01-14",
+      "team1": "Malawi",
+      "team2": "Zimbabwe",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Bafoussam, Cameroon"
+    },
+    {
+      "date": "2022-01-18",
+      "team1": "Malawi",
+      "team2": "Senegal",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Bafoussam, Cameroon"
+    },
+    {
+      "date": "2022-01-18",
+      "team1": "Zimbabwe",
+      "team2": "Guinea",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-10",
+      "team1": "Morocco",
+      "team2": "Ghana",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-10",
+      "team1": "Comoros",
+      "team2": "Gabon",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-14",
+      "team1": "Morocco",
+      "team2": "Comoros",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-14",
+      "team1": "Gabon",
+      "team2": "Ghana",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-18",
+      "team1": "Ghana",
+      "team2": "Comoros",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Garoua, Cameroon"
+    },
+    {
+      "date": "2022-01-18",
+      "team1": "Gabon",
+      "team2": "Morocco",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-11",
+      "team1": "Sudan",
+      "team2": "Guinea-Bissau",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Garoua, Cameroon"
+    },
+    {
+      "date": "2022-01-11",
+      "team1": "Nigeria",
+      "team2": "Egypt",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Garoua, Cameroon"
+    },
+    {
+      "date": "2022-01-15",
+      "team1": "Guinea-Bissau",
+      "team2": "Egypt",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Garoua, Cameroon"
+    },
+    {
+      "date": "2022-01-15",
+      "team1": "Nigeria",
+      "team2": "Sudan",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Garoua, Cameroon"
+    },
+    {
+      "date": "2022-01-19",
+      "team1": "Guinea-Bissau",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Garoua, Cameroon"
+    },
+    {
+      "date": "2022-01-19",
+      "team1": "Egypt",
+      "team2": "Sudan",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-11",
+      "team1": "Algeria",
+      "team2": "Sierra Leone",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Douala, Cameroon"
+    },
+    {
+      "date": "2022-01-12",
+      "team1": "Equatorial Guinea",
+      "team2": "Ivory Coast",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Douala, Cameroon"
+    },
+    {
+      "date": "2022-01-16",
+      "team1": "Algeria",
+      "team2": "Equatorial Guinea",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Douala, Cameroon"
+    },
+    {
+      "date": "2022-01-16",
+      "team1": "Ivory Coast",
+      "team2": "Sierra Leone",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Douala, Cameroon"
+    },
+    {
+      "date": "2022-01-20",
+      "team1": "Sierra Leone",
+      "team2": "Equatorial Guinea",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Limb\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-20",
+      "team1": "Ivory Coast",
+      "team2": "Algeria",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Douala, Cameroon"
+    },
+    {
+      "date": "2022-01-12",
+      "team1": "Tunisia",
+      "team2": "Mali",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Limb\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-12",
+      "team1": "Mauritania",
+      "team2": "Gambia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Limb\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-16",
+      "team1": "Gambia",
+      "team2": "Mali",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Limb\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-16",
+      "team1": "Tunisia",
+      "team2": "Mauritania",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Limb\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-20",
+      "team1": "Mali",
+      "team2": "Mauritania",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Douala, Cameroon"
+    },
+    {
+      "date": "2022-01-20",
+      "team1": "Gambia",
+      "team2": "Tunisia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Limb\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-23",
+      "team1": "Burkina Faso",
+      "team2": "Gabon",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Limb\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-23",
+      "team1": "Nigeria",
+      "team2": "Tunisia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Garoua, Cameroon"
+    },
+    {
+      "date": "2022-01-24",
+      "team1": "Cameroon",
+      "team2": "Comoros",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-24",
+      "team1": "Guinea",
+      "team2": "Gambia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Bafoussam, Cameroon"
+    },
+    {
+      "date": "2022-01-25",
+      "team1": "Morocco",
+      "team2": "Malawi",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-25",
+      "team1": "Senegal",
+      "team2": "Cape Verde",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Bafoussam, Cameroon"
+    },
+    {
+      "date": "2022-01-26",
+      "team1": "Ivory Coast",
+      "team2": "Egypt",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Douala, Cameroon"
+    },
+    {
+      "date": "2022-01-26",
+      "team1": "Mali",
+      "team2": "Equatorial Guinea",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Limb\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-29",
+      "team1": "Burkina Faso",
+      "team2": "Tunisia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Garoua, Cameroon"
+    },
+    {
+      "date": "2022-01-29",
+      "team1": "Cameroon",
+      "team2": "Gambia",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Douala, Cameroon"
+    },
+    {
+      "date": "2022-01-30",
+      "team1": "Egypt",
+      "team2": "Morocco",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-30",
+      "team1": "Senegal",
+      "team2": "Equatorial Guinea",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-02-02",
+      "team1": "Burkina Faso",
+      "team2": "Senegal",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-02-03",
+      "team1": "Cameroon",
+      "team2": "Egypt",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-02-05",
+      "team1": "Cameroon",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      },
+      "round": "Third place playoff",
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-02-06",
+      "team1": "Senegal",
+      "team2": "Egypt",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Final",
+      "ground": "Yaound\u00e9, Cameroon"
+    }
+  ]
+}
