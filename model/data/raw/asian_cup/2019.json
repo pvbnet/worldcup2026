@@ -1,0 +1,709 @@
+{
+  "name": "AFC Asian Cup 2019",
+  "competition": "afc_asian_cup",
+  "edition": 2019,
+  "source_years": [
+    2019
+  ],
+  "matches": [
+    {
+      "date": "2019-01-05",
+      "team1": "United Arab Emirates",
+      "team2": "Bahrain",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-06",
+      "team1": "Thailand",
+      "team2": "India",
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-10",
+      "team1": "United Arab Emirates",
+      "team2": "India",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-10",
+      "team1": "Bahrain",
+      "team2": "Thailand",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-14",
+      "team1": "India",
+      "team2": "Bahrain",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Sharjah, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-14",
+      "team1": "United Arab Emirates",
+      "team2": "Thailand",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Al Ain, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-06",
+      "team1": "Australia",
+      "team2": "Jordan",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Al Ain, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-06",
+      "team1": "Syria",
+      "team2": "Palestine",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Sharjah, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-10",
+      "team1": "Jordan",
+      "team2": "Syria",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Al Ain, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-11",
+      "team1": "Palestine",
+      "team2": "Australia",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-15",
+      "team1": "Australia",
+      "team2": "Syria",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Al Ain, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-15",
+      "team1": "Palestine",
+      "team2": "Jordan",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-07",
+      "team1": "South Korea",
+      "team2": "Philippines",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-07",
+      "team1": "China PR",
+      "team2": "Kyrgyzstan",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Al Ain, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-11",
+      "team1": "Philippines",
+      "team2": "China PR",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-11",
+      "team1": "Kyrgyzstan",
+      "team2": "South Korea",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Al Ain, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-16",
+      "team1": "Kyrgyzstan",
+      "team2": "Philippines",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-16",
+      "team1": "South Korea",
+      "team2": "China PR",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-07",
+      "team1": "Iran",
+      "team2": "Yemen",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-08",
+      "team1": "Iraq",
+      "team2": "Vietnam",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-12",
+      "team1": "Vietnam",
+      "team2": "Iran",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-12",
+      "team1": "Yemen",
+      "team2": "Iraq",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Sharjah, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-16",
+      "team1": "Iran",
+      "team2": "Iraq",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-16",
+      "team1": "Vietnam",
+      "team2": "Yemen",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Al Ain, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-08",
+      "team1": "Saudi Arabia",
+      "team2": "North Korea",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-09",
+      "team1": "Qatar",
+      "team2": "Lebanon",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Al Ain, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-12",
+      "team1": "Lebanon",
+      "team2": "Saudi Arabia",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-13",
+      "team1": "North Korea",
+      "team2": "Qatar",
+      "score": {
+        "ft": [
+          0,
+          6
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Al Ain, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-17",
+      "team1": "Saudi Arabia",
+      "team2": "Qatar",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-17",
+      "team1": "Lebanon",
+      "team2": "North Korea",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Sharjah, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-09",
+      "team1": "Japan",
+      "team2": "Turkmenistan",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-09",
+      "team1": "Uzbekistan",
+      "team2": "Oman",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Sharjah, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-13",
+      "team1": "Oman",
+      "team2": "Japan",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-13",
+      "team1": "Turkmenistan",
+      "team2": "Uzbekistan",
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-17",
+      "team1": "Japan",
+      "team2": "Uzbekistan",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Al Ain, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-17",
+      "team1": "Oman",
+      "team2": "Turkmenistan",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-20",
+      "team1": "Iran",
+      "team2": "Oman",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-20",
+      "team1": "Jordan",
+      "team2": "Vietnam",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-20",
+      "team1": "Thailand",
+      "team2": "China PR",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Al Ain, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-21",
+      "team1": "Australia",
+      "team2": "Uzbekistan",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Al Ain, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-21",
+      "team1": "Japan",
+      "team2": "Saudi Arabia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Sharjah, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-21",
+      "team1": "United Arab Emirates",
+      "team2": "Kyrgyzstan",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-22",
+      "team1": "South Korea",
+      "team2": "Bahrain",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-22",
+      "team1": "Qatar",
+      "team2": "Iraq",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-24",
+      "team1": "China PR",
+      "team2": "Iran",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-24",
+      "team1": "Vietnam",
+      "team2": "Japan",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-25",
+      "team1": "South Korea",
+      "team2": "Qatar",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-25",
+      "team1": "United Arab Emirates",
+      "team2": "Australia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Al Ain, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-28",
+      "team1": "Iran",
+      "team2": "Japan",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Al Ain, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-29",
+      "team1": "United Arab Emirates",
+      "team2": "Qatar",
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-02-01",
+      "team1": "Japan",
+      "team2": "Qatar",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "round": "Final",
+      "ground": "Abu Dhabi, United Arab Emirates"
+    }
+  ]
+}

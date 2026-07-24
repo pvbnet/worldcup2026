@@ -1,0 +1,437 @@
+{
+  "name": "CONCACAF Gold Cup 2019",
+  "competition": "gold_cup",
+  "edition": 2019,
+  "source_years": [
+    2019
+  ],
+  "matches": [
+    {
+      "date": "2019-06-15",
+      "team1": "Mexico",
+      "team2": "Cuba",
+      "score": {
+        "ft": [
+          7,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Los Angeles, United States"
+    },
+    {
+      "date": "2019-06-15",
+      "team1": "Canada",
+      "team2": "Martinique",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Los Angeles, United States"
+    },
+    {
+      "date": "2019-06-19",
+      "team1": "Cuba",
+      "team2": "Martinique",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Denver, United States"
+    },
+    {
+      "date": "2019-06-19",
+      "team1": "Mexico",
+      "team2": "Canada",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Denver, United States"
+    },
+    {
+      "date": "2019-06-23",
+      "team1": "Canada",
+      "team2": "Cuba",
+      "score": {
+        "ft": [
+          7,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Charlotte, United States"
+    },
+    {
+      "date": "2019-06-23",
+      "team1": "Martinique",
+      "team2": "Mexico",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Charlotte, United States"
+    },
+    {
+      "date": "2019-06-16",
+      "team1": "Haiti",
+      "team2": "Bermuda",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "San Jos\u00e9, Jamaica"
+    },
+    {
+      "date": "2019-06-16",
+      "team1": "Costa Rica",
+      "team2": "Nicaragua",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "San Jos\u00e9, Jamaica"
+    },
+    {
+      "date": "2019-06-20",
+      "team1": "Nicaragua",
+      "team2": "Haiti",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Frisco, United States"
+    },
+    {
+      "date": "2019-06-20",
+      "team1": "Costa Rica",
+      "team2": "Bermuda",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Frisco, United States"
+    },
+    {
+      "date": "2019-06-24",
+      "team1": "Bermuda",
+      "team2": "Nicaragua",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "New Jersey, United States"
+    },
+    {
+      "date": "2019-06-24",
+      "team1": "Haiti",
+      "team2": "Costa Rica",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "New Jersey, United States"
+    },
+    {
+      "date": "2019-06-17",
+      "team1": "Cura\u00e7ao",
+      "team2": "El Salvador",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Kingston, Jamaica"
+    },
+    {
+      "date": "2019-06-17",
+      "team1": "Jamaica",
+      "team2": "Honduras",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Kingston, Jamaica"
+    },
+    {
+      "date": "2019-06-21",
+      "team1": "Honduras",
+      "team2": "Cura\u00e7ao",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2019-06-21",
+      "team1": "El Salvador",
+      "team2": "Jamaica",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2019-06-25",
+      "team1": "Honduras",
+      "team2": "El Salvador",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Los Angeles, United States"
+    },
+    {
+      "date": "2019-06-25",
+      "team1": "Jamaica",
+      "team2": "Cura\u00e7ao",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Los Angeles, United States"
+    },
+    {
+      "date": "2019-06-18",
+      "team1": "Panama",
+      "team2": "Trinidad and Tobago",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Saint Paul, United States"
+    },
+    {
+      "date": "2019-06-18",
+      "team1": "United States",
+      "team2": "Guyana",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Saint Paul, United States"
+    },
+    {
+      "date": "2019-06-22",
+      "team1": "Guyana",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Cleveland, United States"
+    },
+    {
+      "date": "2019-06-22",
+      "team1": "United States",
+      "team2": "Trinidad and Tobago",
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Cleveland, United States"
+    },
+    {
+      "date": "2019-06-26",
+      "team1": "United States",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Kansas City, United States"
+    },
+    {
+      "date": "2019-06-26",
+      "team1": "Trinidad and Tobago",
+      "team2": "Guyana",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Kansas City, United States"
+    },
+    {
+      "date": "2019-06-29",
+      "team1": "Haiti",
+      "team2": "Canada",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2019-06-29",
+      "team1": "Mexico",
+      "team2": "Costa Rica",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2019-06-30",
+      "team1": "Jamaica",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Philadelphia, United States"
+    },
+    {
+      "date": "2019-06-30",
+      "team1": "United States",
+      "team2": "Cura\u00e7ao",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Philadelphia, United States"
+    },
+    {
+      "date": "2019-07-02",
+      "team1": "Haiti",
+      "team2": "Mexico",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Glendale, United States"
+    },
+    {
+      "date": "2019-07-03",
+      "team1": "United States",
+      "team2": "Jamaica",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Nashville, United States"
+    },
+    {
+      "date": "2019-07-07",
+      "team1": "United States",
+      "team2": "Mexico",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Final",
+      "ground": "Chicago, United States"
+    }
+  ]
+}

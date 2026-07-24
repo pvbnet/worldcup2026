@@ -1,0 +1,437 @@
+{
+  "name": "CONCACAF Gold Cup 2023",
+  "competition": "gold_cup",
+  "edition": 2023,
+  "source_years": [
+    2023
+  ],
+  "matches": [
+    {
+      "date": "2023-06-24",
+      "team1": "United States",
+      "team2": "Jamaica",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Chicago, United States"
+    },
+    {
+      "date": "2023-06-25",
+      "team1": "Trinidad and Tobago",
+      "team2": "Saint Kitts and Nevis",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Fort Lauderdale, United States"
+    },
+    {
+      "date": "2023-06-28",
+      "team1": "Jamaica",
+      "team2": "Trinidad and Tobago",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "St. Louis, United States"
+    },
+    {
+      "date": "2023-06-28",
+      "team1": "United States",
+      "team2": "Saint Kitts and Nevis",
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "St. Louis, United States"
+    },
+    {
+      "date": "2023-07-02",
+      "team1": "United States",
+      "team2": "Trinidad and Tobago",
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Charlotte, United States"
+    },
+    {
+      "date": "2023-07-02",
+      "team1": "Jamaica",
+      "team2": "Saint Kitts and Nevis",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Santa Clara, United States"
+    },
+    {
+      "date": "2023-06-25",
+      "team1": "Haiti",
+      "team2": "Qatar",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2023-06-25",
+      "team1": "Mexico",
+      "team2": "Honduras",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2023-06-29",
+      "team1": "Qatar",
+      "team2": "Honduras",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Glendale, United States"
+    },
+    {
+      "date": "2023-06-29",
+      "team1": "Haiti",
+      "team2": "Mexico",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Glendale, United States"
+    },
+    {
+      "date": "2023-07-02",
+      "team1": "Honduras",
+      "team2": "Haiti",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Charlotte, United States"
+    },
+    {
+      "date": "2023-07-02",
+      "team1": "Mexico",
+      "team2": "Qatar",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Santa Clara, United States"
+    },
+    {
+      "date": "2023-06-26",
+      "team1": "El Salvador",
+      "team2": "Martinique",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Fort Lauderdale, United States"
+    },
+    {
+      "date": "2023-06-26",
+      "team1": "Costa Rica",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Fort Lauderdale, United States"
+    },
+    {
+      "date": "2023-06-30",
+      "team1": "El Salvador",
+      "team2": "Costa Rica",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Harrison, United States"
+    },
+    {
+      "date": "2023-06-30",
+      "team1": "Martinique",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Harrison, United States"
+    },
+    {
+      "date": "2023-07-04",
+      "team1": "Panama",
+      "team2": "El Salvador",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2023-07-04",
+      "team1": "Costa Rica",
+      "team2": "Martinique",
+      "score": {
+        "ft": [
+          6,
+          4
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Harrison, United States"
+    },
+    {
+      "date": "2023-06-27",
+      "team1": "Canada",
+      "team2": "Guadeloupe",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Toronto, Canada"
+    },
+    {
+      "date": "2023-06-27",
+      "team1": "Guatemala",
+      "team2": "Cuba",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Fort Lauderdale, United States"
+    },
+    {
+      "date": "2023-07-01",
+      "team1": "Cuba",
+      "team2": "Guadeloupe",
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2023-07-01",
+      "team1": "Guatemala",
+      "team2": "Canada",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2023-07-04",
+      "team1": "Canada",
+      "team2": "Cuba",
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2023-07-04",
+      "team1": "Guadeloupe",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Harrison, United States"
+    },
+    {
+      "date": "2023-07-08",
+      "team1": "Panama",
+      "team2": "Qatar",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Arlington, United States"
+    },
+    {
+      "date": "2023-07-08",
+      "team1": "Mexico",
+      "team2": "Costa Rica",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Arlington, United States"
+    },
+    {
+      "date": "2023-07-09",
+      "team1": "Guatemala",
+      "team2": "Jamaica",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Cincinnati, United States"
+    },
+    {
+      "date": "2023-07-09",
+      "team1": "United States",
+      "team2": "Canada",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Cincinnati, United States"
+    },
+    {
+      "date": "2023-07-12",
+      "team1": "United States",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "San Diego, United States"
+    },
+    {
+      "date": "2023-07-12",
+      "team1": "Jamaica",
+      "team2": "Mexico",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Paradise, United States"
+    },
+    {
+      "date": "2023-07-16",
+      "team1": "Mexico",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Final",
+      "ground": "Inglewood, United States"
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "name": "CONCACAF Gold Cup 2025",
+  "competition": "gold_cup",
+  "edition": 2025,
+  "source_years": [
+    2025
+  ],
+  "matches": [
+    {
+      "date": "2025-06-14",
+      "team1": "Mexico",
+      "team2": "Dominican Republic",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "ground": "Inglewood, United States"
+    },
+    {
+      "date": "2025-06-15",
+      "team1": "Costa Rica",
+      "team2": "Suriname",
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      },
+      "ground": "San Diego, United States"
+    },
+    {
+      "date": "2025-06-15",
+      "team1": "United States",
+      "team2": "Trinidad and Tobago",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "ground": "San Jose, United States"
+    },
+    {
+      "date": "2025-06-15",
+      "team1": "Haiti",
+      "team2": "Saudi Arabia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "San Diego, United States"
+    },
+    {
+      "date": "2025-06-16",
+      "team1": "Panama",
+      "team2": "Guadeloupe",
+      "score": {
+        "ft": [
+          5,
+          2
+        ]
+      },
+      "ground": "Carson, United States"
+    },
+    {
+      "date": "2025-06-16",
+      "team1": "Jamaica",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Carson, United States"
+    },
+    {
+      "date": "2025-06-17",
+      "team1": "Cura\u00e7ao",
+      "team2": "El Salvador",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "San Jose, United States"
+    },
+    {
+      "date": "2025-06-17",
+      "team1": "Canada",
+      "team2": "Honduras",
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      },
+      "ground": "Vancouver, Canada"
+    },
+    {
+      "date": "2025-06-18",
+      "team1": "Costa Rica",
+      "team2": "Dominican Republic",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Arlington, United States"
+    },
+    {
+      "date": "2025-06-18",
+      "team1": "Suriname",
+      "team2": "Mexico",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Arlington, United States"
+    },
+    {
+      "date": "2025-06-19",
+      "team1": "Trinidad and Tobago",
+      "team2": "Haiti",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2025-06-19",
+      "team1": "United States",
+      "team2": "Saudi Arabia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Austin, United States"
+    },
+    {
+      "date": "2025-06-20",
+      "team1": "Jamaica",
+      "team2": "Guadeloupe",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "San Jose, United States"
+    },
+    {
+      "date": "2025-06-20",
+      "team1": "Guatemala",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Austin, United States"
+    },
+    {
+      "date": "2025-06-21",
+      "team1": "Cura\u00e7ao",
+      "team2": "Canada",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2025-06-21",
+      "team1": "Honduras",
+      "team2": "El Salvador",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2025-06-22",
+      "team1": "Mexico",
+      "team2": "Costa Rica",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Paradise, United States"
+    },
+    {
+      "date": "2025-06-22",
+      "team1": "Dominican Republic",
+      "team2": "Suriname",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Arlington, United States"
+    },
+    {
+      "date": "2025-06-22",
+      "team1": "Saudi Arabia",
+      "team2": "Trinidad and Tobago",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Paradise, United States"
+    },
+    {
+      "date": "2025-06-22",
+      "team1": "United States",
+      "team2": "Haiti",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Arlington, United States"
+    },
+    {
+      "date": "2025-06-24",
+      "team1": "Honduras",
+      "team2": "Cura\u00e7ao",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "San Jose, United States"
+    },
+    {
+      "date": "2025-06-24",
+      "team1": "Canada",
+      "team2": "El Salvador",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2025-06-24",
+      "team1": "Panama",
+      "team2": "Jamaica",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "ground": "Austin, United States"
+    },
+    {
+      "date": "2025-06-24",
+      "team1": "Guadeloupe",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2025-06-28",
+      "team1": "Panama",
+      "team2": "Honduras",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Glendale, United States"
+    },
+    {
+      "date": "2025-06-28",
+      "team1": "Mexico",
+      "team2": "Saudi Arabia",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Glendale, United States"
+    },
+    {
+      "date": "2025-06-29",
+      "team1": "Canada",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Minneapolis, United States"
+    },
+    {
+      "date": "2025-06-29",
+      "team1": "United States",
+      "team2": "Costa Rica",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Minneapolis, United States"
+    },
+    {
+      "date": "2025-07-02",
+      "team1": "United States",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "St. Louis, United States"
+    },
+    {
+      "date": "2025-07-02",
+      "team1": "Mexico",
+      "team2": "Honduras",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Santa Clara, United States"
+    },
+    {
+      "date": "2025-07-06",
+      "team1": "United States",
+      "team2": "Mexico",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Houston, United States"
+    }
+  ]
+}

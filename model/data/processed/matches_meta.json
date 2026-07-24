@@ -1,16 +1,19 @@
 {
-  "generated_at": "2026-07-21T21:00:17.526530+00:00",
+  "generated_at": "2026-07-24T00:51:08.471317+00:00",
   "years": [
     2018,
     2022,
     2026
   ],
-  "match_count": 2317,
-  "played_count": 2317,
+  "match_count": 4636,
+  "played_count": 4636,
   "by_competition": {
+    "afc_asian_cup": 102,
     "afcon": 156,
     "copa_america": 60,
     "euro": 102,
+    "friendly": 2093,
+    "gold_cup": 124,
     "wc_qualifier": 1767,
     "world_cup": 232
   }

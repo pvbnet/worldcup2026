@@ -152,6 +152,21 @@ def normalize_matches(years: list[int] | None = None) -> pd.DataFrame:
                 default_stage=meta.get("default_stage"),
             )
 
+    # Friendlies occasionally include non-FIFA sides (regional/sub-national
+    # select teams, e.g. Galicia, Basque Country). Treat "appears in a World
+    # Cup, qualifier, or continental championship" as the definition of a
+    # real, recognized national team and drop friendly matches against
+    # anything else, so they don't pollute real teams' Elo ratings.
+    known_teams = {r["team1"] for r in rows if r["competition"] != "friendly"} | {
+        r["team2"] for r in rows if r["competition"] != "friendly"
+    }
+    rows = [
+        r
+        for r in rows
+        if r["competition"] != "friendly"
+        or (r["team1"] in known_teams and r["team2"] in known_teams)
+    ]
+
     df = pd.DataFrame(rows)
     if df.empty:
         raise RuntimeError("No matches ingested")

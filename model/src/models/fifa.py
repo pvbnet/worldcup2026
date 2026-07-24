@@ -13,6 +13,16 @@ DEFAULT_FIFA_RANK = 100
 PSEUDO_ELO_BASE = 2100.0
 PSEUDO_ELO_SCALE = 25.0
 
+# Separate calibration used only for *seeding* fit_elo's initial ratings.
+# Unlike PSEUDO_ELO_BASE/SCALE above (which produce a ~1900-2100 scale used
+# for a standalone FIFA-only comparison model in evaluate.py), these constants
+# are tuned to land on the same numeric scale as our *trained* Elo ratings
+# (observed to span roughly 1330-1720, median ~1480 across a full training
+# run). Rank 1 seeds near the top of that range, and the bottom of the FIFA
+# ranking (~rank 210) seeds near the bottom of it.
+SEED_RATING_BASE = 1720.0
+SEED_RATING_SCALE = 48.0
+
 
 @dataclass
 class FifaSnapshot:
@@ -40,6 +50,35 @@ def load_fifa_snapshot(snapshot_id: str | None = None) -> FifaSnapshot:
 def pseudo_elo_from_rank(rank: int) -> float:
     rank = max(int(rank), 1)
     return PSEUDO_ELO_BASE - PSEUDO_ELO_SCALE * math.log2(rank)
+
+
+def seed_rating_from_rank(rank: int) -> float:
+    """Map a FIFA rank to a starting Elo rating on the trained-Elo scale.
+
+    Used to seed fit_elo so teams enter the training window already spread
+    out by real pre-existing strength, instead of a flat 1500 for everyone.
+    """
+    rank = max(int(rank), 1)
+    return SEED_RATING_BASE - SEED_RATING_SCALE * math.log2(rank)
+
+
+def seed_ratings_from_fifa(
+    teams: list[str], snapshot_id: str | None = None
+) -> dict[str, float]:
+    """Build a {team: seed_rating} map from a FIFA snapshot for fit_elo.
+
+    Defaults to the data file's "tuning_snapshot" (a pre-training-window
+    ranking, so the seed doesn't leak knowledge of results already inside
+    the training data). Teams absent from the snapshot fall back to
+    DEFAULT_FIFA_RANK.
+    """
+    payload = load_fifa_data()
+    snapshot_id = snapshot_id or payload.get("tuning_snapshot") or payload["display_snapshot"]
+    snap = load_fifa_snapshot(snapshot_id)
+    return {
+        team: seed_rating_from_rank(snap.ranks.get(canonicalize(team), DEFAULT_FIFA_RANK))
+        for team in teams
+    }
 
 
 def ratings_for_strength(

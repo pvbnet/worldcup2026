@@ -21,10 +21,6 @@ body {
   padding: 24px;
 }
 
-.app--wide {
-  max-width: 1480px;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -78,12 +74,27 @@ header p {
 }
 
 .strength-toggle,
-.sim-count-control {
+.sim-count-control,
+.stage-selector {
   display: flex;
   flex-direction: column;
   gap: 6px;
   width: fit-content;
   max-width: none;
+}
+
+.stage-selector select {
+  background: #152238;
+  color: #e8eef7;
+  border: 1px solid #2a3a55;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  min-width: 190px;
+}
+
+.header-actions .stage-selector {
+  gap: 4px;
 }
 
 .strength-label {
@@ -369,14 +380,14 @@ tbody tr.selected {
 
 .bracket-scroll {
   overflow-x: auto;
-  padding-bottom: 8px;
+  padding: 0 16px 8px;
 }
 
 .bracket {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   gap: 8px;
-  min-width: 1100px;
+  min-width: 960px;
   align-items: center;
   font-size: 0.78rem;
 }
@@ -388,19 +399,19 @@ tbody tr.selected {
 }
 
 .bracket-half--left {
-  grid-template-columns: repeat(4, minmax(112px, 1fr));
+  grid-template-columns: repeat(4, minmax(96px, 1fr));
 }
 
 .bracket-half--right {
-  grid-template-columns: repeat(4, minmax(112px, 1fr));
+  grid-template-columns: repeat(4, minmax(96px, 1fr));
 }
 
 .bracket-center {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  min-width: 140px;
-  max-width: 160px;
+  min-width: 120px;
+  max-width: 140px;
   justify-content: center;
 }
 

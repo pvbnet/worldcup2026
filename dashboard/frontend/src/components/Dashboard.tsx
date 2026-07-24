@@ -1,8 +1,41 @@
-import { Strength, TeamPrediction } from "../api/client";
+import {
+  STAGE_INCLUDED_MATCH_STAGES,
+  STAGE_OPTIONS,
+  Stage,
+  Strength,
+  TeamPrediction,
+} from "../api/client";
 
 function groupLetter(group: string | null | undefined): string {
   if (!group) return "—";
   return group.replace(/^Group\s+/i, "");
+}
+
+export function StageSelector({
+  stage,
+  onChange,
+  disabled,
+}: {
+  stage: Stage;
+  onChange: (value: Stage) => void;
+  disabled?: boolean;
+}) {
+  return (
+    <div className="stage-selector" role="group" aria-label="Tournament stage">
+      <span className="strength-label">Tournament stage</span>
+      <select
+        value={stage}
+        disabled={disabled}
+        onChange={(e) => onChange(e.target.value as Stage)}
+      >
+        {STAGE_OPTIONS.map((opt) => (
+          <option key={opt.id} value={opt.id}>
+            {opt.label}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
 }
 
 export function StrengthToggle({
@@ -100,6 +133,35 @@ function pct(value: number | undefined): string {
   return `${((value ?? 0) * 100).toFixed(1)}%`;
 }
 
+const STAGE_FOOTNOTES: Record<Stage, string> = {
+  pre_tournament:
+    "Every stage below, including the group stage, is Monte Carlo simulated " +
+    "using only pre-tournament data — no 2026 results are used.",
+  group:
+    "Group stage results are fixed to the real outcome. Round of 32 is " +
+    "resolved from the real group standings (FIFA's third-place ranking " +
+    "rules) and Round of 32 onward is simulated.",
+  r32:
+    "Group stage and Round of 32 results are fixed to the real outcome. " +
+    "Round of 16 onward is simulated.",
+  r16:
+    "Group stage through Round of 16 are fixed to the real outcome. " +
+    "Quarterfinals onward is simulated.",
+  qf:
+    "Group stage through Quarterfinals are fixed to the real outcome. " +
+    "Semifinals and the Final are simulated.",
+  sf:
+    "Group stage through Semifinals are fixed to the real outcome. Only the " +
+    "Final is simulated.",
+  complete:
+    "The tournament is over — every probability reflects the real, final " +
+    "outcome (no simulation).",
+};
+
+export function stageFootnote(stage: Stage): string {
+  return STAGE_FOOTNOTES[stage];
+}
+
 export function RankingsTable({
   teams,
   selectedTeam,
@@ -172,13 +234,15 @@ export function RankingsTable({
 
 export function GroupStandings({
   groups,
+  title = "2026 Group Standings (Played Matches)",
 }: {
   groups: Record<string, unknown[]>;
+  title?: string;
 }) {
   const entries = Object.entries(groups).sort(([a], [b]) => a.localeCompare(b));
   return (
     <div className="panel">
-      <h2>2026 Group Standings (Played Matches)</h2>
+      <h2>{title}</h2>
       <div className="groups-grid">
         {entries.map(([group, rows]) => (
           <div key={group} className="group-card">
@@ -213,6 +277,7 @@ export function GroupStandings({
 export function TeamDetailPanel({
   team,
   matches,
+  stage,
 }: {
   team: TeamPrediction | null;
   matches: Array<{
@@ -222,7 +287,9 @@ export function TeamDetailPanel({
     goals2: number | null;
     played: boolean;
     date: string;
+    stage?: string;
   }>;
+  stage: Stage;
 }) {
   if (!team) {
     return (
@@ -233,9 +300,13 @@ export function TeamDetailPanel({
     );
   }
 
+  const includedStages = STAGE_INCLUDED_MATCH_STAGES[stage];
   const recent = matches
     .filter(
-      (m) => m.played && (m.team1 === team.team || m.team2 === team.team)
+      (m) =>
+        m.played &&
+        (m.team1 === team.team || m.team2 === team.team) &&
+        (!m.stage || includedStages.has(m.stage))
     )
     .slice(-5);
 

@@ -49,7 +49,11 @@ class EloModel:
         )
 
 
-def fit_elo(matches: pd.DataFrame, base_rating: float = 1500.0) -> EloModel:
+def fit_elo(
+    matches: pd.DataFrame,
+    base_rating: float = 1500.0,
+    base_ratings: dict[str, float] | None = None,
+) -> EloModel:
     model = EloModel(ratings={}, home_advantage=0.0)
     played = matches[matches["played"]].sort_values(["date", "year"])
 
@@ -57,7 +61,7 @@ def fit_elo(matches: pd.DataFrame, base_rating: float = 1500.0) -> EloModel:
         pd.concat([played["team1"], played["team2"]], ignore_index=True)
     )
     for team in teams:
-        model.ratings[str(team)] = base_rating
+        model.ratings[str(team)] = (base_ratings or {}).get(str(team), base_rating)
 
     for _, row in played.iterrows():
         t1, t2 = row["team1"], row["team2"]

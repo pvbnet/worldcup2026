@@ -8,7 +8,7 @@ from sklearn.metrics import brier_score_loss, log_loss
 
 from config import ARTIFACTS_EVALUATION
 from models.elo import fit_elo
-from models.fifa import load_fifa_snapshot, ratings_for_strength
+from models.fifa import load_fifa_snapshot, ratings_for_strength, seed_ratings_from_fifa
 
 
 def _one_hot(outcome: int) -> np.ndarray:
@@ -36,7 +36,11 @@ def evaluate_models(matches: pd.DataFrame, training_frame: pd.DataFrame | None =
     if train_matches.empty or test_matches.empty:
         return metrics
 
-    elo = fit_elo(train_matches)
+    train_teams = pd.unique(
+        pd.concat([train_matches["team1"], train_matches["team2"]], ignore_index=True)
+    )
+    seeds = seed_ratings_from_fifa([str(t) for t in train_teams])
+    elo = fit_elo(train_matches, base_ratings=seeds)
     fifa = load_fifa_snapshot()
     teams = list(
         pd.unique(pd.concat([test_matches["team1"], test_matches["team2"]], ignore_index=True))

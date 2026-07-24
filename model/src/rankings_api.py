@@ -11,7 +11,14 @@ SRC = Path(__file__).resolve().parent
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from config import ARTIFACTS_PREDICTIONS, CURRENT_YEAR, DEFAULT_STRENGTH, STRENGTH_SOURCES
+from config import (
+    ARTIFACTS_PREDICTIONS,
+    ARTIFACTS_TRAINING,
+    DEFAULT_STAGE,
+    DEFAULT_STRENGTH,
+    STAGE_ORDER,
+    STRENGTH_SOURCES,
+)
 from ingest import load_matches
 from models.elo import EloModel
 from models.fifa import (
@@ -20,20 +27,9 @@ from models.fifa import (
     rank_table_from_values,
     ratings_for_strength,
 )
-from simulation.tournament import TournamentSimulator
-from teams import is_placeholder
+from simulation.bracket import RealBracketSimulator, list_tournament_teams
 
 ProgressCallback = Callable[[int, int], None]
-
-
-def _2026_teams(matches: pd.DataFrame) -> list[str]:
-    year_matches = matches[matches["year"] == CURRENT_YEAR]
-    if "competition" in year_matches.columns:
-        year_matches = year_matches[year_matches["competition"] == "world_cup"]
-    teams = pd.unique(
-        pd.concat([year_matches["team1"], year_matches["team2"]], ignore_index=True)
-    )
-    return sorted(str(team) for team in teams if not is_placeholder(str(team)))
 
 
 def normalize_strength(strength: str | None) -> str:
@@ -42,36 +38,53 @@ def normalize_strength(strength: str | None) -> str:
     return DEFAULT_STRENGTH
 
 
+def normalize_stage(stage: str | None) -> str:
+    if stage in STAGE_ORDER:
+        return stage
+    return DEFAULT_STAGE
+
+
+def load_stage_elo(stage: str) -> EloModel:
+    path = ARTIFACTS_TRAINING / f"elo_{stage}.json"
+    if path.exists():
+        return EloModel.load(path)
+    return EloModel.load()
+
+
 def run_simulation(
     strength: str = DEFAULT_STRENGTH,
+    stage: str = DEFAULT_STAGE,
     simulations: int = 1000,
     on_progress: ProgressCallback | None = None,
 ) -> pd.DataFrame:
     strength = normalize_strength(strength)
+    stage = normalize_stage(stage)
     matches = load_matches()
-    pure_elo = EloModel.load()
-    simulator = TournamentSimulator(matches, pure_elo, strength=strength)
+    pure_elo = load_stage_elo(stage)
+    simulator = RealBracketSimulator(matches, pure_elo, strength=strength, stage=stage)
     return simulator.run(simulations=simulations, on_progress=on_progress)
 
 
 def build_rankings_payload(
     strength: str = DEFAULT_STRENGTH,
+    stage: str = DEFAULT_STAGE,
     resimulate: bool = False,
     simulations: int = 1000,
     on_progress: ProgressCallback | None = None,
 ) -> dict:
     strength = normalize_strength(strength)
+    stage = normalize_stage(stage)
     matches = load_matches()
-    pure_elo = EloModel.load()
+    pure_elo = load_stage_elo(stage)
     fifa = load_fifa_snapshot()
-    teams = _2026_teams(matches)
+    teams = list_tournament_teams(matches)
     active = ratings_for_strength(pure_elo, fifa, strength, teams=teams)
 
-    path = ARTIFACTS_PREDICTIONS / f"worldcup_{strength}.json"
+    path = ARTIFACTS_PREDICTIONS / f"worldcup_{stage}_{strength}.json"
     if resimulate or not path.exists():
-        simulator = TournamentSimulator(matches, pure_elo, strength=strength)
+        simulator = RealBracketSimulator(matches, pure_elo, strength=strength, stage=stage)
         pred_df = simulator.run(simulations=simulations, on_progress=on_progress)
-        simulator.save_predictions(pred_df, strength, simulations=simulations)
+        simulator.save_predictions(pred_df, simulations=simulations)
         resimulated = True
     else:
         payload = json.loads(path.read_text(encoding="utf-8"))
@@ -81,6 +94,7 @@ def build_rankings_payload(
     if pred_df.empty:
         return {
             "strength": strength,
+            "stage": stage,
             "fifa_snapshot": fifa.snapshot_id,
             "resimulated": resimulated,
             "teams": [],
@@ -129,6 +143,7 @@ def build_rankings_payload(
     rows.sort(key=lambda r: r["model_rank"])
     return {
         "strength": strength,
+        "stage": stage,
         "fifa_snapshot": fifa.snapshot_id,
         "resimulated": resimulated,
         "teams": rows,

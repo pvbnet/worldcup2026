@@ -8,6 +8,8 @@ from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel, Field
 
 from services.loader import (
+    DEFAULT_STAGE,
+    STAGE_ORDER,
     group_standings,
     load_config,
     load_matches,
@@ -23,8 +25,18 @@ _jobs: dict[str, dict[str, Any]] = {}
 _jobs_lock = threading.Lock()
 
 
+def _validate_stage(stage: str) -> str:
+    if stage not in STAGE_ORDER:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Invalid stage; use one of {', '.join(STAGE_ORDER)}",
+        )
+    return stage
+
+
 class SimulationRequest(BaseModel):
     strength: str = "elo"
+    stage: str = DEFAULT_STAGE
     simulations: int = Field(default=1000, ge=50, le=10000)
 
 
@@ -43,7 +55,7 @@ def _set_job(job_id: str, **updates: Any) -> None:
         job.update(updates)
 
 
-def _run_simulation_job(job_id: str, strength: str, simulations: int) -> None:
+def _run_simulation_job(job_id: str, strength: str, stage: str, simulations: int) -> None:
     _set_job(
         job_id,
         status="running",
@@ -61,6 +73,7 @@ def _run_simulation_job(job_id: str, strength: str, simulations: int) -> None:
     try:
         result = load_rankings(
             strength=strength,
+            stage=stage,
             resimulate=True,
             simulations=simulations,
             on_progress=on_progress,
@@ -94,22 +107,25 @@ def config() -> dict:
 @router.get("/teams/rankings")
 def rankings(
     strength: str = Query(default="elo"),
+    stage: str = Query(default=DEFAULT_STAGE),
     resimulate: bool = Query(default=False),
 ) -> dict:
     if strength not in {"elo", "fifa"}:
         raise HTTPException(status_code=400, detail="Invalid strength; use elo or fifa")
-    return load_rankings(strength=strength, resimulate=resimulate)
+    stage = _validate_stage(stage)
+    return load_rankings(strength=strength, stage=stage, resimulate=resimulate)
 
 
 @router.post("/simulations")
 def start_simulation(body: SimulationRequest) -> dict:
     if body.strength not in {"elo", "fifa"}:
         raise HTTPException(status_code=400, detail="Invalid strength; use elo or fifa")
+    stage = _validate_stage(body.stage)
     job_id = uuid.uuid4().hex
     _set_job(job_id, status="running", progress=0.0, message="Queued")
     thread = threading.Thread(
         target=_run_simulation_job,
-        args=(job_id, body.strength, body.simulations),
+        args=(job_id, body.strength, stage, body.simulations),
         daemon=True,
     )
     thread.start()
@@ -128,18 +144,21 @@ def simulation_status(job_id: str) -> dict:
 @router.get("/predictions/worldcup")
 def worldcup_predictions(
     strength: str = Query(default="elo"),
+    stage: str = Query(default=DEFAULT_STAGE),
     resimulate: bool = Query(default=False),
 ) -> dict:
     if strength not in {"elo", "fifa"}:
         raise HTTPException(status_code=400, detail="Invalid strength; use elo or fifa")
+    stage = _validate_stage(stage)
     if resimulate:
-        payload = load_rankings(strength=strength, resimulate=True)
+        payload = load_rankings(strength=strength, stage=stage, resimulate=True)
         return {
             "strength": strength,
+            "stage": stage,
             "teams": payload.get("teams", []),
             "resimulated": payload.get("resimulated", True),
         }
-    return load_predictions(strength)
+    return load_predictions(strength, stage)
 
 
 @router.get("/matches")

@@ -1,0 +1,709 @@
+{
+  "name": "AFC Asian Cup 2023",
+  "competition": "afc_asian_cup",
+  "edition": 2023,
+  "source_years": [
+    2024
+  ],
+  "matches": [
+    {
+      "date": "2024-01-12",
+      "team1": "Qatar",
+      "team2": "Lebanon",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Lusail, Qatar"
+    },
+    {
+      "date": "2024-01-13",
+      "team1": "China PR",
+      "team2": "Tajikistan",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-17",
+      "team1": "Qatar",
+      "team2": "Tajikistan",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Al Khor, Qatar"
+    },
+    {
+      "date": "2024-01-17",
+      "team1": "Lebanon",
+      "team2": "China PR",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-22",
+      "team1": "Qatar",
+      "team2": "China PR",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-01-22",
+      "team1": "Tajikistan",
+      "team2": "Lebanon",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-13",
+      "team1": "Australia",
+      "team2": "India",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-01-13",
+      "team1": "Uzbekistan",
+      "team2": "Syria",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-18",
+      "team1": "Syria",
+      "team2": "Australia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-18",
+      "team1": "India",
+      "team2": "Uzbekistan",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-01-23",
+      "team1": "Australia",
+      "team2": "Uzbekistan",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Al Wakrah, Qatar"
+    },
+    {
+      "date": "2024-01-23",
+      "team1": "Syria",
+      "team2": "India",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Al Khor, Qatar"
+    },
+    {
+      "date": "2024-01-14",
+      "team1": "Iran",
+      "team2": "Palestine",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-01-14",
+      "team1": "United Arab Emirates",
+      "team2": "Hong Kong",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-01-18",
+      "team1": "Palestine",
+      "team2": "United Arab Emirates",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Al Wakrah, Qatar"
+    },
+    {
+      "date": "2024-01-19",
+      "team1": "Hong Kong",
+      "team2": "Iran",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-01-23",
+      "team1": "Iran",
+      "team2": "United Arab Emirates",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-01-23",
+      "team1": "Hong Kong",
+      "team2": "Palestine",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-14",
+      "team1": "Japan",
+      "team2": "Vietnam",
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-15",
+      "team1": "Indonesia",
+      "team2": "Iraq",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-19",
+      "team1": "Iraq",
+      "team2": "Japan",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-01-19",
+      "team1": "Vietnam",
+      "team2": "Indonesia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-24",
+      "team1": "Iraq",
+      "team2": "Vietnam",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-24",
+      "team1": "Japan",
+      "team2": "Indonesia",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-15",
+      "team1": "South Korea",
+      "team2": "Bahrain",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-15",
+      "team1": "Malaysia",
+      "team2": "Jordan",
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Al Wakrah, Qatar"
+    },
+    {
+      "date": "2024-01-20",
+      "team1": "Bahrain",
+      "team2": "Malaysia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-20",
+      "team1": "Jordan",
+      "team2": "South Korea",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-25",
+      "team1": "South Korea",
+      "team2": "Malaysia",
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Al Wakrah, Qatar"
+    },
+    {
+      "date": "2024-01-25",
+      "team1": "Jordan",
+      "team2": "Bahrain",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Group E",
+      "group": "Group E",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-01-16",
+      "team1": "Thailand",
+      "team2": "Kyrgyzstan",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-16",
+      "team1": "Saudi Arabia",
+      "team2": "Oman",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-01-21",
+      "team1": "Oman",
+      "team2": "Thailand",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-21",
+      "team1": "Kyrgyzstan",
+      "team2": "Saudi Arabia",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-01-25",
+      "team1": "Kyrgyzstan",
+      "team2": "Oman",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-25",
+      "team1": "Saudi Arabia",
+      "team2": "Thailand",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group F",
+      "group": "Group F",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-01-28",
+      "team1": "Australia",
+      "team2": "Indonesia",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-28",
+      "team1": "Tajikistan",
+      "team2": "United Arab Emirates",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-01-29",
+      "team1": "Iraq",
+      "team2": "Jordan",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-01-29",
+      "team1": "Qatar",
+      "team2": "Palestine",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Al Khor, Qatar"
+    },
+    {
+      "date": "2024-01-30",
+      "team1": "Saudi Arabia",
+      "team2": "South Korea",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-01-30",
+      "team1": "Uzbekistan",
+      "team2": "Thailand",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Al Wakrah, Qatar"
+    },
+    {
+      "date": "2024-01-31",
+      "team1": "Bahrain",
+      "team2": "Japan",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-01-31",
+      "team1": "Iran",
+      "team2": "Syria",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Round of 16",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-02-02",
+      "team1": "Australia",
+      "team2": "South Korea",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Al Wakrah, Qatar"
+    },
+    {
+      "date": "2024-02-02",
+      "team1": "Tajikistan",
+      "team2": "Jordan",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-02-03",
+      "team1": "Iran",
+      "team2": "Japan",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-02-03",
+      "team1": "Qatar",
+      "team2": "Uzbekistan",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Al Khor, Qatar"
+    },
+    {
+      "date": "2024-02-06",
+      "team1": "Jordan",
+      "team2": "South Korea",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2024-02-07",
+      "team1": "Qatar",
+      "team2": "Iran",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2024-02-10",
+      "team1": "Qatar",
+      "team2": "Jordan",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Final",
+      "ground": "Lusail, Qatar"
+    }
+  ]
+}

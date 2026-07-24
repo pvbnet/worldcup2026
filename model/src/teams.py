@@ -20,6 +20,19 @@ TEAM_ALIASES: dict[str, str] = {
     "FYR Macedonia": "North Macedonia",
     "Macedonia": "North Macedonia",
     "Rep. of Ireland": "Republic of Ireland",
+    "Brunei Darussalam": "Brunei",
+    "Swaziland": "Eswatini",
+    "eSwatini": "Eswatini",
+    "Kyrgyz Republic": "Kyrgyzstan",
+    "Korea DPR": "North Korea",
+    "St. Kitts and Nevis": "Saint Kitts and Nevis",
+    "St Kitts and Nevis": "Saint Kitts and Nevis",
+    "St. Lucia": "Saint Lucia",
+    "St Lucia": "Saint Lucia",
+    "St. Vincent and the Grenadines": "Saint Vincent and the Grenadines",
+    "St Vincent and the Grenadines": "Saint Vincent and the Grenadines",
+    "Chinese Taipei": "Taiwan",
+    "US Virgin Islands": "United States Virgin Islands",
 }
 
 

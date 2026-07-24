@@ -1,16 +1,17 @@
-import { Navigate, NavLink, Route, Routes, useLocation } from "react-router-dom";
+import { Navigate, NavLink, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import { useDashboard } from "./hooks/useApi";
-import { Strength } from "./api/client";
+import { Stage, Strength } from "./api/client";
+import { StageSelector } from "./components/Dashboard";
 import { RankingsPage } from "./pages/RankingsPage";
 import { GroupsPage } from "./pages/GroupsPage";
 import { BracketPage } from "./pages/BracketPage";
 
 export default function App() {
   const [strength, setStrength] = useState<Strength>("elo");
+  const [stage, setStage] = useState<Stage>("pre_tournament");
   const [simulations, setSimulations] = useState(1000);
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
-  const location = useLocation();
   const {
     teams,
     matches,
@@ -20,12 +21,10 @@ export default function App() {
     progressMessage,
     error,
     refresh,
-  } = useDashboard(strength, simulations);
-
-  const wide = location.pathname === "/knockout";
+  } = useDashboard(strength, simulations, stage);
 
   return (
-    <div className={wide ? "app app--wide" : "app"}>
+    <div className="app">
       <header>
         <div>
           <h1>World Cup 2026 Predictive Dashboard</h1>
@@ -42,6 +41,7 @@ export default function App() {
           </nav>
         </div>
         <div className="header-actions">
+          <StageSelector stage={stage} onChange={setStage} disabled={simulating} />
           <button onClick={refresh} disabled={simulating}>
             {simulating ? "Simulating…" : "Refresh data"}
           </button>
@@ -59,6 +59,7 @@ export default function App() {
                 teams={teams}
                 matches={matches}
                 groups={groups}
+                stage={stage}
                 selectedTeam={selectedTeam}
                 onSelectTeam={setSelectedTeam}
               />
@@ -66,7 +67,7 @@ export default function App() {
           />
           <Route
             path="/knockout"
-            element={<BracketPage matches={matches} />}
+            element={<BracketPage matches={matches} stage={stage} />}
           />
           <Route
             path="/predictions"
@@ -74,6 +75,7 @@ export default function App() {
               <RankingsPage
                 strength={strength}
                 onStrengthChange={setStrength}
+                stage={stage}
                 simulations={simulations}
                 onSimulationsChange={setSimulations}
                 teams={teams}

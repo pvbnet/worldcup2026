@@ -1,0 +1,437 @@
+{
+  "name": "CONCACAF Gold Cup 2021",
+  "competition": "gold_cup",
+  "edition": 2021,
+  "source_years": [
+    2021
+  ],
+  "matches": [
+    {
+      "date": "2021-07-10",
+      "team1": "Mexico",
+      "team2": "Trinidad and Tobago",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Arlington, United States"
+    },
+    {
+      "date": "2021-07-11",
+      "team1": "El Salvador",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Frisco, United States"
+    },
+    {
+      "date": "2021-07-14",
+      "team1": "Trinidad and Tobago",
+      "team2": "El Salvador",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Frisco, United States"
+    },
+    {
+      "date": "2021-07-14",
+      "team1": "Guatemala",
+      "team2": "Mexico",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Dallas, United States"
+    },
+    {
+      "date": "2021-07-18",
+      "team1": "Guatemala",
+      "team2": "Trinidad and Tobago",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Frisco, United States"
+    },
+    {
+      "date": "2021-07-18",
+      "team1": "Mexico",
+      "team2": "El Salvador",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group A",
+      "group": "Group A",
+      "ground": "Dallas, United States"
+    },
+    {
+      "date": "2021-07-11",
+      "team1": "Canada",
+      "team2": "Martinique",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Kansas City, United States"
+    },
+    {
+      "date": "2021-07-11",
+      "team1": "United States",
+      "team2": "Haiti",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Kansas City, United States"
+    },
+    {
+      "date": "2021-07-15",
+      "team1": "Haiti",
+      "team2": "Canada",
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Kansas City, United States"
+    },
+    {
+      "date": "2021-07-15",
+      "team1": "United States",
+      "team2": "Martinique",
+      "score": {
+        "ft": [
+          6,
+          1
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Kansas City, United States"
+    },
+    {
+      "date": "2021-07-18",
+      "team1": "Martinique",
+      "team2": "Haiti",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Frisco, United States"
+    },
+    {
+      "date": "2021-07-18",
+      "team1": "United States",
+      "team2": "Canada",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group B",
+      "group": "Group B",
+      "ground": "Kansas City, United States"
+    },
+    {
+      "date": "2021-07-12",
+      "team1": "Jamaica",
+      "team2": "Suriname",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Orlando, United States"
+    },
+    {
+      "date": "2021-07-12",
+      "team1": "Costa Rica",
+      "team2": "Guadeloupe",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Orlando, United States"
+    },
+    {
+      "date": "2021-07-16",
+      "team1": "Suriname",
+      "team2": "Costa Rica",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Orlando, United States"
+    },
+    {
+      "date": "2021-07-16",
+      "team1": "Guadeloupe",
+      "team2": "Jamaica",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Orlando, United States"
+    },
+    {
+      "date": "2021-07-20",
+      "team1": "Costa Rica",
+      "team2": "Jamaica",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Orlando, United States"
+    },
+    {
+      "date": "2021-07-20",
+      "team1": "Suriname",
+      "team2": "Guadeloupe",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Group C",
+      "group": "Group C",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2021-07-13",
+      "team1": "Qatar",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2021-07-13",
+      "team1": "Honduras",
+      "team2": "Grenada",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2021-07-17",
+      "team1": "Grenada",
+      "team2": "Qatar",
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2021-07-17",
+      "team1": "Panama",
+      "team2": "Honduras",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2021-07-20",
+      "team1": "Honduras",
+      "team2": "Qatar",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2021-07-20",
+      "team1": "Panama",
+      "team2": "Grenada",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "round": "Group D",
+      "group": "Group D",
+      "ground": "Orlando, United States"
+    },
+    {
+      "date": "2021-07-24",
+      "team1": "Mexico",
+      "team2": "Honduras",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Glendale, United States"
+    },
+    {
+      "date": "2021-07-24",
+      "team1": "Qatar",
+      "team2": "El Salvador",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Glendale, United States"
+    },
+    {
+      "date": "2021-07-25",
+      "team1": "Costa Rica",
+      "team2": "Canada",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Arlington, United States"
+    },
+    {
+      "date": "2021-07-25",
+      "team1": "United States",
+      "team2": "Jamaica",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Quarter-final",
+      "ground": "Arlington, United States"
+    },
+    {
+      "date": "2021-07-29",
+      "team1": "Mexico",
+      "team2": "Canada",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2021-07-29",
+      "team1": "United States",
+      "team2": "Qatar",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Semi-final",
+      "ground": "Austin, United States"
+    },
+    {
+      "date": "2021-08-01",
+      "team1": "United States",
+      "team2": "Mexico",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "round": "Final",
+      "ground": "Las Vegas, United States"
+    }
+  ]
+}

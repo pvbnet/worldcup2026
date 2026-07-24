@@ -1,0 +1,2998 @@
+{
+  "name": "International Friendly 2019",
+  "competition": "friendly",
+  "edition": 2019,
+  "source_years": [
+    2019
+  ],
+  "matches": [
+    {
+      "date": "2019-01-02",
+      "team1": "Oman",
+      "team2": "Thailand",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-01-08",
+      "team1": "Finland",
+      "team2": "Sweden",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2019-01-11",
+      "team1": "Estonia",
+      "team2": "Finland",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2019-01-11",
+      "team1": "Iceland",
+      "team2": "Sweden",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2019-01-15",
+      "team1": "Estonia",
+      "team2": "Iceland",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2019-01-27",
+      "team1": "United States",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Glendale, United States"
+    },
+    {
+      "date": "2019-02-02",
+      "team1": "United States",
+      "team2": "Costa Rica",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "San Jose, United States"
+    },
+    {
+      "date": "2019-02-21",
+      "team1": "Kazakhstan",
+      "team2": "Moldova",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Belek, Turkey"
+    },
+    {
+      "date": "2019-02-23",
+      "team1": "Sint Maarten",
+      "team2": "Saint Barth\u00e9lemy",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Philipsburg, Sint Maarten"
+    },
+    {
+      "date": "2019-02-27",
+      "team1": "Cuba",
+      "team2": "Bermuda",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "ground": "Havana, Cuba"
+    },
+    {
+      "date": "2019-03-03",
+      "team1": "Bolivia",
+      "team2": "Nicaragua",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Villa Tunari, Bolivia"
+    },
+    {
+      "date": "2019-03-04",
+      "team1": "Barbados",
+      "team2": "Grenada",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Kingstown, Saint Vincent and the Grenadines"
+    },
+    {
+      "date": "2019-03-06",
+      "team1": "El Salvador",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Los Angeles, United States"
+    },
+    {
+      "date": "2019-03-09",
+      "team1": "Cambodia",
+      "team2": "Bangladesh",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Phnom Penh, Cambodia"
+    },
+    {
+      "date": "2019-03-16",
+      "team1": "Bahamas",
+      "team2": "Turks and Caicos Islands",
+      "score": {
+        "ft": [
+          6,
+          1
+        ]
+      },
+      "ground": "Nassau, Bahamas"
+    },
+    {
+      "date": "2019-03-17",
+      "team1": "Saint Barth\u00e9lemy",
+      "team2": "Saint Martin",
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      },
+      "ground": "Saint-Jean, Saint Barth\u00e9lemy"
+    },
+    {
+      "date": "2019-03-18",
+      "team1": "Fiji",
+      "team2": "New Caledonia",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Suva, Fiji"
+    },
+    {
+      "date": "2019-03-18",
+      "team1": "Solomon Islands",
+      "team2": "Vanuatu",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Honiara, Solomon Islands"
+    },
+    {
+      "date": "2019-03-19",
+      "team1": "Myanmar",
+      "team2": "Taiwan",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Mandalay, Myanmar"
+    },
+    {
+      "date": "2019-03-20",
+      "team1": "Germany",
+      "team2": "Serbia",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Wolfsburg, Germany"
+    },
+    {
+      "date": "2019-03-20",
+      "team1": "Wales",
+      "team2": "Trinidad and Tobago",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Wrexham, Wales"
+    },
+    {
+      "date": "2019-03-21",
+      "team1": "Kosovo",
+      "team2": "Denmark",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Pristina, Kosovo"
+    },
+    {
+      "date": "2019-03-21",
+      "team1": "Kuwait",
+      "team2": "Nepal",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Al Ahmadi, Kuwait"
+    },
+    {
+      "date": "2019-03-21",
+      "team1": "Mauritius",
+      "team2": "New Caledonia",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Lautoka, Fiji"
+    },
+    {
+      "date": "2019-03-21",
+      "team1": "United Arab Emirates",
+      "team2": "Saudi Arabia",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-03-21",
+      "team1": "United States",
+      "team2": "Ecuador",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Orlando, United States"
+    },
+    {
+      "date": "2019-03-22",
+      "team1": "Argentina",
+      "team2": "Venezuela",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "ground": "Madrid, Spain"
+    },
+    {
+      "date": "2019-03-22",
+      "team1": "Guatemala",
+      "team2": "Costa Rica",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Guatemala City, Guatemala"
+    },
+    {
+      "date": "2019-03-22",
+      "team1": "South Korea",
+      "team2": "Bolivia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Ulsan, South Korea"
+    },
+    {
+      "date": "2019-03-22",
+      "team1": "Mexico",
+      "team2": "Chile",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "San Diego, United States"
+    },
+    {
+      "date": "2019-03-22",
+      "team1": "Peru",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Harrison, United States"
+    },
+    {
+      "date": "2019-03-23",
+      "team1": "Brazil",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Porto, Portugal"
+    },
+    {
+      "date": "2019-03-23",
+      "team1": "Malaysia",
+      "team2": "Afghanistan",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Kuala Lumpur, Malaysia"
+    },
+    {
+      "date": "2019-03-23",
+      "team1": "Oman",
+      "team2": "Singapore",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Kuala Lumpur, Malaysia"
+    },
+    {
+      "date": "2019-03-23",
+      "team1": "Vatican City",
+      "team2": "Raetia",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Rome, Italy"
+    },
+    {
+      "date": "2019-03-24",
+      "team1": "Taiwan",
+      "team2": "Solomon Islands",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Taipei, Taiwan"
+    },
+    {
+      "date": "2019-03-24",
+      "team1": "Fiji",
+      "team2": "Mauritius",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Lautoka, Fiji"
+    },
+    {
+      "date": "2019-03-25",
+      "team1": "Catalonia",
+      "team2": "Venezuela",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Girona, Spain"
+    },
+    {
+      "date": "2019-03-25",
+      "team1": "Azerbaijan",
+      "team2": "Lithuania",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Baku, Azerbaijan"
+    },
+    {
+      "date": "2019-03-25",
+      "team1": "Kuwait",
+      "team2": "Nepal",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Al Ahmadi, Kuwait"
+    },
+    {
+      "date": "2019-03-25",
+      "team1": "Myanmar",
+      "team2": "Indonesia",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Mandalay, Myanmar"
+    },
+    {
+      "date": "2019-03-25",
+      "team1": "Saudi Arabia",
+      "team2": "Equatorial Guinea",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "ground": "Riyadh, Saudi Arabia"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "Algeria",
+      "team2": "Tunisia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Blida, Algeria"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "Costa Rica",
+      "team2": "Jamaica",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "San Jos\u00e9, Costa Rica"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "Czech Republic",
+      "team2": "Brazil",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "ground": "Prague, Czech Republic"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "Ghana",
+      "team2": "Mauritania",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Accra, Ghana"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "Gibraltar",
+      "team2": "Estonia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Gibraltar, Gibraltar"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "Honduras",
+      "team2": "Ecuador",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Harrison, United States"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "Ivory Coast",
+      "team2": "Liberia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Abidjan, Ivory Coast"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "South Korea",
+      "team2": "Colombia",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Seoul, South Korea"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "Morocco",
+      "team2": "Argentina",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Tangier, Morocco"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "Nicaragua",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Managua, Nicaragua"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "Nigeria",
+      "team2": "Egypt",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Asaba, Nigeria"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "Paraguay",
+      "team2": "Mexico",
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      },
+      "ground": "Santa Clara, United States"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "Peru",
+      "team2": "El Salvador",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Washington, D.C., United States"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "Senegal",
+      "team2": "Mali",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Dakar, Senegal"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "United Arab Emirates",
+      "team2": "Syria",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-03-26",
+      "team1": "United States",
+      "team2": "Chile",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2019-05-04",
+      "team1": "Yorkshire",
+      "team2": "Somaliland",
+      "score": {
+        "ft": [
+          6,
+          2
+        ]
+      },
+      "ground": "Athersley, England"
+    },
+    {
+      "date": "2019-05-25",
+      "team1": "Kernow",
+      "team2": "Barawa",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "ground": "Bodmin, England"
+    },
+    {
+      "date": "2019-05-25",
+      "team1": "Cascadia",
+      "team2": "Chagos Islands",
+      "score": {
+        "ft": [
+          6,
+          3
+        ]
+      },
+      "ground": "Kent, United States"
+    },
+    {
+      "date": "2019-05-28",
+      "team1": "Laos",
+      "team2": "Sri Lanka",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Vientiane, Laos"
+    },
+    {
+      "date": "2019-05-29",
+      "team1": "Panama",
+      "team2": "Basque Country",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Panama City, Panama"
+    },
+    {
+      "date": "2019-05-30",
+      "team1": "Turkey",
+      "team2": "Greece",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Antalya, Turkey"
+    },
+    {
+      "date": "2019-05-31",
+      "team1": "Laos",
+      "team2": "Sri Lanka",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Vientiane, Laos"
+    },
+    {
+      "date": "2019-06-01",
+      "team1": "Venezuela",
+      "team2": "Ecuador",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Miami Gardens, United States"
+    },
+    {
+      "date": "2019-06-02",
+      "team1": "El Salvador",
+      "team2": "Haiti",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Washington, D.C., United States"
+    },
+    {
+      "date": "2019-06-02",
+      "team1": "France",
+      "team2": "Bolivia",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Nantes, France"
+    },
+    {
+      "date": "2019-06-02",
+      "team1": "Luxembourg",
+      "team2": "Madagascar",
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      },
+      "ground": "Luxembourg, Luxembourg"
+    },
+    {
+      "date": "2019-06-02",
+      "team1": "Malaysia",
+      "team2": "Nepal",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Kuala Lumpur, Malaysia"
+    },
+    {
+      "date": "2019-06-02",
+      "team1": "Turkey",
+      "team2": "Uzbekistan",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Alanya, Turkey"
+    },
+    {
+      "date": "2019-06-03",
+      "team1": "Colombia",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Bogot\u00e1, Colombia"
+    },
+    {
+      "date": "2019-06-03",
+      "team1": "Vanuatu",
+      "team2": "Tahiti",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Port Vila, Vanuatu"
+    },
+    {
+      "date": "2019-06-05",
+      "team1": "Brazil",
+      "team2": "Qatar",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Bras\u00edlia, Brazil"
+    },
+    {
+      "date": "2019-06-05",
+      "team1": "Mexico",
+      "team2": "Venezuela",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Atlanta, United States"
+    },
+    {
+      "date": "2019-06-05",
+      "team1": "Paraguay",
+      "team2": "Honduras",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Ciudad del Este, Paraguay"
+    },
+    {
+      "date": "2019-06-05",
+      "team1": "Peru",
+      "team2": "Costa Rica",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Lima, Peru"
+    },
+    {
+      "date": "2019-06-05",
+      "team1": "United States",
+      "team2": "Jamaica",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Washington, D.C., United States"
+    },
+    {
+      "date": "2019-06-06",
+      "team1": "Bermuda",
+      "team2": "Guyana",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Hamilton, Bermuda"
+    },
+    {
+      "date": "2019-06-06",
+      "team1": "Chile",
+      "team2": "Haiti",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Coquimbo, Chile"
+    },
+    {
+      "date": "2019-06-06",
+      "team1": "Taiwan",
+      "team2": "Nepal",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Kaohsiung, Taiwan"
+    },
+    {
+      "date": "2019-06-06",
+      "team1": "Iran",
+      "team2": "Syria",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "ground": "Tehran, Iran"
+    },
+    {
+      "date": "2019-06-06",
+      "team1": "Slovakia",
+      "team2": "Jordan",
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      },
+      "ground": "Trnava, Slovakia"
+    },
+    {
+      "date": "2019-06-06",
+      "team1": "Tajikistan",
+      "team2": "Afghanistan",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Dushanbe, Tajikistan"
+    },
+    {
+      "date": "2019-06-07",
+      "team1": "Argentina",
+      "team2": "Nicaragua",
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      },
+      "ground": "San Juan, Argentina"
+    },
+    {
+      "date": "2019-06-07",
+      "team1": "China PR",
+      "team2": "Philippines",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Guangzhou, China PR"
+    },
+    {
+      "date": "2019-06-07",
+      "team1": "Fiji",
+      "team2": "Tahiti",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Port Vila, Vanuatu"
+    },
+    {
+      "date": "2019-06-07",
+      "team1": "Ivory Coast",
+      "team2": "Comoros",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Boulogne-Sur-Mer, Ivory Coast"
+    },
+    {
+      "date": "2019-06-07",
+      "team1": "Kenya",
+      "team2": "Madagascar",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Bondoufle, Kenya"
+    },
+    {
+      "date": "2019-06-07",
+      "team1": "South Korea",
+      "team2": "Australia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Busan, South Korea"
+    },
+    {
+      "date": "2019-06-07",
+      "team1": "Tunisia",
+      "team2": "Iraq",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Rad\u00e8s, Tunisia"
+    },
+    {
+      "date": "2019-06-07",
+      "team1": "Uruguay",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Montevideo, Uruguay"
+    },
+    {
+      "date": "2019-06-07",
+      "team1": "Uzbekistan",
+      "team2": "North Korea",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "ground": "Tashkent, Uzbekistan"
+    },
+    {
+      "date": "2019-06-08",
+      "team1": "Angola",
+      "team2": "Guinea-Bissau",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Penafiel, Angola"
+    },
+    {
+      "date": "2019-06-08",
+      "team1": "Nigeria",
+      "team2": "Zimbabwe",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Asaba, Nigeria"
+    },
+    {
+      "date": "2019-06-08",
+      "team1": "Singapore",
+      "team2": "Solomon Islands",
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      },
+      "ground": "Kallang, Singapore"
+    },
+    {
+      "date": "2019-06-09",
+      "team1": "Brazil",
+      "team2": "Honduras",
+      "score": {
+        "ft": [
+          7,
+          0
+        ]
+      },
+      "ground": "Porto Alegre, Brazil"
+    },
+    {
+      "date": "2019-06-09",
+      "team1": "Cameroon",
+      "team2": "Zambia",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Majadahonda, Cameroon"
+    },
+    {
+      "date": "2019-06-09",
+      "team1": "DR Congo",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Marbella, Spain"
+    },
+    {
+      "date": "2019-06-09",
+      "team1": "Mexico",
+      "team2": "Ecuador",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "ground": "Arlington, United States"
+    },
+    {
+      "date": "2019-06-09",
+      "team1": "Paraguay",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Asunci\u00f3n, Paraguay"
+    },
+    {
+      "date": "2019-06-09",
+      "team1": "Peru",
+      "team2": "Colombia",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "ground": "Lima, Peru"
+    },
+    {
+      "date": "2019-06-09",
+      "team1": "Turkmenistan",
+      "team2": "Uganda",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-06-09",
+      "team1": "United States",
+      "team2": "Venezuela",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "ground": "Cincinnati, United States"
+    },
+    {
+      "date": "2019-06-10",
+      "team1": "Vanuatu",
+      "team2": "Fiji",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Port Vila, Vanuatu"
+    },
+    {
+      "date": "2019-06-11",
+      "team1": "Algeria",
+      "team2": "Burundi",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2019-06-11",
+      "team1": "Benin",
+      "team2": "Guinea",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Marrakech, Morocco"
+    },
+    {
+      "date": "2019-06-11",
+      "team1": "China PR",
+      "team2": "Tajikistan",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Guangzhou, China PR"
+    },
+    {
+      "date": "2019-06-11",
+      "team1": "Croatia",
+      "team2": "Tunisia",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Vara\u017edin, Croatia"
+    },
+    {
+      "date": "2019-06-11",
+      "team1": "Hong Kong",
+      "team2": "Taiwan",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Hong Kong, Hong Kong"
+    },
+    {
+      "date": "2019-06-11",
+      "team1": "Jordan",
+      "team2": "Indonesia",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "ground": "Amman, Jordan"
+    },
+    {
+      "date": "2019-06-11",
+      "team1": "South Korea",
+      "team2": "Iran",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Seoul, South Korea"
+    },
+    {
+      "date": "2019-06-11",
+      "team1": "Kyrgyzstan",
+      "team2": "Palestine",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Bishkek, Kyrgyzstan"
+    },
+    {
+      "date": "2019-06-11",
+      "team1": "Singapore",
+      "team2": "Myanmar",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Kallang, Singapore"
+    },
+    {
+      "date": "2019-06-11",
+      "team1": "Uzbekistan",
+      "team2": "Syria",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Tashkent, Uzbekistan"
+    },
+    {
+      "date": "2019-06-12",
+      "team1": "Morocco",
+      "team2": "Gambia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Marrakech, Morocco"
+    },
+    {
+      "date": "2019-06-12",
+      "team1": "Ynys M\u00f4n",
+      "team2": "Saint Helena",
+      "score": {
+        "ft": [
+          7,
+          2
+        ]
+      },
+      "ground": "Anglesey, Wales"
+    },
+    {
+      "date": "2019-06-13",
+      "team1": "Egypt",
+      "team2": "Tanzania",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Alexandria, Egypt"
+    },
+    {
+      "date": "2019-06-14",
+      "team1": "Cameroon",
+      "team2": "Mali",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Al Wakrah, Qatar"
+    },
+    {
+      "date": "2019-06-14",
+      "team1": "Madagascar",
+      "team2": "Mauritania",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "ground": "Marrakech, Morocco"
+    },
+    {
+      "date": "2019-06-15",
+      "team1": "Ghana",
+      "team2": "South Africa",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2019-06-15",
+      "team1": "Indonesia",
+      "team2": "Vanuatu",
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      },
+      "ground": "Jakarta, Indonesia"
+    },
+    {
+      "date": "2019-06-15",
+      "team1": "Ivory Coast",
+      "team2": "Uganda",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-06-15",
+      "team1": "Kenya",
+      "team2": "DR Congo",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Madrid, Spain"
+    },
+    {
+      "date": "2019-06-15",
+      "team1": "Tanzania",
+      "team2": "Zimbabwe",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Cairo, Egypt"
+    },
+    {
+      "date": "2019-06-16",
+      "team1": "Algeria",
+      "team2": "Mali",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2019-06-16",
+      "team1": "Egypt",
+      "team2": "Guinea",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Alexandria, Egypt"
+    },
+    {
+      "date": "2019-06-16",
+      "team1": "Morocco",
+      "team2": "Zambia",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "ground": "Marrakech, Morocco"
+    },
+    {
+      "date": "2019-06-16",
+      "team1": "Senegal",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Ismailia, Egypt"
+    },
+    {
+      "date": "2019-06-17",
+      "team1": "Tunisia",
+      "team2": "Burundi",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Rad\u00e8s, Tunisia"
+    },
+    {
+      "date": "2019-06-18",
+      "team1": "Benin",
+      "team2": "Mauritania",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Marrakech, Morocco"
+    },
+    {
+      "date": "2019-06-19",
+      "team1": "Ivory Coast",
+      "team2": "Zambia",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-06-25",
+      "team1": "Raetia",
+      "team2": "Franconia",
+      "score": {
+        "ft": [
+          3,
+          4
+        ]
+      },
+      "ground": "Chur, Switzerland"
+    },
+    {
+      "date": "2019-07-21",
+      "team1": "Equatorial Guinea",
+      "team2": "Liberia",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Malabo, Equatorial Guinea"
+    },
+    {
+      "date": "2019-08-09",
+      "team1": "South Ossetia",
+      "team2": "Luhansk PR",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Tskhinvali, Georgia"
+    },
+    {
+      "date": "2019-08-11",
+      "team1": "Saint Vincent and the Grenadines",
+      "team2": "Trinidad and Tobago",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Georgetown, Saint Vincent and the Grenadines"
+    },
+    {
+      "date": "2019-08-14",
+      "team1": "Dominican Republic",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Santiago de los Caballeros, Dominican Republic"
+    },
+    {
+      "date": "2019-08-27",
+      "team1": "Saint Kitts and Nevis",
+      "team2": "Antigua and Barbuda",
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      },
+      "ground": "Basseterre, Saint Kitts and Nevis"
+    },
+    {
+      "date": "2019-08-28",
+      "team1": "Belize",
+      "team2": "Saint Vincent and the Grenadines",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Belmopan, Belize"
+    },
+    {
+      "date": "2019-08-28",
+      "team1": "Taiwan",
+      "team2": "Guam",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Kaohsiung, Taiwan"
+    },
+    {
+      "date": "2019-08-29",
+      "team1": "United Arab Emirates",
+      "team2": "Dominican Republic",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "ground": "Riffa, Bahrain"
+    },
+    {
+      "date": "2019-08-30",
+      "team1": "Belize",
+      "team2": "Saint Vincent and the Grenadines",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Belmopan, Belize"
+    },
+    {
+      "date": "2019-08-30",
+      "team1": "China PR",
+      "team2": "Myanmar",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "ground": "Xianghe, Egypt"
+    },
+    {
+      "date": "2019-08-30",
+      "team1": "Malaysia",
+      "team2": "Jordan",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Kuala Lumpur, Malaysia"
+    },
+    {
+      "date": "2019-08-31",
+      "team1": "United Arab Emirates",
+      "team2": "Sri Lanka",
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      },
+      "ground": "Riffa, Bahrain"
+    },
+    {
+      "date": "2019-09-04",
+      "team1": "Libya",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Marrakech, Morocco"
+    },
+    {
+      "date": "2019-09-05",
+      "team1": "Argentina",
+      "team2": "Chile",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Los Angeles, United States"
+    },
+    {
+      "date": "2019-09-05",
+      "team1": "Honduras",
+      "team2": "Puerto Rico",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "ground": "Tegucigalpa, Honduras"
+    },
+    {
+      "date": "2019-09-05",
+      "team1": "South Korea",
+      "team2": "Georgia",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Istanbul, Turkey"
+    },
+    {
+      "date": "2019-09-05",
+      "team1": "Montenegro",
+      "team2": "Hungary",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Podgorica, Montenegro"
+    },
+    {
+      "date": "2019-09-05",
+      "team1": "Northern Ireland",
+      "team2": "Luxembourg",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Belfast, Northern Ireland"
+    },
+    {
+      "date": "2019-09-05",
+      "team1": "Peru",
+      "team2": "Ecuador",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Harrison, United States"
+    },
+    {
+      "date": "2019-09-05",
+      "team1": "Saudi Arabia",
+      "team2": "Mali",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Riyadh, Saudi Arabia"
+    },
+    {
+      "date": "2019-09-06",
+      "team1": "Brazil",
+      "team2": "Colombia",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Miami Gardens, United States"
+    },
+    {
+      "date": "2019-09-06",
+      "team1": "Costa Rica",
+      "team2": "Uruguay",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "San Jos\u00e9, Costa Rica"
+    },
+    {
+      "date": "2019-09-06",
+      "team1": "Ivory Coast",
+      "team2": "Benin",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Caen, Egypt"
+    },
+    {
+      "date": "2019-09-06",
+      "team1": "Morocco",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Marrakech, Morocco"
+    },
+    {
+      "date": "2019-09-06",
+      "team1": "Tunisia",
+      "team2": "Mauritania",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Rad\u00e8s, Tunisia"
+    },
+    {
+      "date": "2019-09-06",
+      "team1": "United States",
+      "team2": "Mexico",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "ground": "East Rutherford, United States"
+    },
+    {
+      "date": "2019-09-07",
+      "team1": "Libya",
+      "team2": "Niger",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Berrechid, Egypt"
+    },
+    {
+      "date": "2019-09-08",
+      "team1": "Kenya",
+      "team2": "Uganda",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Nairobi, Kenya"
+    },
+    {
+      "date": "2019-09-09",
+      "team1": "Algeria",
+      "team2": "Benin",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Algiers, Algeria"
+    },
+    {
+      "date": "2019-09-09",
+      "team1": "Iraq",
+      "team2": "Uzbekistan",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Amman, Jordan"
+    },
+    {
+      "date": "2019-09-09",
+      "team1": "Wales",
+      "team2": "Belarus",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Cardiff, Wales"
+    },
+    {
+      "date": "2019-09-10",
+      "team1": "Argentina",
+      "team2": "Mexico",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "ground": "San Antonio, United States"
+    },
+    {
+      "date": "2019-09-10",
+      "team1": "Brazil",
+      "team2": "Peru",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Los Angeles, United States"
+    },
+    {
+      "date": "2019-09-10",
+      "team1": "Colombia",
+      "team2": "Venezuela",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Tampa, United States"
+    },
+    {
+      "date": "2019-09-10",
+      "team1": "Ecuador",
+      "team2": "Bolivia",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Cuenca, Ecuador"
+    },
+    {
+      "date": "2019-09-10",
+      "team1": "Honduras",
+      "team2": "Chile",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "San Pedro Sula, Honduras"
+    },
+    {
+      "date": "2019-09-10",
+      "team1": "Ivory Coast",
+      "team2": "Tunisia",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Rouen, France"
+    },
+    {
+      "date": "2019-09-10",
+      "team1": "Jordan",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      },
+      "ground": "Amman, Jordan"
+    },
+    {
+      "date": "2019-09-10",
+      "team1": "Morocco",
+      "team2": "Niger",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Marrakech, Morocco"
+    },
+    {
+      "date": "2019-09-10",
+      "team1": "Oman",
+      "team2": "Lebanon",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Muscat, Oman"
+    },
+    {
+      "date": "2019-09-10",
+      "team1": "Republic of Ireland",
+      "team2": "Bulgaria",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Dublin, Republic of Ireland"
+    },
+    {
+      "date": "2019-09-10",
+      "team1": "Ukraine",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Dnipro, Ukraine"
+    },
+    {
+      "date": "2019-09-10",
+      "team1": "United States",
+      "team2": "Uruguay",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "St. Louis, United States"
+    },
+    {
+      "date": "2019-09-18",
+      "team1": "DR Congo",
+      "team2": "Rwanda",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "ground": "Kinshasa, DR Congo"
+    },
+    {
+      "date": "2019-09-29",
+      "team1": "Bangladesh",
+      "team2": "Bhutan",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "ground": "Dhaka, Bangladesh"
+    },
+    {
+      "date": "2019-09-30",
+      "team1": "Botswana",
+      "team2": "Liberia",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Gaborone, Botswana"
+    },
+    {
+      "date": "2019-10-02",
+      "team1": "Mexico",
+      "team2": "Trinidad and Tobago",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Toluca, Mexico"
+    },
+    {
+      "date": "2019-10-03",
+      "team1": "Bangladesh",
+      "team2": "Bhutan",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Dhaka, Bangladesh"
+    },
+    {
+      "date": "2019-10-05",
+      "team1": "Jordan",
+      "team2": "Singapore",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Amman, Jordan"
+    },
+    {
+      "date": "2019-10-05",
+      "team1": "Malaysia",
+      "team2": "Sri Lanka",
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      },
+      "ground": "Kuala Lumpur, Malaysia"
+    },
+    {
+      "date": "2019-10-09",
+      "team1": "Bahrain",
+      "team2": "Azerbaijan",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "ground": "Riffa, Bahrain"
+    },
+    {
+      "date": "2019-10-09",
+      "team1": "Germany",
+      "team2": "Argentina",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Dortmund, Germany"
+    },
+    {
+      "date": "2019-10-10",
+      "team1": "Algeria",
+      "team2": "DR Congo",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Blida, Algeria"
+    },
+    {
+      "date": "2019-10-10",
+      "team1": "Brazil",
+      "team2": "Senegal",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Kallang, Singapore"
+    },
+    {
+      "date": "2019-10-10",
+      "team1": "Cape Verde",
+      "team2": "Togo",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Fos-sur-Mer, Cape Verde"
+    },
+    {
+      "date": "2019-10-10",
+      "team1": "Gabon",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Paris, France"
+    },
+    {
+      "date": "2019-10-10",
+      "team1": "Kosovo",
+      "team2": "Gibraltar",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Pristina, Kosovo"
+    },
+    {
+      "date": "2019-10-10",
+      "team1": "Niger",
+      "team2": "Zambia",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Niamey, Niger"
+    },
+    {
+      "date": "2019-10-10",
+      "team1": "Serbia",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Belgrade, Serbia"
+    },
+    {
+      "date": "2019-10-10",
+      "team1": "Thailand",
+      "team2": "Congo",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Thanyaburi, Thailand"
+    },
+    {
+      "date": "2019-10-10",
+      "team1": "Venezuela",
+      "team2": "Bolivia",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "ground": "Caracas, Venezuela"
+    },
+    {
+      "date": "2019-10-11",
+      "team1": "Morocco",
+      "team2": "Libya",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Morocco, Morocco"
+    },
+    {
+      "date": "2019-10-11",
+      "team1": "Uruguay",
+      "team2": "Peru",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Montevideo, Uruguay"
+    },
+    {
+      "date": "2019-10-12",
+      "team1": "Colombia",
+      "team2": "Chile",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Alicante, Spain"
+    },
+    {
+      "date": "2019-10-12",
+      "team1": "Guinea",
+      "team2": "Comoros",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Guinea, Guinea"
+    },
+    {
+      "date": "2019-10-12",
+      "team1": "Ivory Coast",
+      "team2": "DR Congo",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Ivory Coast, Ivory Coast"
+    },
+    {
+      "date": "2019-10-12",
+      "team1": "Tunisia",
+      "team2": "Cameroon",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Rad\u00e8s, Tunisia"
+    },
+    {
+      "date": "2019-10-13",
+      "team1": "Benin",
+      "team2": "Zambia",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Benin, Benin"
+    },
+    {
+      "date": "2019-10-13",
+      "team1": "Brazil",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Kallang, Singapore"
+    },
+    {
+      "date": "2019-10-13",
+      "team1": "Ecuador",
+      "team2": "Argentina",
+      "score": {
+        "ft": [
+          1,
+          6
+        ]
+      },
+      "ground": "Elche, Spain"
+    },
+    {
+      "date": "2019-10-13",
+      "team1": "Equatorial Guinea",
+      "team2": "Togo",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Equatorial Guinea, Equatorial Guinea"
+    },
+    {
+      "date": "2019-10-13",
+      "team1": "Ethiopia",
+      "team2": "Uganda",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Ethiopia, Ethiopia"
+    },
+    {
+      "date": "2019-10-13",
+      "team1": "Kenya",
+      "team2": "Mozambique",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Kenya, Kenya"
+    },
+    {
+      "date": "2019-10-13",
+      "team1": "Lesotho",
+      "team2": "Malawi",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Lesotho, Lesotho"
+    },
+    {
+      "date": "2019-10-13",
+      "team1": "Niger",
+      "team2": "Central African Republic",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Niger, Niger"
+    },
+    {
+      "date": "2019-10-13",
+      "team1": "Slovakia",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Bratislava, Slovakia"
+    },
+    {
+      "date": "2019-10-13",
+      "team1": "South Africa",
+      "team2": "Mali",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Port Elizabeth, South Africa"
+    },
+    {
+      "date": "2019-10-14",
+      "team1": "Czech Republic",
+      "team2": "Northern Ireland",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "ground": "Prague, Czech Republic"
+    },
+    {
+      "date": "2019-10-14",
+      "team1": "Egypt",
+      "team2": "Botswana",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Cairo, Egypt"
+    },
+    {
+      "date": "2019-10-14",
+      "team1": "Rwanda",
+      "team2": "Tanzania",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Rwanda, Rwanda"
+    },
+    {
+      "date": "2019-10-14",
+      "team1": "Venezuela",
+      "team2": "Trinidad and Tobago",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Caracas, Venezuela"
+    },
+    {
+      "date": "2019-10-15",
+      "team1": "Algeria",
+      "team2": "Colombia",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Villeneuve D'Ascq, Algeria"
+    },
+    {
+      "date": "2019-10-15",
+      "team1": "Bermuda",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Hamilton, Bermuda"
+    },
+    {
+      "date": "2019-10-15",
+      "team1": "Bolivia",
+      "team2": "Haiti",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Santa Cruz, Bolivia"
+    },
+    {
+      "date": "2019-10-15",
+      "team1": "Chile",
+      "team2": "Guinea",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "ground": "Alicante, Spain"
+    },
+    {
+      "date": "2019-10-15",
+      "team1": "Denmark",
+      "team2": "Luxembourg",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "ground": "Aalborg, Denmark"
+    },
+    {
+      "date": "2019-10-15",
+      "team1": "Kuwait",
+      "team2": "Turkmenistan",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Kuwait City, Kuwait"
+    },
+    {
+      "date": "2019-10-15",
+      "team1": "Mauritania",
+      "team2": "Libya",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Nouakchott, Mauritania"
+    },
+    {
+      "date": "2019-10-15",
+      "team1": "Morocco",
+      "team2": "Gabon",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "ground": "Morocco, Morocco"
+    },
+    {
+      "date": "2019-10-15",
+      "team1": "Peru",
+      "team2": "Uruguay",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Lima, Peru"
+    },
+    {
+      "date": "2019-10-19",
+      "team1": "West Papua",
+      "team2": "East Turkestan",
+      "score": {
+        "ft": [
+          2,
+          8
+        ]
+      },
+      "ground": "The Hague, Netherlands"
+    },
+    {
+      "date": "2019-11-07",
+      "team1": "Egypt",
+      "team2": "Liberia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Alexandria, Egypt"
+    },
+    {
+      "date": "2019-11-07",
+      "team1": "Nicaragua",
+      "team2": "Cuba",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Managua, Nicaragua"
+    },
+    {
+      "date": "2019-11-09",
+      "team1": "Malaysia",
+      "team2": "Tajikistan",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Kuala Lumpur, Malaysia"
+    },
+    {
+      "date": "2019-11-09",
+      "team1": "Namibia",
+      "team2": "Zambia",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Windhoek, Namibia"
+    },
+    {
+      "date": "2019-11-09",
+      "team1": "Uzbekistan",
+      "team2": "Kyrgyzstan",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Tashkent, Uzbekistan"
+    },
+    {
+      "date": "2019-11-10",
+      "team1": "Nicaragua",
+      "team2": "Cuba",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Managua, Nicaragua"
+    },
+    {
+      "date": "2019-11-10",
+      "team1": "Trinidad and Tobago",
+      "team2": "Anguilla",
+      "score": {
+        "ft": [
+          15,
+          0
+        ]
+      },
+      "ground": "Couva, Trinidad and Tobago"
+    },
+    {
+      "date": "2019-11-14",
+      "team1": "Bulgaria",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Sofia, Bulgaria"
+    },
+    {
+      "date": "2019-11-14",
+      "team1": "Cambodia",
+      "team2": "Mongolia",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Phnom Penh, Cambodia"
+    },
+    {
+      "date": "2019-11-14",
+      "team1": "Ecuador",
+      "team2": "Trinidad and Tobago",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Portoviejo, Ecuador"
+    },
+    {
+      "date": "2019-11-14",
+      "team1": "Qatar",
+      "team2": "Singapore",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2019-11-14",
+      "team1": "Republic of Ireland",
+      "team2": "New Zealand",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Dublin, Republic of Ireland"
+    },
+    {
+      "date": "2019-11-14",
+      "team1": "Ukraine",
+      "team2": "Estonia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Zaporizhia, Ukraine"
+    },
+    {
+      "date": "2019-11-15",
+      "team1": "Colombia",
+      "team2": "Peru",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Miami Gardens, United States"
+    },
+    {
+      "date": "2019-11-15",
+      "team1": "Hungary",
+      "team2": "Uruguay",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Budapest, Hungary"
+    },
+    {
+      "date": "2019-11-17",
+      "team1": "Lithuania",
+      "team2": "New Zealand",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Vilnius, Lithuania"
+    },
+    {
+      "date": "2019-11-18",
+      "team1": "Argentina",
+      "team2": "Uruguay",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Tel Aviv, Israel"
+    },
+    {
+      "date": "2019-11-19",
+      "team1": "Brazil",
+      "team2": "South Korea",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2019-11-19",
+      "team1": "Croatia",
+      "team2": "Georgia",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Pula, Croatia"
+    },
+    {
+      "date": "2019-11-19",
+      "team1": "Ecuador",
+      "team2": "Colombia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Harrison, United States"
+    },
+    {
+      "date": "2019-11-19",
+      "team1": "Montenegro",
+      "team2": "Belarus",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Podgorica, Montenegro"
+    },
+    {
+      "date": "2019-11-19",
+      "team1": "Saudi Arabia",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Riyadh, Saudi Arabia"
+    },
+    {
+      "date": "2019-11-21",
+      "team1": "Guatemala",
+      "team2": "Antigua and Barbuda",
+      "score": {
+        "ft": [
+          8,
+          0
+        ]
+      },
+      "ground": "Guatemala City, Guatemala"
+    },
+    {
+      "date": "2019-12-08",
+      "team1": "Luhansk PR",
+      "team2": "South Ossetia",
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      },
+      "ground": "Luhansk, Ukraine"
+    },
+    {
+      "date": "2019-12-29",
+      "team1": "Chagos Islands",
+      "team2": "Panjab",
+      "score": {
+        "ft": [
+          0,
+          6
+        ]
+      },
+      "ground": "Horsham, England"
+    }
+  ]
+}

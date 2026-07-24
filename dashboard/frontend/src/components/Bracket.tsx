@@ -1,6 +1,57 @@
-import { MatchRow } from "../api/client";
+import { MatchRow, Stage, STAGE_INCLUDED_MATCH_STAGES } from "../api/client";
 
 type KnockoutStage = "r32" | "r16" | "qf" | "sf";
+type RoundMode = "full" | "entry" | "hidden";
+
+const ALL_KO_ROUNDS: readonly string[] = ["r32", "r16", "qf", "sf", "final"];
+
+// For each knockout round (plus "third"), decide whether to render it with
+// real scores ("full"), real team names but a hidden result ("entry" — the
+// first round beyond the stage cutoff), or a blank TBD placeholder
+// ("hidden" — further rounds, whose participants aren't "knowable" yet at
+// this cutoff).
+function roundModes(stage: Stage): Record<string, RoundMode> {
+  const included = STAGE_INCLUDED_MATCH_STAGES[stage];
+  const modes: Record<string, RoundMode> = {};
+  let entryAssigned = false;
+  for (const round of ALL_KO_ROUNDS) {
+    if (included.has(round)) {
+      modes[round] = "full";
+    } else if (!entryAssigned) {
+      modes[round] = "entry";
+      entryAssigned = true;
+    } else {
+      modes[round] = "hidden";
+    }
+  }
+  modes.third = included.has("third")
+    ? "full"
+    : modes.sf === "full"
+      ? "entry"
+      : "hidden";
+  return modes;
+}
+
+function maskMatch(match: MatchRow, mode: RoundMode): MatchRow {
+  if (mode === "full") return match;
+  return {
+    ...match,
+    team1: mode === "hidden" ? "TBD" : match.team1,
+    team2: mode === "hidden" ? "TBD" : match.team2,
+    played: false,
+    advancer: null,
+    goals1: null,
+    goals2: null,
+    et1: null,
+    et2: null,
+    pen1: null,
+    pen2: null,
+  };
+}
+
+function maskRoundMatches(matches: MatchRow[], mode: RoundMode): MatchRow[] {
+  return matches.map((m) => maskMatch(m, mode));
+}
 
 const STAGE_LABELS: Record<string, string> = {
   r32: "Round of 32",
@@ -163,9 +214,11 @@ function BracketRound({
 function BracketHalf({
   side,
   rounds,
+  modes,
 }: {
   side: "left" | "right";
   rounds: Record<KnockoutStage, MatchRow[]>;
+  modes: Record<string, RoundMode>;
 }) {
   const order = side === "left" ? LEFT_ORDER : RIGHT_ORDER;
   return (
@@ -174,14 +227,20 @@ function BracketHalf({
         <BracketRound
           key={stage}
           label={STAGE_LABELS[stage]}
-          matches={rounds[stage]}
+          matches={maskRoundMatches(rounds[stage], modes[stage])}
         />
       ))}
     </div>
   );
 }
 
-export function Bracket({ matches }: { matches: MatchRow[] }) {
+export function Bracket({
+  matches,
+  stage,
+}: {
+  matches: MatchRow[];
+  stage: Stage;
+}) {
   const { left, right, finalMatch, thirdMatch } = buildBracket(matches);
   const hasAny =
     left.r32.length + right.r32.length > 0 || finalMatch || thirdMatch;
@@ -194,19 +253,27 @@ export function Bracket({ matches }: { matches: MatchRow[] }) {
     );
   }
 
+  const modes = roundModes(stage);
+
   return (
     <div className="bracket-scroll">
       <div className="bracket">
-        <BracketHalf side="left" rounds={left} />
+        <BracketHalf side="left" rounds={left} modes={modes} />
         <div className="bracket-center">
           {finalMatch && (
-            <BracketRound label={STAGE_LABELS.final} matches={[finalMatch]} />
+            <BracketRound
+              label={STAGE_LABELS.final}
+              matches={[maskMatch(finalMatch, modes.final)]}
+            />
           )}
           {thirdMatch && (
-            <BracketRound label={STAGE_LABELS.third} matches={[thirdMatch]} />
+            <BracketRound
+              label={STAGE_LABELS.third}
+              matches={[maskMatch(thirdMatch, modes.third)]}
+            />
           )}
         </div>
-        <BracketHalf side="right" rounds={right} />
+        <BracketHalf side="right" rounds={right} modes={modes} />
       </div>
     </div>
   );

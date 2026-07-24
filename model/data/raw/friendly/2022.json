@@ -1,0 +1,4186 @@
+{
+  "name": "International Friendly 2022",
+  "competition": "friendly",
+  "edition": 2022,
+  "source_years": [
+    2022
+  ],
+  "matches": [
+    {
+      "date": "2022-01-02",
+      "team1": "Gabon",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2022-01-02",
+      "team1": "Sudan",
+      "team2": "Zimbabwe",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-01-03",
+      "team1": "Rwanda",
+      "team2": "Guinea",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Kigali, Rwanda"
+    },
+    {
+      "date": "2022-01-04",
+      "team1": "Mauritania",
+      "team2": "Gabon",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2022-01-05",
+      "team1": "Algeria",
+      "team2": "Ghana",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2022-01-06",
+      "team1": "Rwanda",
+      "team2": "Guinea",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Kigali, Rwanda"
+    },
+    {
+      "date": "2022-01-12",
+      "team1": "Iceland",
+      "team2": "Uganda",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Belek, Turkey"
+    },
+    {
+      "date": "2022-01-15",
+      "team1": "South Korea",
+      "team2": "Iceland",
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      },
+      "ground": "Antalya, Turkey"
+    },
+    {
+      "date": "2022-01-16",
+      "team1": "Colombia",
+      "team2": "Honduras",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Fort Lauderdale, United States"
+    },
+    {
+      "date": "2022-01-16",
+      "team1": "Peru",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Lima, Peru"
+    },
+    {
+      "date": "2022-01-18",
+      "team1": "Moldova",
+      "team2": "Uganda",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "ground": "Belek, Turkey"
+    },
+    {
+      "date": "2022-01-20",
+      "team1": "South Korea",
+      "team2": "Moldova",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "ground": "Antalya, Turkey"
+    },
+    {
+      "date": "2022-01-20",
+      "team1": "Peru",
+      "team2": "Jamaica",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Lima, Peru"
+    },
+    {
+      "date": "2022-01-21",
+      "team1": "Bolivia",
+      "team2": "Trinidad and Tobago",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "ground": "Sucre, Bolivia"
+    },
+    {
+      "date": "2022-01-21",
+      "team1": "Iraq",
+      "team2": "Uganda",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Baghdad, Iraq"
+    },
+    {
+      "date": "2022-01-27",
+      "team1": "Bahrain",
+      "team2": "Uganda",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Riffa, Bahrain"
+    },
+    {
+      "date": "2022-01-27",
+      "team1": "Indonesia",
+      "team2": "Timor-Leste",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "ground": "Gianyar, Indonesia"
+    },
+    {
+      "date": "2022-01-27",
+      "team1": "Uzbekistan",
+      "team2": "South Sudan",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2022-01-28",
+      "team1": "Jordan",
+      "team2": "New Zealand",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2022-01-28",
+      "team1": "Suriname",
+      "team2": "Barbados",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Paramaribo, Suriname"
+    },
+    {
+      "date": "2022-01-29",
+      "team1": "Kuwait",
+      "team2": "Libya",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Kuwait City, Kuwait"
+    },
+    {
+      "date": "2022-01-29",
+      "team1": "Nepal",
+      "team2": "Mauritius",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Kathmandu, Nepal"
+    },
+    {
+      "date": "2022-01-29",
+      "team1": "Nicaragua",
+      "team2": "Belize",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "ground": "Managua, Nicaragua"
+    },
+    {
+      "date": "2022-01-30",
+      "team1": "Indonesia",
+      "team2": "Timor-Leste",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Gianyar, Indonesia"
+    },
+    {
+      "date": "2022-02-01",
+      "team1": "Bahrain",
+      "team2": "DR Congo",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Riffa, Bahrain"
+    },
+    {
+      "date": "2022-02-01",
+      "team1": "Kuwait",
+      "team2": "Libya",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Kuwait City, Kuwait"
+    },
+    {
+      "date": "2022-02-01",
+      "team1": "Nepal",
+      "team2": "Mauritius",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Kathmandu, Nepal"
+    },
+    {
+      "date": "2022-02-01",
+      "team1": "Nicaragua",
+      "team2": "Belize",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Managua, Nicaragua"
+    },
+    {
+      "date": "2022-02-01",
+      "team1": "Suriname",
+      "team2": "Guyana",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Paramaribo, Suriname"
+    },
+    {
+      "date": "2022-03-18",
+      "team1": "Iraq",
+      "team2": "Zambia",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Baghdad, Iraq"
+    },
+    {
+      "date": "2022-03-19",
+      "team1": "Mauritius",
+      "team2": "Seychelles",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Saint Pierre, Mauritius"
+    },
+    {
+      "date": "2022-03-23",
+      "team1": "Bahrain",
+      "team2": "India",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Riffa, Bahrain"
+    },
+    {
+      "date": "2022-03-23",
+      "team1": "Gibraltar",
+      "team2": "Grenada",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Gibraltar, Gibraltar"
+    },
+    {
+      "date": "2022-03-23",
+      "team1": "Guinea-Bissau",
+      "team2": "Equatorial Guinea",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "\u00d3bidos, Portugal"
+    },
+    {
+      "date": "2022-03-23",
+      "team1": "Guadeloupe",
+      "team2": "Cape Verde",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Orl\u00e9ans, France"
+    },
+    {
+      "date": "2022-03-23",
+      "team1": "Laos",
+      "team2": "Mongolia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Vientiane, Laos"
+    },
+    {
+      "date": "2022-03-23",
+      "team1": "Malaysia",
+      "team2": "Philippines",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Kallang, Singapore"
+    },
+    {
+      "date": "2022-03-23",
+      "team1": "Mozambique",
+      "team2": "Niger",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Nouakchott, Mauritania"
+    },
+    {
+      "date": "2022-03-23",
+      "team1": "Tanzania",
+      "team2": "Central African Republic",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Dar es Salaam, Tanzania"
+    },
+    {
+      "date": "2022-03-24",
+      "team1": "Armenia",
+      "team2": "Montenegro",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Yerevan, Armenia"
+    },
+    {
+      "date": "2022-03-24",
+      "team1": "Guatemala",
+      "team2": "Cuba",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Antigua Guatemala City, Guatemala"
+    },
+    {
+      "date": "2022-03-24",
+      "team1": "Hungary",
+      "team2": "Serbia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Budapest, Hungary"
+    },
+    {
+      "date": "2022-03-24",
+      "team1": "Kosovo",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "ground": "Pristina, Kosovo"
+    },
+    {
+      "date": "2022-03-24",
+      "team1": "Liberia",
+      "team2": "Benin",
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      },
+      "ground": "Antalya, Turkey"
+    },
+    {
+      "date": "2022-03-24",
+      "team1": "Maldives",
+      "team2": "Bangladesh",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Mal\u00e9, Maldives"
+    },
+    {
+      "date": "2022-03-24",
+      "team1": "Scotland",
+      "team2": "Poland",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Glasgow, Scotland"
+    },
+    {
+      "date": "2022-03-24",
+      "team1": "Thailand",
+      "team2": "Nepal",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Chonburi, Thailand"
+    },
+    {
+      "date": "2022-03-24",
+      "team1": "Togo",
+      "team2": "Sierra Leone",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Antalya, Turkey"
+    },
+    {
+      "date": "2022-03-25",
+      "team1": "Andorra",
+      "team2": "Saint Kitts and Nevis",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Andorra la Vella, Andorra"
+    },
+    {
+      "date": "2022-03-25",
+      "team1": "Bosnia and Herzegovina",
+      "team2": "Georgia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Zenica, Bosnia and Herzegovina"
+    },
+    {
+      "date": "2022-03-25",
+      "team1": "Cape Verde",
+      "team2": "Liechtenstein",
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      },
+      "ground": "San Pedro del Pinatar, Spain"
+    },
+    {
+      "date": "2022-03-25",
+      "team1": "Comoros",
+      "team2": "Ethiopia",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Moroni, Comoros"
+    },
+    {
+      "date": "2022-03-25",
+      "team1": "Congo",
+      "team2": "Zambia",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "ground": "Antalya, Turkey"
+    },
+    {
+      "date": "2022-03-25",
+      "team1": "France",
+      "team2": "Ivory Coast",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Marseille, France"
+    },
+    {
+      "date": "2022-03-25",
+      "team1": "Latvia",
+      "team2": "Kuwait",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Ta' Qali, Malta"
+    },
+    {
+      "date": "2022-03-25",
+      "team1": "Luxembourg",
+      "team2": "Northern Ireland",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "ground": "Luxembourg, Luxembourg"
+    },
+    {
+      "date": "2022-03-25",
+      "team1": "Malta",
+      "team2": "Azerbaijan",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Ta' Qali, Malta"
+    },
+    {
+      "date": "2022-03-25",
+      "team1": "Norway",
+      "team2": "Slovakia",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Oslo, Norway"
+    },
+    {
+      "date": "2022-03-25",
+      "team1": "Romania",
+      "team2": "Greece",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Bucharest, Romania"
+    },
+    {
+      "date": "2022-03-25",
+      "team1": "San Marino",
+      "team2": "Lithuania",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Serravalle, San Marino"
+    },
+    {
+      "date": "2022-03-25",
+      "team1": "South Africa",
+      "team2": "Guinea",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Kortrijk, Belgium"
+    },
+    {
+      "date": "2022-03-25",
+      "team1": "Trinidad and Tobago",
+      "team2": "Barbados",
+      "score": {
+        "ft": [
+          9,
+          0
+        ]
+      },
+      "ground": "Port of Spain, Trinidad and Tobago"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "Angola",
+      "team2": "Guinea-Bissau",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "ground": "\u00d3bidos, Portugal"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "Bahrain",
+      "team2": "Burundi",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Arad, Iran"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "Belarus",
+      "team2": "India",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Isa Town, Bahrain"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "Central African Republic",
+      "team2": "Sudan",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Dar es Salaam, Tanzania"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "Croatia",
+      "team2": "Slovenia",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "England",
+      "team2": "Switzerland",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "London, England"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "Finland",
+      "team2": "Iceland",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Murcia, Spain"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "Germany",
+      "team2": "Israel",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Sinsheim, Germany"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "Gibraltar",
+      "team2": "Faroe Islands",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Gibraltar, Gibraltar"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "Libya",
+      "team2": "Niger",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Nouakchott, Mauritania"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "Mauritania",
+      "team2": "Mozambique",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Nouakchott, Mauritania"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "Netherlands",
+      "team2": "Denmark",
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      },
+      "ground": "Amsterdam, Netherlands"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "Qatar",
+      "team2": "Bulgaria",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "Republic of Ireland",
+      "team2": "Belgium",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Dublin, Republic of Ireland"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "Singapore",
+      "team2": "Malaysia",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Kallang, Singapore"
+    },
+    {
+      "date": "2022-03-26",
+      "team1": "Spain",
+      "team2": "Albania",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Barcelona, Spain"
+    },
+    {
+      "date": "2022-03-27",
+      "team1": "Barbados",
+      "team2": "Guyana",
+      "score": {
+        "ft": [
+          0,
+          5
+        ]
+      },
+      "ground": "Port of Spain, Trinidad and Tobago"
+    },
+    {
+      "date": "2022-03-27",
+      "team1": "Belize",
+      "team2": "Cuba",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "ground": "Belmopan, Belize"
+    },
+    {
+      "date": "2022-03-27",
+      "team1": "Benin",
+      "team2": "Zambia",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Antalya, Turkey"
+    },
+    {
+      "date": "2022-03-27",
+      "team1": "Guatemala",
+      "team2": "Haiti",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Fort Lauderdale, United States"
+    },
+    {
+      "date": "2022-03-27",
+      "team1": "Laos",
+      "team2": "Brunei",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "ground": "Vientiane, Laos"
+    },
+    {
+      "date": "2022-03-27",
+      "team1": "Liberia",
+      "team2": "Sierra Leone",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Antalya, Turkey"
+    },
+    {
+      "date": "2022-03-27",
+      "team1": "Thailand",
+      "team2": "Suriname",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Pathum Thani, Thailand"
+    },
+    {
+      "date": "2022-03-28",
+      "team1": "Andorra",
+      "team2": "Grenada",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Andorra la Vella, Andorra"
+    },
+    {
+      "date": "2022-03-28",
+      "team1": "Cape Verde",
+      "team2": "San Marino",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "San Pedro del Pinatar, Spain"
+    },
+    {
+      "date": "2022-03-28",
+      "team1": "Montenegro",
+      "team2": "Greece",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Podgorica, Montenegro"
+    },
+    {
+      "date": "2022-03-28",
+      "team1": "Vanuatu",
+      "team2": "Fiji",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Albania",
+      "team2": "Georgia",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Tirana, Albania"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Angola",
+      "team2": "Equatorial Guinea",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "\u00d3bidos, Portugal"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Austria",
+      "team2": "Scotland",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Vienna, Austria"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Azerbaijan",
+      "team2": "Latvia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Ta' Qali, Malta"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Bahrain",
+      "team2": "Belarus",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Riffa, Bahrain"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Bangladesh",
+      "team2": "Mongolia",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Sylhet, Bangladesh"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Belgium",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Anderlecht, Belgium"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Bosnia and Herzegovina",
+      "team2": "Luxembourg",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Zenica, Bosnia and Herzegovina"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Congo",
+      "team2": "Sierra Leone",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Antalya, Turkey"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Croatia",
+      "team2": "Bulgaria",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Denmark",
+      "team2": "Serbia",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Copenhagen, Denmark"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "England",
+      "team2": "Ivory Coast",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "London, England"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Faroe Islands",
+      "team2": "Liechtenstein",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "San Pedro del Pinatar, Spain"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Finland",
+      "team2": "Slovakia",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Murcia, Spain"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "France",
+      "team2": "South Africa",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "ground": "Villeneuve D'Ascq, Algeria"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Israel",
+      "team2": "Romania",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Netanya, Israel"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Liberia",
+      "team2": "Burundi",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Antalya, Turkey"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Malta",
+      "team2": "Kuwait",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Ta' Qali, Malta"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Mauritania",
+      "team2": "Libya",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Nouakchott, Mauritania"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Netherlands",
+      "team2": "Germany",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Amsterdam, Netherlands"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Northern Ireland",
+      "team2": "Hungary",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Belfast, Northern Ireland"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Norway",
+      "team2": "Armenia",
+      "score": {
+        "ft": [
+          9,
+          0
+        ]
+      },
+      "ground": "Oslo, Norway"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Qatar",
+      "team2": "Slovenia",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Republic of Ireland",
+      "team2": "Lithuania",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Dublin, Republic of Ireland"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Singapore",
+      "team2": "Philippines",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Kallang, Singapore"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Spain",
+      "team2": "Iceland",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "ground": "La Coru\u00f1a, Spain"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Switzerland",
+      "team2": "Kosovo",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Z\u00fcrich, Switzerland"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Tanzania",
+      "team2": "Sudan",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Dar es Salaam, Tanzania"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Togo",
+      "team2": "Benin",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Antalya, Turkey"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Trinidad and Tobago",
+      "team2": "Guyana",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Port of Spain, Trinidad and Tobago"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Turkey",
+      "team2": "Italy",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "ground": "Konya, Turkey"
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Wales",
+      "team2": "Czech Republic",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Cardiff, Wales"
+    },
+    {
+      "date": "2022-04-24",
+      "team1": "El Salvador",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      },
+      "ground": "San Jose, United States"
+    },
+    {
+      "date": "2022-04-27",
+      "team1": "Mexico",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Orlando, United States"
+    },
+    {
+      "date": "2022-05-12",
+      "team1": "Bahamas",
+      "team2": "Turks and Caicos Islands",
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      },
+      "ground": "Nassau, Bahamas"
+    },
+    {
+      "date": "2022-05-12",
+      "team1": "Dominica",
+      "team2": "Saint Vincent and the Grenadines",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Roseau, Dominica"
+    },
+    {
+      "date": "2022-05-14",
+      "team1": "Bahamas",
+      "team2": "Turks and Caicos Islands",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Nassau, Bahamas"
+    },
+    {
+      "date": "2022-05-15",
+      "team1": "Dominica",
+      "team2": "Saint Vincent and the Grenadines",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Roseau, Dominica"
+    },
+    {
+      "date": "2022-05-24",
+      "team1": "Mozambique",
+      "team2": "Eswatini",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Maputo, Mozambique"
+    },
+    {
+      "date": "2022-05-24",
+      "team1": "Thailand",
+      "team2": "Bahrain",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Bangkok, Thailand"
+    },
+    {
+      "date": "2022-05-27",
+      "team1": "Bahrain",
+      "team2": "Myanmar",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Pathum Thani, Thailand"
+    },
+    {
+      "date": "2022-05-27",
+      "team1": "Malaysia",
+      "team2": "Brunei",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "ground": "Kuala Lumpur, Malaysia"
+    },
+    {
+      "date": "2022-05-27",
+      "team1": "Thailand",
+      "team2": "Turkmenistan",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Sisaket, Thailand"
+    },
+    {
+      "date": "2022-05-28",
+      "team1": "Ethiopia",
+      "team2": "Lesotho",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Adama, Ethiopia"
+    },
+    {
+      "date": "2022-05-28",
+      "team1": "India",
+      "team2": "Jordan",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2022-05-28",
+      "team1": "Mexico",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Arlington, United States"
+    },
+    {
+      "date": "2022-05-29",
+      "team1": "United Arab Emirates",
+      "team2": "Gambia",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2022-05-30",
+      "team1": "Ethiopia",
+      "team2": "Lesotho",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Adama, Ethiopia"
+    },
+    {
+      "date": "2022-05-30",
+      "team1": "Trinidad and Tobago",
+      "team2": "Saint Lucia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "San Fernando, Trinidad and Tobago"
+    },
+    {
+      "date": "2022-05-31",
+      "team1": "Thailand",
+      "team2": "Bahrain",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Pathum Thani, Thailand"
+    },
+    {
+      "date": "2022-06-01",
+      "team1": "Australia",
+      "team2": "Jordan",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Al Wakrah, Qatar"
+    },
+    {
+      "date": "2022-06-01",
+      "team1": "Indonesia",
+      "team2": "Bangladesh",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Soreang, Indonesia"
+    },
+    {
+      "date": "2022-06-01",
+      "team1": "Malta",
+      "team2": "Venezuela",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Ta' Qali, Malta"
+    },
+    {
+      "date": "2022-06-01",
+      "team1": "Kuwait",
+      "team2": "Singapore",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2022-06-01",
+      "team1": "Malaysia",
+      "team2": "Hong Kong",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Kuala Lumpur, Malaysia"
+    },
+    {
+      "date": "2022-06-01",
+      "team1": "Syria",
+      "team2": "Tajikistan",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2022-06-01",
+      "team1": "United States",
+      "team2": "Morocco",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Cincinnati, United States"
+    },
+    {
+      "date": "2022-06-01",
+      "team1": "Vietnam",
+      "team2": "Afghanistan",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Ho Chi Minh City, Vietnam"
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Cambodia",
+      "team2": "Timor-Leste",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Phnom Penh, Cambodia"
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Ecuador",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Harrison, United States"
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Japan",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "ground": "Sapporo, Japan"
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "South Korea",
+      "team2": "Brazil",
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      },
+      "ground": "Seoul, South Korea"
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Mexico",
+      "team2": "Uruguay",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "ground": "Glendale, United States"
+    },
+    {
+      "date": "2022-06-03",
+      "team1": "Nepal",
+      "team2": "Oman",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Argentina",
+      "team2": "Estonia",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "ground": "Pamplona, Spain"
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Mexico",
+      "team2": "Ecuador",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Chicago, United States"
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Peru",
+      "team2": "New Zealand",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Barcelona, Spain"
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Saudi Arabia",
+      "team2": "Colombia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Murcia, Spain"
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "United States",
+      "team2": "Uruguay",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Kansas City, United States"
+    },
+    {
+      "date": "2022-06-06",
+      "team1": "South Korea",
+      "team2": "Chile",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Daejeon, South Korea"
+    },
+    {
+      "date": "2022-06-06",
+      "team1": "Japan",
+      "team2": "Brazil",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Tokyo, Japan"
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "New Zealand",
+      "team2": "Oman",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Al Rayyan, Qatar"
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "San Marino",
+      "team2": "Iceland",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Serravalle, San Marino"
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "Saudi Arabia",
+      "team2": "Venezuela",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Murcia, Spain"
+    },
+    {
+      "date": "2022-06-10",
+      "team1": "South Korea",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Suwon, South Korea"
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "Ecuador",
+      "team2": "Cape Verde",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Fort Lauderdale, United States"
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "Uruguay",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "ground": "Montevideo, Uruguay"
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "Iran",
+      "team2": "Algeria",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2022-06-13",
+      "team1": "Albania",
+      "team2": "Estonia",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Tirana, Albania"
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "South Korea",
+      "team2": "Egypt",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "ground": "Seoul, South Korea"
+    },
+    {
+      "date": "2022-07-16",
+      "team1": "Elba Island",
+      "team2": "Raetia",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "ground": "Capoliveri, Italy"
+    },
+    {
+      "date": "2022-08-07",
+      "team1": "Raetia",
+      "team2": "Tibet",
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      },
+      "ground": "Chur, Switzerland"
+    },
+    {
+      "date": "2022-08-31",
+      "team1": "Mexico",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Atlanta, United States"
+    },
+    {
+      "date": "2022-09-21",
+      "team1": "Brunei",
+      "team2": "Maldives",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      },
+      "ground": "Bandar Seri Begawan, Brunei"
+    },
+    {
+      "date": "2022-09-21",
+      "team1": "Hong Kong",
+      "team2": "Myanmar",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Hong Kong, Hong Kong"
+    },
+    {
+      "date": "2022-09-21",
+      "team1": "Libya",
+      "team2": "Uganda",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Benghazi, Libya"
+    },
+    {
+      "date": "2022-09-21",
+      "team1": "San Marino",
+      "team2": "Seychelles",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Serravalle, San Marino"
+    },
+    {
+      "date": "2022-09-21",
+      "team1": "Vietnam",
+      "team2": "Singapore",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "ground": "Ho Chi Minh City, Vietnam"
+    },
+    {
+      "date": "2022-09-22",
+      "team1": "Australia",
+      "team2": "New Zealand",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Brisbane, Australia"
+    },
+    {
+      "date": "2022-09-22",
+      "team1": "Cambodia",
+      "team2": "Bangladesh",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Phnom Penh, Cambodia"
+    },
+    {
+      "date": "2022-09-22",
+      "team1": "Comoros",
+      "team2": "Tunisia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Orl\u00e9ans, France"
+    },
+    {
+      "date": "2022-09-22",
+      "team1": "Iceland",
+      "team2": "Venezuela",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Maria Enzersdorf, Austria"
+    },
+    {
+      "date": "2022-09-22",
+      "team1": "Suriname",
+      "team2": "Nicaragua",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Almere, Netherlands"
+    },
+    {
+      "date": "2022-09-23",
+      "team1": "Algeria",
+      "team2": "Guinea",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Oran, Algeria"
+    },
+    {
+      "date": "2022-09-23",
+      "team1": "Argentina",
+      "team2": "Honduras",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Miami Gardens, United States"
+    },
+    {
+      "date": "2022-09-23",
+      "team1": "Bahrain",
+      "team2": "Cape Verde",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Riffa, Bahrain"
+    },
+    {
+      "date": "2022-09-23",
+      "team1": "Brazil",
+      "team2": "Ghana",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Le Havre, France"
+    },
+    {
+      "date": "2022-09-23",
+      "team1": "Cameroon",
+      "team2": "Uzbekistan",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Goyang, South Korea"
+    },
+    {
+      "date": "2022-09-23",
+      "team1": "Canada",
+      "team2": "Qatar",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Vienna, Austria"
+    },
+    {
+      "date": "2022-09-23",
+      "team1": "DR Congo",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Casablanca, Morocco"
+    },
+    {
+      "date": "2022-09-23",
+      "team1": "Egypt",
+      "team2": "Niger",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Alexandria, Egypt"
+    },
+    {
+      "date": "2022-09-23",
+      "team1": "Iran",
+      "team2": "Uruguay",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Sankt P\u00f6lten, Austria"
+    },
+    {
+      "date": "2022-09-23",
+      "team1": "South Korea",
+      "team2": "Costa Rica",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Goyang, South Korea"
+    },
+    {
+      "date": "2022-09-23",
+      "team1": "Mali",
+      "team2": "Zambia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Bamako, Mali"
+    },
+    {
+      "date": "2022-09-23",
+      "team1": "Morocco",
+      "team2": "Chile",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Barcelona, Spain"
+    },
+    {
+      "date": "2022-09-23",
+      "team1": "Paraguay",
+      "team2": "United Arab Emirates",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Wiener Neustadt, Austria"
+    },
+    {
+      "date": "2022-09-23",
+      "team1": "Rwanda",
+      "team2": "Equatorial Guinea",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Berrechid, Egypt"
+    },
+    {
+      "date": "2022-09-23",
+      "team1": "Saudi Arabia",
+      "team2": "Ecuador",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Murcia, Spain"
+    },
+    {
+      "date": "2022-09-24",
+      "team1": "Bolivia",
+      "team2": "Senegal",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Orl\u00e9ans, France"
+    },
+    {
+      "date": "2022-09-24",
+      "team1": "Colombia",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "ground": "Harrison, United States"
+    },
+    {
+      "date": "2022-09-24",
+      "team1": "Grenada",
+      "team2": "Saint Vincent and the Grenadines",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "ground": "Carriacou, Grenada"
+    },
+    {
+      "date": "2022-09-24",
+      "team1": "Hong Kong",
+      "team2": "Myanmar",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Hong Kong, Hong Kong"
+    },
+    {
+      "date": "2022-09-24",
+      "team1": "India",
+      "team2": "Singapore",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Ho Chi Minh City, Vietnam"
+    },
+    {
+      "date": "2022-09-24",
+      "team1": "Indonesia",
+      "team2": "Cura\u00e7ao",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      },
+      "ground": "Bandung, Indonesia"
+    },
+    {
+      "date": "2022-09-24",
+      "team1": "Ivory Coast",
+      "team2": "Togo",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Rouen, France"
+    },
+    {
+      "date": "2022-09-24",
+      "team1": "Laos",
+      "team2": "Maldives",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "ground": "Bandar Seri Begawan, Brunei"
+    },
+    {
+      "date": "2022-09-24",
+      "team1": "Madagascar",
+      "team2": "Congo",
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      },
+      "ground": "Mohammedia, Morocco"
+    },
+    {
+      "date": "2022-09-24",
+      "team1": "Mauritania",
+      "team2": "Benin",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Mohammedia, Morocco"
+    },
+    {
+      "date": "2022-09-24",
+      "team1": "Mexico",
+      "team2": "Peru",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Pasadena, United States"
+    },
+    {
+      "date": "2022-09-24",
+      "team1": "South Africa",
+      "team2": "Sierra Leone",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "ground": "Johannesburg, South Africa"
+    },
+    {
+      "date": "2022-09-24",
+      "team1": "Tanzania",
+      "team2": "Uganda",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Benghazi, Libya"
+    },
+    {
+      "date": "2022-09-24",
+      "team1": "Kyrgyzstan",
+      "team2": "Russia",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Bishkek, Kyrgyzstan"
+    },
+    {
+      "date": "2022-09-25",
+      "team1": "New Zealand",
+      "team2": "Australia",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Auckland, New Zealand"
+    },
+    {
+      "date": "2022-09-25",
+      "team1": "Niger",
+      "team2": "Liberia",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Cairo, Egypt"
+    },
+    {
+      "date": "2022-09-26",
+      "team1": "Ethiopia",
+      "team2": "Sudan",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Addis Ababa, Ethiopia"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Algeria",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Oran, Algeria"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Argentina",
+      "team2": "Jamaica",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Harrison, United States"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Bahrain",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Riffa, Bahrain"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Brazil",
+      "team2": "Tunisia",
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      },
+      "ground": "Paris, France"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Brunei",
+      "team2": "Laos",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Bandar Seri Begawan, Brunei"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Burkina Faso",
+      "team2": "Comoros",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Casablanca, Morocco"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Canada",
+      "team2": "Uruguay",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Bratislava, Slovakia"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "DR Congo",
+      "team2": "Sierra Leone",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Casablanca, Morocco"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Costa Rica",
+      "team2": "Uzbekistan",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Suwon, South Korea"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Egypt",
+      "team2": "Liberia",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Alexandria, Egypt"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Equatorial Guinea",
+      "team2": "Togo",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Casablanca, Morocco"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Ghana",
+      "team2": "Nicaragua",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Lorca, Spain"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Honduras",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Houston, United States"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Indonesia",
+      "team2": "Cura\u00e7ao",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Cibinong, Indonesia"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Iran",
+      "team2": "Senegal",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Maria Enzersdorf, Austria"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Ivory Coast",
+      "team2": "Guinea",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Amiens, France"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "South Korea",
+      "team2": "Cameroon",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Seoul, South Korea"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Libya",
+      "team2": "Tanzania",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Benghazi, Libya"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Madagascar",
+      "team2": "Benin",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Mohammedia, Morocco"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Malta",
+      "team2": "Israel",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Ta' Qali, Malta"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Mauritania",
+      "team2": "Congo",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Mohammedia, Morocco"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Mexico",
+      "team2": "Colombia",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "ground": "Santa Clara, United States"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Nepal",
+      "team2": "Bangladesh",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Kathmandu, Nepal"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Paraguay",
+      "team2": "Morocco",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Seville, Spain"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Peru",
+      "team2": "El Salvador",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      },
+      "ground": "Washington, D.C., United States"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Qatar",
+      "team2": "Chile",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Vienna, Austria"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Saudi Arabia",
+      "team2": "United States",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Murcia, Spain"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "South Africa",
+      "team2": "Botswana",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Johannesburg, South Africa"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "United Arab Emirates",
+      "team2": "Venezuela",
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      },
+      "ground": "Wiener Neustadt, Austria"
+    },
+    {
+      "date": "2022-09-27",
+      "team1": "Vietnam",
+      "team2": "India",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Ho Chi Minh City, Vietnam"
+    },
+    {
+      "date": "2022-10-01",
+      "team1": "Saint Vincent and the Grenadines",
+      "team2": "Grenada",
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      },
+      "ground": "Kingstown, Saint Vincent and the Grenadines"
+    },
+    {
+      "date": "2022-10-22",
+      "team1": "Saudi Arabia",
+      "team2": "North Macedonia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2022-10-23",
+      "team1": "Qatar",
+      "team2": "Guatemala",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "M\u00e1laga, Spain"
+    },
+    {
+      "date": "2022-10-26",
+      "team1": "Saudi Arabia",
+      "team2": "Albania",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2022-10-27",
+      "team1": "Qatar",
+      "team2": "Honduras",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Marbella, Spain"
+    },
+    {
+      "date": "2022-10-30",
+      "team1": "Saudi Arabia",
+      "team2": "Honduras",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2022-11-06",
+      "team1": "Saudi Arabia",
+      "team2": "Iceland",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2022-11-07",
+      "team1": "Qatar",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Marbella, Spain"
+    },
+    {
+      "date": "2022-11-09",
+      "team1": "Albania",
+      "team2": "Qatar",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Marbella, Spain"
+    },
+    {
+      "date": "2022-11-09",
+      "team1": "Cameroon",
+      "team2": "Jamaica",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Yaound\u00e9, Cameroon"
+    },
+    {
+      "date": "2022-11-09",
+      "team1": "Costa Rica",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "San Jos\u00e9, Costa Rica"
+    },
+    {
+      "date": "2022-11-09",
+      "team1": "Mexico",
+      "team2": "Iraq",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "ground": "Girona, Spain"
+    },
+    {
+      "date": "2022-11-10",
+      "team1": "Iran",
+      "team2": "Nicaragua",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Tehran, Iran"
+    },
+    {
+      "date": "2022-11-10",
+      "team1": "Saudi Arabia",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2022-11-11",
+      "team1": "Bahrain",
+      "team2": "Canada",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Isa Town, Bahrain"
+    },
+    {
+      "date": "2022-11-11",
+      "team1": "South Korea",
+      "team2": "Iceland",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Hwaseong, South Korea"
+    },
+    {
+      "date": "2022-11-12",
+      "team1": "Iraq",
+      "team2": "Ecuador",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Madrid, Spain"
+    },
+    {
+      "date": "2022-11-13",
+      "team1": "Syria",
+      "team2": "Algeria",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Sharjah, United Arab Emirates"
+    },
+    {
+      "date": "2022-11-13",
+      "team1": "West Papua",
+      "team2": "Raetia",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "The Hague, Netherlands"
+    },
+    {
+      "date": "2022-11-15",
+      "team1": "Venezuela",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Al Hamriyah, United Arab Emirates"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Albania",
+      "team2": "Italy",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "ground": "Tirana, Albania"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Algeria",
+      "team2": "Mali",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Oran, Algeria"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Andorra",
+      "team2": "Austria",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "M\u00e1laga, Spain"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Cyprus",
+      "team2": "Bulgaria",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Larnaca, Cyprus"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Czech Republic",
+      "team2": "Faroe Islands",
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      },
+      "ground": "Olomouc, Czech Republic"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Dominican Republic",
+      "team2": "Cuba",
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      },
+      "ground": "Santiago de los Caballeros, Dominican Republic"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Gibraltar",
+      "team2": "Liechtenstein",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Gibraltar, Gibraltar"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Iran",
+      "team2": "Tunisia",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Doha, Qatar"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Ivory Coast",
+      "team2": "Burundi",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "ground": "Marrakech, Morocco"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Kosovo",
+      "team2": "Armenia",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Pristina, Kosovo"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Mexico",
+      "team2": "Sweden",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Girona, Spain"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Moldova",
+      "team2": "Azerbaijan",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Chi\u0219in\u0103u, Moldova"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Nepal",
+      "team2": "Pakistan",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Kathmandu, Nepal"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Nicaragua",
+      "team2": "El Salvador",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Managua, Nicaragua"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Oman",
+      "team2": "Germany",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Muscat, Oman"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Peru",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Lima, Peru"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Poland",
+      "team2": "Chile",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Warsaw, Poland"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Saudi Arabia",
+      "team2": "Croatia",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Riyadh, Saudi Arabia"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Turkey",
+      "team2": "Scotland",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Diyarbakir, Turkey"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "United Arab Emirates",
+      "team2": "Argentina",
+      "score": {
+        "ft": [
+          0,
+          5
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2022-11-16",
+      "team1": "Uzbekistan",
+      "team2": "Kazakhstan",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Tashkent, Uzbekistan"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Angola",
+      "team2": "Botswana",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Soweto, South Africa"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Gabon",
+      "team2": "Guinea-Bissau",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Antalya, Turkey"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Israel",
+      "team2": "Zambia",
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      },
+      "ground": "Petah Tikva, Israel"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Japan",
+      "team2": "Canada",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Jordan",
+      "team2": "Spain",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "ground": "Amman, Jordan"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Luxembourg",
+      "team2": "Hungary",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Luxembourg, Luxembourg"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Malta",
+      "team2": "Greece",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Ta' Qali, Malta"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Montenegro",
+      "team2": "Slovakia",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      },
+      "ground": "Podgorica, Montenegro"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Morocco",
+      "team2": "Georgia",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Sharjah, United Arab Emirates"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Niger",
+      "team2": "Libya",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "ground": "Antalya, Turkey"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "North Macedonia",
+      "team2": "Finland",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Skopje, North Macedonia"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Portugal",
+      "team2": "Nigeria",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "ground": "Lisbon, Portugal"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Republic of Ireland",
+      "team2": "Norway",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Dublin, Republic of Ireland"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Romania",
+      "team2": "Slovenia",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Cluj-Napoca, Romania"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Rwanda",
+      "team2": "Sudan",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Kigali, Rwanda"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "South Africa",
+      "team2": "Mozambique",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Mbombela, South Africa"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Saint Lucia",
+      "team2": "San Marino",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Gros Islet, Saint Lucia"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Switzerland",
+      "team2": "Ghana",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Syria",
+      "team2": "Belarus",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2022-11-17",
+      "team1": "Tajikistan",
+      "team2": "Russia",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Dushanbe, Tajikistan"
+    },
+    {
+      "date": "2022-11-18",
+      "team1": "Bahrain",
+      "team2": "Serbia",
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      },
+      "ground": "Arad, Bahrain"
+    },
+    {
+      "date": "2022-11-18",
+      "team1": "Cameroon",
+      "team2": "Panama",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2022-11-18",
+      "team1": "Dominican Republic",
+      "team2": "Cuba",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "San Crist\u00f3bal, Dominican Republic"
+    },
+    {
+      "date": "2022-11-18",
+      "team1": "Egypt",
+      "team2": "Belgium",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Kuwait City, Kuwait"
+    },
+    {
+      "date": "2022-11-19",
+      "team1": "Albania",
+      "team2": "Armenia",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Tirana, Albania"
+    },
+    {
+      "date": "2022-11-19",
+      "team1": "Colombia",
+      "team2": "Paraguay",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Fort Lauderdale, United States"
+    },
+    {
+      "date": "2022-11-19",
+      "team1": "Gibraltar",
+      "team2": "Andorra",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Gibraltar, Gibraltar"
+    },
+    {
+      "date": "2022-11-19",
+      "team1": "Guatemala",
+      "team2": "Nicaragua",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Carson, United States"
+    },
+    {
+      "date": "2022-11-19",
+      "team1": "Ivory Coast",
+      "team2": "Burkina Faso",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Marrakech, Morocco"
+    },
+    {
+      "date": "2022-11-19",
+      "team1": "Kosovo",
+      "team2": "Faroe Islands",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Pristina, Kosovo"
+    },
+    {
+      "date": "2022-11-19",
+      "team1": "Kuwait",
+      "team2": "Lebanon",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2022-11-19",
+      "team1": "Peru",
+      "team2": "Bolivia",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Arequipa, Peru"
+    },
+    {
+      "date": "2022-11-19",
+      "team1": "Rwanda",
+      "team2": "Sudan",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Kigali, Rwanda"
+    },
+    {
+      "date": "2022-11-19",
+      "team1": "Sweden",
+      "team2": "Algeria",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Malm\u00f6, Sweden"
+    },
+    {
+      "date": "2022-11-19",
+      "team1": "Turkey",
+      "team2": "Czech Republic",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Gaziantep, Turkey"
+    },
+    {
+      "date": "2022-11-19",
+      "team1": "United Arab Emirates",
+      "team2": "Kazakhstan",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "Austria",
+      "team2": "Italy",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Vienna, Austria"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "Gambia",
+      "team2": "Guinea-Bissau",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Antalya, Turkey"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "Hungary",
+      "team2": "Greece",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Budapest, Hungary"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "Israel",
+      "team2": "Cyprus",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      },
+      "ground": "Petah Tikva, Israel"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "Luxembourg",
+      "team2": "Bulgaria",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Luxembourg, Luxembourg"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "Malta",
+      "team2": "Republic of Ireland",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Ta' Qali, Malta"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "Moldova",
+      "team2": "Romania",
+      "score": {
+        "ft": [
+          0,
+          5
+        ]
+      },
+      "ground": "Chi\u0219in\u0103u, Moldova"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "Niger",
+      "team2": "Gabon",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "ground": "Antalya, Turkey"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "North Macedonia",
+      "team2": "Azerbaijan",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      },
+      "ground": "Skopje, North Macedonia"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "Norway",
+      "team2": "Finland",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Oslo, Norway"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "Oman",
+      "team2": "Belarus",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      },
+      "ground": "Al Ain, United Arab Emirates"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "Slovakia",
+      "team2": "Chile",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Bratislava, Slovakia"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "Slovenia",
+      "team2": "Montenegro",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Ljubljana, Slovenia"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "South Africa",
+      "team2": "Angola",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      },
+      "ground": "Mbombela, South Africa"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "Saint Lucia",
+      "team2": "San Marino",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Gros Islet, Saint Lucia"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "Syria",
+      "team2": "Venezuela",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      },
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2022-11-20",
+      "team1": "Uzbekistan",
+      "team2": "Russia",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      },
+      "ground": "Tashkent, Uzbekistan"
+    },
+    {
+      "date": "2022-12-09",
+      "team1": "Malaysia",
+      "team2": "Cambodia",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      },
+      "ground": "Kuala Lumpur, Malaysia"
+    },
+    {
+      "date": "2022-12-11",
+      "team1": "Thailand",
+      "team2": "Myanmar",
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      },
+      "ground": "Pathum Thani, Thailand"
+    },
+    {
+      "date": "2022-12-14",
+      "team1": "Malaysia",
+      "team2": "Maldives",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      },
+      "ground": "Kuala Lumpur, Malaysia"
+    },
+    {
+      "date": "2022-12-14",
+      "team1": "Thailand",
+      "team2": "Taiwan",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      },
+      "ground": "Pathum Thani, Thailand"
+    },
+    {
+      "date": "2022-12-14",
+      "team1": "Vietnam",
+      "team2": "Philippines",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Hanoi, Vietnam"
+    },
+    {
+      "date": "2022-12-17",
+      "team1": "Singapore",
+      "team2": "Maldives",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      },
+      "ground": "Singapore, Singapore"
+    },
+    {
+      "date": "2022-12-23",
+      "team1": "Oman",
+      "team2": "Syria",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      },
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2022-12-30",
+      "team1": "Iraq",
+      "team2": "Kuwait",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Basra, Iraq"
+    },
+    {
+      "date": "2022-12-30",
+      "team1": "Oman",
+      "team2": "Syria",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Dubai, United Arab Emirates"
+    },
+    {
+      "date": "2022-12-30",
+      "team1": "United Arab Emirates",
+      "team2": "Lebanon",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      },
+      "ground": "Abu Dhabi, United Arab Emirates"
+    }
+  ]
+}

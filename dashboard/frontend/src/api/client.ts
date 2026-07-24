@@ -1,5 +1,37 @@
 export type Strength = "elo" | "fifa";
 
+export type Stage =
+  | "pre_tournament"
+  | "group"
+  | "r32"
+  | "r16"
+  | "qf"
+  | "sf"
+  | "complete";
+
+export const STAGE_OPTIONS: { id: Stage; label: string }[] = [
+  { id: "pre_tournament", label: "Pre-tournament" },
+  { id: "group", label: "Group stage done" },
+  { id: "r32", label: "Round of 32 done" },
+  { id: "r16", label: "Round of 16 done" },
+  { id: "qf", label: "Quarterfinals done" },
+  { id: "sf", label: "Semifinals done" },
+  { id: "complete", label: "Tournament complete" },
+];
+
+// Per-stage set of current-year match `stage` values that are fixed/real (as
+// opposed to simulated). Mirrors STAGE_INCLUDED_MATCH_STAGES in
+// model/src/config.py.
+export const STAGE_INCLUDED_MATCH_STAGES: Record<Stage, Set<string>> = {
+  pre_tournament: new Set(),
+  group: new Set(["group"]),
+  r32: new Set(["group", "r32"]),
+  r16: new Set(["group", "r32", "r16"]),
+  qf: new Set(["group", "r32", "r16", "qf"]),
+  sf: new Set(["group", "r32", "r16", "qf", "sf"]),
+  complete: new Set(["group", "r32", "r16", "qf", "sf", "final", "third"]),
+};
+
 export interface TeamPrediction {
   team: string;
   rank: number;
@@ -20,6 +52,7 @@ export interface TeamPrediction {
 
 export interface RankingsResponse {
   strength: Strength;
+  stage?: Stage;
   fifa_snapshot?: string;
   resimulated?: boolean;
   teams: TeamPrediction[];
@@ -51,8 +84,11 @@ export interface SimulationJob {
   result?: RankingsResponse | null;
 }
 
-export async function fetchRankings(strength: Strength): Promise<RankingsResponse> {
-  const params = new URLSearchParams({ strength });
+export async function fetchRankings(
+  strength: Strength,
+  stage: Stage,
+): Promise<RankingsResponse> {
+  const params = new URLSearchParams({ strength, stage });
   const res = await fetch(`/api/teams/rankings?${params.toString()}`);
   if (!res.ok) {
     throw new Error("Failed to load rankings");
@@ -62,12 +98,13 @@ export async function fetchRankings(strength: Strength): Promise<RankingsRespons
 
 export async function startSimulation(
   strength: Strength,
+  stage: Stage,
   simulations = 1000,
 ): Promise<{ job_id: string }> {
   const res = await fetch("/api/simulations", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ strength, simulations }),
+    body: JSON.stringify({ strength, stage, simulations }),
   });
   if (!res.ok) {
     throw new Error("Failed to start simulation");

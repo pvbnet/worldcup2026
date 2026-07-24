@@ -3,12 +3,14 @@ import {
   SimCountControl,
   SimulationOverlay,
   StrengthToggle,
+  stageFootnote,
 } from "../components/Dashboard";
-import { Strength, TeamPrediction } from "../api/client";
+import { Stage, Strength, TeamPrediction } from "../api/client";
 
 interface Props {
   strength: Strength;
   onStrengthChange: (value: Strength) => void;
+  stage: Stage;
   simulations: number;
   onSimulationsChange: (value: number) => void;
   teams: TeamPrediction[];
@@ -22,6 +24,7 @@ interface Props {
 export function RankingsPage({
   strength,
   onStrengthChange,
+  stage,
   simulations,
   onSimulationsChange,
   teams,
@@ -55,13 +58,7 @@ export function RankingsPage({
         selectedTeam={selectedTeam}
         onSelect={onSelectTeam}
       />
-      <p className="predictions-footnote">
-        Round of 16: each trial takes the top 2 from every group (24 teams),
-        ranks them by the active strength ratings (Elo or FIFA), and keeps the
-        top 16 for an Elo-seeded knockout bracket. There is no separate Round of
-        32 in the simulator — P(R32) is the chance of finishing top-2 in the
-        group.
-      </p>
+      <p className="predictions-footnote">{stageFootnote(stage)}</p>
     </>
   );
 }

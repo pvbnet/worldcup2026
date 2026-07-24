@@ -18,25 +18,34 @@ DATA_PROCESSED = MODEL_ROOT / "data" / "processed"
 if str(MODEL_SRC) not in sys.path:
     sys.path.insert(0, str(MODEL_SRC))
 
-from rankings_api import ProgressCallback, build_rankings_payload, normalize_strength  # noqa: E402
+from config import DEFAULT_STAGE, STAGE_LABELS, STAGE_ORDER  # noqa: E402
+from rankings_api import (  # noqa: E402
+    ProgressCallback,
+    build_rankings_payload,
+    normalize_stage,
+    normalize_strength,
+)
 
 
-def load_predictions(strength: str = "elo") -> dict:
+def load_predictions(strength: str = "elo", stage: str = DEFAULT_STAGE) -> dict:
     strength = normalize_strength(strength)
-    path = ARTIFACTS_PREDICTIONS / f"worldcup_{strength}.json"
+    stage = normalize_stage(stage)
+    path = ARTIFACTS_PREDICTIONS / f"worldcup_{stage}_{strength}.json"
     if not path.exists():
-        return {"strength": strength, "teams": [], "simulations": 0}
+        return {"strength": strength, "stage": stage, "teams": [], "simulations": 0}
     return json.loads(path.read_text(encoding="utf-8"))
 
 
 def load_rankings(
     strength: str = "elo",
+    stage: str = DEFAULT_STAGE,
     resimulate: bool = False,
     simulations: int = 1000,
     on_progress: ProgressCallback | None = None,
 ) -> dict:
     return build_rankings_payload(
         strength=strength,
+        stage=stage,
         resimulate=resimulate,
         simulations=simulations,
         on_progress=on_progress,
@@ -44,7 +53,12 @@ def load_rankings(
 
 
 def load_config() -> dict:
-    return {"default_strength": "elo", "strength_sources": ["elo", "fifa"]}
+    return {
+        "default_strength": "elo",
+        "strength_sources": ["elo", "fifa"],
+        "default_stage": DEFAULT_STAGE,
+        "stages": [{"id": stage, "label": STAGE_LABELS[stage]} for stage in STAGE_ORDER],
+    }
 
 
 def load_matches(year: int | None = None, played: bool | None = None) -> list[dict]:
@@ -68,8 +82,8 @@ def load_metrics() -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def load_elo_ratings() -> dict[str, float]:
-    path = ARTIFACTS_TRAINING / "elo.json"
+def load_elo_ratings(stage: str = "pre_tournament") -> dict[str, float]:
+    path = ARTIFACTS_TRAINING / f"elo_{stage}.json"
     if not path.exists():
         return {}
     payload = json.loads(path.read_text(encoding="utf-8"))
