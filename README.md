@@ -10,10 +10,50 @@ stages. The dashboard can be pinned to lock in results from played stages, and p
 update the Elo rating and knock-out stage win probabilities by Monte-Carlo simulations of the remaining 
 tournament. 
 
+## Quick start
+
+**Requirements:** Python 3.12.3 (pyenv recommended), Node.js 18+.
+
+```bash
+git clone https://github.com/pvbnet/worldcup2026.git
+cd worldcup2026
+# SSH: git clone git@github.com:pvbnet/worldcup2026.git
+```
+
+Set up the model (venv, fetch World Cup raw JSON, ingest):
+
+```bash
+cd model
+pyenv local 3.12.3   # optional
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python scripts/fetch_data.py   # required: 2018/2022/2026 WC JSON not in git
+python scripts/ingest.py
+# Optional if you want to regenerate artifacts (committed copies work out of the box):
+# python scripts/train.py && python scripts/simulate.py
+```
+
+Dashboard backend and frontend (two terminals, or use `./start-dashboard.sh` from repo root):
+
+```bash
+cd dashboard/backend
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+./run.sh
+```
+
+```bash
+cd dashboard/frontend
+npm install
+./run.sh
+```
+
+Open **http://127.0.0.1:5173/** — default page is **Predictions** (`/`). See [Setup](#setup) for details.
+
 ## Project layout
 
 ```
-worldcup/
+worldcup2026/
   model/          # data ingest, Elo training, evaluation, simulation
   dashboard/      # FastAPI backend + React frontend
 ```
@@ -25,7 +65,7 @@ worldcup/
 | **Elo ratings** | Team strength updated after each match (training engine); one model per tournament-stage cutoff |
 | **FIFA rankings** | Converted to pseudo-Elo for an alternate strength source |
 | **Elo / FIFA toggle** | Binary switch: Monte Carlo match outcomes use either trained Elo or FIFA-based ratings |
-| **Tournament stage selector** | Pins the model + simulation to "what was knowable as of stage X" (see below) |
+| **Stage completed** control | Pins the model + simulation to "what was knowable as of stage X" (see below) |
 | **Monte Carlo sim** | Simulates the real 2026 bracket forward from the selected stage → stage-reach and win probabilities |
 
 There is a single match-outcome engine (Elo win probabilities). Strength input is either trained Elo or FIFA pseudo-Elo.
@@ -62,11 +102,11 @@ From many trials the dashboard reports **P(R32), P(R16), P(QF), P(SF), P(Final),
 
 ## Dashboard UI
 
-A **Stage completed** control in the header (default: **Pre-tournament**) applies to every page:
+A **Stage completed** control in the header (default: **Pre-tournament**) applies to every page. Tab order: **Predictions** (default, `/`), **Teams & groups** (`/teams`), **Knockout Stage** (`/knockout`).
 
+- **Predictions** — Elo/FIFA toggle; Monte Carlo run count (1000–5000, default **3000**); rankings table with stage-reach probabilities and an inline win-probability bar; progress overlay while sims run; a footnote explains which stages are fixed vs. predicted for the current selection.
 - **Teams & groups** — group standings and team detail. Shows a placeholder instead of standings when `pre_tournament` is selected (nothing is "real" yet at that stage); a team's "Recent matches" list only shows matches within the selected stage's fixed rounds.
 - **Knockout Stage** — actual 2026 knockout fixtures, masked to the selected stage: rounds at or before the cutoff show real scores; the first round after the cutoff shows the real matchup with the result hidden; further rounds show blank "TBD" placeholders.
-- **Predictions** — Elo/FIFA toggle; Monte Carlo run count (1000–5000); rankings table with stage-reach probabilities and an inline win-probability bar; progress overlay while sims run; a footnote explains which stages are fixed vs. predicted for the current selection.
 
 ## Setup
 
@@ -75,7 +115,7 @@ Uses **pyenv** (Python 3.12.3) with local virtualenvs in each component.
 ### 1. Model pipeline
 
 ```bash
-cd /home/pvb/work/proj/worldcup/model
+cd model
 pyenv local 3.12.3
 python -m venv .venv
 source .venv/bin/activate
@@ -95,10 +135,12 @@ Artifacts are written to:
 - `model/artifacts/evaluation/` — backtest metrics (Elo vs FIFA on WC 2022; always trained on data before 2022, independent of the stage selector)
 - `model/artifacts/predictions/` — stage-reach and win probabilities, `worldcup_{stage}_{strength}.json`
 
+Pre-built files under `model/artifacts/` are committed so the dashboard runs without re-simulating; regenerate with `train.py` / `simulate.py` or **Refresh data** in the UI.
+
 ### 2. Dashboard backend
 
 ```bash
-cd /home/pvb/work/proj/worldcup/dashboard/backend
+cd dashboard/backend
 pyenv local 3.12.3
 python -m venv .venv
 source .venv/bin/activate
@@ -110,10 +152,10 @@ Or manually: `cd app && ../.venv/bin/uvicorn main:app --reload --host 0.0.0.0 --
 
 ### 3. Dashboard frontend
 
-Node.js 20 is expected at `~/.local/node-v20.18.0-linux-x64/bin` (or any Node 18+ on your PATH).
+Node.js 18+ on your PATH (Node 20 recommended).
 
 ```bash
-cd /home/pvb/work/proj/worldcup/dashboard/frontend
+cd dashboard/frontend
 npm install
 ./run.sh
 ```
@@ -179,6 +221,8 @@ Production frontend build output: `dashboard/artifacts/build/`
 
 ## Data sources
 
+See [NOTICE.md](NOTICE.md) for third-party data licensing and what is (and is not) committed to git.
+
 | Competition | Source | Editions / cycles |
 |---|---|---|
 | World Cup finals | [openfootball/worldcup.json](https://github.com/openfootball/worldcup.json) | 2018, 2022, 2026 |
@@ -204,7 +248,7 @@ Continental/qualifier files are parsed from `Football.TXT` into the same match s
 As matches complete, click **Refresh data** in the dashboard (re-fetches World Cup JSON, then ingest/train/simulate) or run:
 
 ```bash
-cd /home/pvb/work/proj/worldcup/model
+cd model
 python scripts/fetch_data.py --force --competitions world_cup
 python scripts/ingest.py && python scripts/train.py && python scripts/simulate.py
 ```
@@ -214,3 +258,9 @@ python scripts/ingest.py && python scripts/train.py && python scripts/simulate.p
 Note: `RealBracketSimulator`'s feeder-tree construction (`build_bracket_tree`) currently assumes the **full** knockout bracket (Round of 32 through the Final) has already been played, since it derives round-to-round slot links by chaining real match participants forward. It is exercised here against the completed 2026 tournament; using the stage selector mid-tournament (before the Final has been played) would need that construction to tolerate partially-completed rounds.
 
 Knockout scores include full-time, extra-time (`et`), and penalties (`p`) when present; the bracket page highlights who advanced and shows `aet` / `p` notes as needed.
+
+## License
+
+MIT — see [LICENSE](LICENSE). Third-party data terms are described in [NOTICE.md](NOTICE.md).
+
+Contributing: [CONTRIBUTING.md](CONTRIBUTING.md). Security: [SECURITY.md](SECURITY.md).

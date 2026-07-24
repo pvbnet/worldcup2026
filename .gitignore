@@ -5,6 +5,13 @@ __pycache__/
 .DS_Store
 node_modules/
 dist/
+dashboard/frontend/dist/
+dashboard/frontend/tsconfig.tsbuildinfo
+dashboard/artifacts/build/
+.env
+.env.*
+*.log
+AGENTS.md
 *.parquet
 model/data/raw/*.json
 !model/data/raw/.gitkeep
