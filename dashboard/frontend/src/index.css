@@ -22,10 +22,6 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  align-items: flex-start;
   margin-bottom: 24px;
 }
 
@@ -39,17 +35,31 @@ header p {
   color: #9fb0c9;
 }
 
+.header-main,
+header > div:first-child {
+  width: 100%;
+}
+
+.header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
 .header-actions {
   display: flex;
   gap: 12px;
-  align-items: end;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .top-nav {
   display: flex;
   gap: 16px;
-  margin-top: 12px;
+  margin-top: 0;
 }
 
 .top-nav a {
@@ -75,7 +85,7 @@ header p {
 
 .strength-toggle,
 .sim-count-control,
-.stage-selector {
+.stage-toggle {
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -83,18 +93,29 @@ header p {
   max-width: none;
 }
 
-.stage-selector select {
-  background: #152238;
-  color: #e8eef7;
-  border: 1px solid #2a3a55;
-  border-radius: 8px;
-  padding: 8px 10px;
-  font-size: 0.9rem;
-  min-width: 190px;
+.stage-toggle {
+  margin-top: 16px;
+  width: 100%;
+  max-width: 100%;
 }
 
-.header-actions .stage-selector {
-  gap: 4px;
+.stage-toggle .segmented {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.stage-toggle .segmented button {
+  width: auto;
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #2a3a55;
 }
 
 .strength-label {

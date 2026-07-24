@@ -456,7 +456,7 @@ class RealBracketSimulator:
 
     def run(
         self,
-        simulations: int = 1000,
+        simulations: int = 3000,
         seed: int = 42,
         on_progress: ProgressCallback | None = None,
         progress_every: int = 100,

@@ -40,7 +40,7 @@ def load_rankings(
     strength: str = "elo",
     stage: str = DEFAULT_STAGE,
     resimulate: bool = False,
-    simulations: int = 1000,
+    simulations: int = 3000,
     on_progress: ProgressCallback | None = None,
 ) -> dict:
     return build_rankings_payload(

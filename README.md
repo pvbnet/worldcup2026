@@ -1,6 +1,14 @@
 # World Cup 2026 Predictive Dashboard
 
-Interactive dashboard ranking national soccer teams and estimating 2026 World Cup win probabilities using World Cup finals (2018, 2022, 2026) plus continental tournaments (Euro, Copa América, AFCON) and World Cup qualifiers for denser team-strength history. The 2010 and 2014 World Cups are intentionally excluded from training.
+Interactive dashboard ranking national soccer teams and estimating 2026 World Cup win probabilities. 
+Uses game data from previous World Cup finals (2018, 2022) plus continental tournaments (Euro, Copa América, AFCON) 
+and World Cup qualifiers for predicting team strength (Elo rating). Uses Monte-Carlo simulations of the 2026 tournament 
+to predict the probabilities of teams reaching knock-out stages and the final WC 2026 tournament winner. 
+
+Game results from the actual 2026 World Cup tournament are used as they become available, per the main
+stages. The dashboard can be pinned to lock in results from played stages, and past results are used to
+update the Elo rating and knock-out stage win probabilities by Monte-Carlo simulations of the remaining 
+tournament. 
 
 ## Project layout
 
@@ -54,9 +62,9 @@ From many trials the dashboard reports **P(R32), P(R16), P(QF), P(SF), P(Final),
 
 ## Dashboard UI
 
-A **Tournament stage** dropdown in the header (default: **Pre-tournament**) applies to every page:
+A **Stage completed** control in the header (default: **Pre-tournament**) applies to every page:
 
-- **Groups & teams** — group standings and team detail. Shows a placeholder instead of standings when `pre_tournament` is selected (nothing is "real" yet at that stage); a team's "Recent matches" list only shows matches within the selected stage's fixed rounds.
+- **Teams & groups** — group standings and team detail. Shows a placeholder instead of standings when `pre_tournament` is selected (nothing is "real" yet at that stage); a team's "Recent matches" list only shows matches within the selected stage's fixed rounds.
 - **Knockout Stage** — actual 2026 knockout fixtures, masked to the selected stage: rounds at or before the cutoff show real scores; the first round after the cutoff shows the real matchup with the result hidden; further rounds show blank "TBD" placeholders.
 - **Predictions** — Elo/FIFA toggle; Monte Carlo run count (1000–5000); rankings table with stage-reach probabilities and an inline win-probability bar; progress overlay while sims run; a footnote explains which stages are fixed vs. predicted for the current selection.
 
@@ -161,7 +169,7 @@ Production frontend build output: `dashboard/artifacts/build/`
 
 - `GET /api/config` — `{ "default_strength", "strength_sources", "default_stage", "stages": [{ "id", "label" }, ...] }`
 - `GET /api/teams/rankings?strength=elo&stage=pre_tournament` — cached rankings when warm (no resim); `stage` defaults to `pre_tournament`, invalid values 400
-- `POST /api/simulations` — body `{ "strength": "elo"|"fifa", "stage": "pre_tournament", "simulations": 1000 }` → `{ "job_id" }`
+- `POST /api/simulations` — body `{ "strength": "elo"|"fifa", "stage": "pre_tournament", "simulations": 3000 }` → `{ "job_id" }`
 - `GET /api/simulations/{job_id}` — `{ "status", "progress", "message", "result?" }` (progress every 100 sims)
 - `GET /api/predictions/worldcup?strength=elo&stage=pre_tournament`
 - `GET /api/matches?year=2026` — always the full real dataset; stage-aware masking happens client-side

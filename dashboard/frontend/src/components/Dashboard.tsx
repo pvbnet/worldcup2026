@@ -21,19 +21,21 @@ export function StageSelector({
   disabled?: boolean;
 }) {
   return (
-    <div className="stage-selector" role="group" aria-label="Tournament stage">
-      <span className="strength-label">Tournament stage</span>
-      <select
-        value={stage}
-        disabled={disabled}
-        onChange={(e) => onChange(e.target.value as Stage)}
-      >
+    <div className="stage-toggle" role="group" aria-label="Stage completed">
+      <span className="strength-label">Stage completed</span>
+      <div className="segmented">
         {STAGE_OPTIONS.map((opt) => (
-          <option key={opt.id} value={opt.id}>
+          <button
+            key={opt.id}
+            type="button"
+            className={stage === opt.id ? "active" : ""}
+            onClick={() => onChange(opt.id)}
+            disabled={disabled}
+          >
             {opt.label}
-          </option>
+          </button>
         ))}
-      </select>
+      </div>
     </div>
   );
 }
@@ -178,7 +180,7 @@ export function RankingsTable({
         <table className="rankings-table">
           <thead>
             <tr>
-              <th>Model Rank</th>
+              <th>Sim Rank</th>
               <th>Elo Rank</th>
               <th>FIFA Rank</th>
               <th>Team</th>
@@ -315,7 +317,7 @@ export function TeamDetailPanel({
       <h2>{team.team}</h2>
       <dl className="detail-grid">
         <div>
-          <dt>Model Rank</dt>
+          <dt>Sim Rank</dt>
           <dd>{team.model_rank ?? team.rank}</dd>
         </div>
         <div>

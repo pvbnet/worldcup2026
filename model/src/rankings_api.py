@@ -54,7 +54,7 @@ def load_stage_elo(stage: str) -> EloModel:
 def run_simulation(
     strength: str = DEFAULT_STRENGTH,
     stage: str = DEFAULT_STAGE,
-    simulations: int = 1000,
+    simulations: int = 3000,
     on_progress: ProgressCallback | None = None,
 ) -> pd.DataFrame:
     strength = normalize_strength(strength)
@@ -69,7 +69,7 @@ def build_rankings_payload(
     strength: str = DEFAULT_STRENGTH,
     stage: str = DEFAULT_STAGE,
     resimulate: bool = False,
-    simulations: int = 1000,
+    simulations: int = 3000,
     on_progress: ProgressCallback | None = None,
 ) -> dict:
     strength = normalize_strength(strength)

@@ -11,12 +11,12 @@ export type Stage =
 
 export const STAGE_OPTIONS: { id: Stage; label: string }[] = [
   { id: "pre_tournament", label: "Pre-tournament" },
-  { id: "group", label: "Group stage done" },
-  { id: "r32", label: "Round of 32 done" },
-  { id: "r16", label: "Round of 16 done" },
-  { id: "qf", label: "Quarterfinals done" },
-  { id: "sf", label: "Semifinals done" },
-  { id: "complete", label: "Tournament complete" },
+  { id: "group", label: "Group stage" },
+  { id: "r32", label: "Round-of-32" },
+  { id: "r16", label: "Round-of-16" },
+  { id: "qf", label: "Quarterfinals" },
+  { id: "sf", label: "Semifinals" },
+  { id: "complete", label: "Finals" },
 ];
 
 // Per-stage set of current-year match `stage` values that are fixed/real (as
@@ -99,7 +99,7 @@ export async function fetchRankings(
 export async function startSimulation(
   strength: Strength,
   stage: Stage,
-  simulations = 1000,
+  simulations = 3000,
 ): Promise<{ job_id: string }> {
   const res = await fetch("/api/simulations", {
     method: "POST",

@@ -7,13 +7,21 @@ interface Props {
   groups: Record<string, unknown[]>;
   stage: Stage;
   selectedTeam: string | null;
-  onSelectTeam: (team: string) => void;
+  onSelectTeam: (team: string | null) => void;
 }
 
 interface GroupRow {
   team: string;
   points: number;
   gd: number;
+}
+
+function sortTeamsByFifaRank(teams: TeamPrediction[]): TeamPrediction[] {
+  return [...teams].sort((a, b) => {
+    const diff = a.fifa_rank - b.fifa_rank;
+    if (diff !== 0) return diff;
+    return a.team.localeCompare(b.team);
+  });
 }
 
 // Pre-tournament: no real results are knowable yet, so build the group view
@@ -23,12 +31,9 @@ function buildPreTournamentGroups(
   teams: TeamPrediction[]
 ): Record<string, GroupRow[]> {
   const groups: Record<string, GroupRow[]> = {};
-  for (const t of teams) {
+  for (const t of sortTeamsByFifaRank(teams)) {
     const key = t.group ?? "Unassigned";
     (groups[key] ??= []).push({ team: t.team, points: 0, gd: 0 });
-  }
-  for (const rows of Object.values(groups)) {
-    rows.sort((a, b) => a.team.localeCompare(b.team));
   }
   return groups;
 }
@@ -41,18 +46,26 @@ export function GroupsPage({
   selectedTeam,
   onSelectTeam,
 }: Props) {
-  const selected = teams.find((t) => t.team === selectedTeam) ?? null;
+  const teamsOrdered = sortTeamsByFifaRank(teams);
+  const selected = teamsOrdered.find((t) => t.team === selectedTeam) ?? null;
   const isPreTournament = stage === "pre_tournament";
   const displayGroups = isPreTournament
-    ? buildPreTournamentGroups(teams)
+    ? buildPreTournamentGroups(teamsOrdered)
     : groups;
 
   return (
     <section className="bottom-grid">
       <div className="panel">
-        <h2>Select a team</h2>
+        <h2>Teams</h2>
         <div className="team-chips">
-          {teams.map((t) => (
+          <button
+            type="button"
+            className={selectedTeam === null ? "active" : ""}
+            onClick={() => onSelectTeam(null)}
+          >
+            None
+          </button>
+          {teamsOrdered.map((t) => (
             <button
               key={t.team}
               type="button"
@@ -69,8 +82,8 @@ export function GroupsPage({
         groups={displayGroups}
         title={
           isPreTournament
-            ? "2026 Group Assignments (Tournament Not Started)"
-            : "2026 Group Standings (Played Matches)"
+            ? "2026 Group Standings (Pre-Tournament)"
+            : "2026 Group Standings"
         }
       />
     </section>
