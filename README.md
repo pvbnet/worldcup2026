@@ -16,63 +16,48 @@ tournament.
 
 ```bash
 git clone https://github.com/pvbnet/worldcup2026.git
-cd worldcup2026
 # SSH: git clone git@github.com:pvbnet/worldcup2026.git
+cd worldcup2026
 ```
 
-Set up the model (venv, fetch World Cup raw JSON, ingest):
+For detailed instructions on setting up Python environments, the model, the backend, and the frontend, see the [dev setup section](#dev-setup).
+
+To start the dashboard backend and frontend from the repo root:
 
 ```bash
-cd model
-pyenv local 3.12.3   # optional
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-python scripts/fetch_data.py   # required: 2018/2022/2026 WC JSON not in git
-python scripts/ingest.py
-# Optional if you want to regenerate artifacts (committed copies work out of the box):
-# python scripts/train.py && python scripts/simulate.py
+./start-dashboard-local.sh
 ```
 
-Dashboard backend and frontend (two terminals, or use `./start-dashboard.sh` from repo root):
-
-```bash
-cd dashboard/backend
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-./run.sh
-```
-
-```bash
-cd dashboard/frontend
-npm install
-./run.sh
-```
-
-Open **http://127.0.0.1:5173/** — default page is **Predictions** (`/`). See [Setup](#setup) for details.
+Open **http://localhost:5173/** in the browser.
 
 ## Project layout
 
 ```
 worldcup2026/
   model/          # data ingest, Elo training, evaluation, simulation
-  dashboard/      # FastAPI backend + React frontend
+  dashboard/      # dashboard
+    backend/      # FastAPI backend
+    frontend/     # React/Vite frontend
+    artifacts/    # compiled website files
 ```
 
-## Outcome model
+High-level system design: [docs/architecture.md](docs/architecture.md).
+
+## Team strength and match outcome model
 
 | Piece | Purpose |
 |---|---|
-| **Elo ratings** | Team strength updated after each match (training engine); one model per tournament-stage cutoff |
-| **FIFA rankings** | Converted to pseudo-Elo for an alternate strength source |
-| **Elo / FIFA toggle** | Binary switch: Monte Carlo match outcomes use either trained Elo or FIFA-based ratings |
+| **Elo ratings** | Team strength updated after each match (training engine) |
+| **FIFA rankings** | Alternate, public, strength ranking (converted to pseudo-Elo) |
+| **Elo / FIFA toggle** | Binary switch: simulations use either trained Elo or FIFA-based ratings |
 | **Stage completed** control | Pins the model + simulation to "what was knowable as of stage X" (see below) |
-| **Monte Carlo sim** | Simulates the real 2026 bracket forward from the selected stage → stage-reach and win probabilities |
+| **Monte Carlo sim** | Simulates the 2026 bracket forward from the selected stage → stage-reach and win probabilities |
 
-There is a single match-outcome engine (Elo win probabilities). Strength input is either trained Elo or FIFA pseudo-Elo.
+There is a single match-outcome engine: Elo win probabilities (either trained or from FIFA ranking).
 
 ### Tournament stage selector
 
-The dashboard (and the underlying model) can be pinned to any of seven stages, each meaning "train on and lock in results up to and including this stage; simulate everything after it":
+The dashboard (and the underlying model) can be pinned to any of the stages completed (played), each meaning "train on and lock in known results up to and including this stage; simulate everything after it":
 
 | Stage id | Label | Fixed (real) results used | Simulated |
 |---|---|---|---|
@@ -84,31 +69,26 @@ The dashboard (and the underlying model) can be pinned to any of seven stages, e
 | `sf` | Semifinals done | … + SF | Final only |
 | `complete` | Tournament complete | everything | nothing (probabilities are the real 0/1 outcome) |
 
-Selecting a stage does three things:
-- **Training**: the Elo model is retrained using only current-year World Cup match results up to that stage (`model/artifacts/training/elo_{stage}.json`); all historical/continental/qualifier data is always used.
-- **Simulation**: rounds at or before the cutoff are taken from the real results; rounds after it are Monte Carlo simulated.
-- **Dashboard pages**: the Groups page and knockout bracket only reveal what would have been knowable at that stage (see below).
+### How the tournament is simulated
 
-### How the tournament is simulated (`RealBracketSimulator`)
-
-Instead of a simplified Elo-seeded bracket, the simulator reconstructs the **real** 2026 World Cup format for every stage, including `pre_tournament`:
+The simulator reconstructs the 2026 World Cup format for every stage:
 
 1. **Groups** — for `pre_tournament`, all 72 group matches are simulated from scratch; for every other stage, the real group standings are used directly.
-2. **Round of 32** — resolved from group standings (real or, for `pre_tournament`, that trial's simulated standings) using FIFA's published Round-of-32 slot template and the 495-row "Annex C" best-third-place table, hardcoded in `model/data/wc2026_r32_bracket.json`. This reproduces the real 2026 Round of 32 exactly (validated at startup).
-3. **Round of 16 → Quarterfinals → Semifinals → Final** — a feeder tree is derived once from the completed 2026 match data (which bracket slot's winner plays in which next-round slot). Because slot succession is fixed by the schedule, this tree correctly propagates simulated results too, not just the real ones.
+2. **Round of 32** — resolved from group standings (real or, for `pre_tournament`, that trial's simulated standings) using FIFA's published Round-of-32 slot template and best-third-place table.
+3. **Round of 16 → Quarterfinals → Semifinals → Final** — a feeder tree is derived once from the completed 2026 match data. This tree correctly propagates simulated results as well as the real ones.
 4. Rounds at or before the stage cutoff use the real recorded winner; rounds after it sample a winner from the active Elo/FIFA ratings each Monte Carlo trial (draws resolved with an Elo tie-break, approximating extra time/penalties).
 
-From many trials the dashboard reports **P(R32), P(R16), P(QF), P(SF), P(Final), P(Win WC)** (monotonic by construction). For stages ≤ the cutoff these are exactly 0 or 1 (deterministic, since they're already known); for `complete`, no simulation runs at all.
+From many trials the dashboard reports **P(R32), P(R16), P(QF), P(SF), P(Final), P(Win WC)**. For stages ≤ the cutoff these are exactly 0 or 1 (deterministic, since they're already known).
 
 ## Dashboard UI
 
-A **Stage completed** control in the header (default: **Pre-tournament**) applies to every page. Tab order: **Predictions** (default, `/`), **Teams & groups** (`/teams`), **Knockout Stage** (`/knockout`).
+A **Stage completed (played)** control in the header (default: **Pre-tournament**) applies to every page.
 
 - **Predictions** — Elo/FIFA toggle; Monte Carlo run count (1000–5000, default **3000**); rankings table with stage-reach probabilities and an inline win-probability bar; progress overlay while sims run; a footnote explains which stages are fixed vs. predicted for the current selection.
-- **Teams & groups** — group standings and team detail. Shows a placeholder instead of standings when `pre_tournament` is selected (nothing is "real" yet at that stage); a team's "Recent matches" list only shows matches within the selected stage's fixed rounds.
-- **Knockout Stage** — actual 2026 knockout fixtures, masked to the selected stage: rounds at or before the cutoff show real scores; the first round after the cutoff shows the real matchup with the result hidden; further rounds show blank "TBD" placeholders.
+- **Teams & groups** — group standings and team detail. A team's "Recent matches" list shows matches within the selected stage's played rounds.
+- **Knockout Stage** — actual 2026 knockout fixtures, masked to the selected stage: rounds at or before the cutoff show real scores; the first round after the cutoff shows the real matchup with the result hidden; further rounds show placeholders.
 
-## Setup
+## Dev Setup
 
 Uses **pyenv** (Python 3.12.3) with local virtualenvs in each component.
 
@@ -145,67 +125,62 @@ pyenv local 3.12.3
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-./run.sh
 ```
 
-Or manually: `cd app && ../.venv/bin/uvicorn main:app --reload --host 0.0.0.0 --port 8000`
+Local test of dev API (at **http://localhost:8000**, auto-reload enabled):
+
+```bash
+cd dashboard/backend
+./run.sh
+# health check
+curl http://localhost:8000/api/health
+```
 
 ### 3. Dashboard frontend
 
 Node.js 18+ on your PATH (Node 20 recommended).
 
+Local dev test (using Vite):
+
 ```bash
 cd dashboard/frontend
 npm install
-./run.sh
+./run.sh        # Runs `npm run dev`
+curl http://localhost:5173/
 ```
 
-Or manually: `npm run dev`
+Open dashboard at: **http://localhost:5173/**
 
-**Windows Chrome + WSL:** prefer the WSL IP if localhost fails:
+Generate production build:
 
 ```bash
-hostname -I | awk '{print $1}'   # e.g. 172.22.117.148 → http://172.22.117.148:5173
+cd dashboard/frontend && ./build.sh
 ```
 
-Do **not** use `10.255.255.254` — that is WSL internal DNS, not the web app.
+The production frontend build output is located at: `dashboard/artifacts/build/`
 
-### Troubleshooting "connection reset" / site not loading
+### 4. Local test of production build
 
-Both servers must be running at the same time:
-
-1. **Backend** (terminal 1): `cd dashboard/backend && ./run.sh`
-2. **Frontend** (terminal 2): `cd dashboard/frontend && ./run.sh`
-
-Quick checks inside WSL:
+One process serves the **built** frontend and the API at: **http://localhost:8080/**
 
 ```bash
-curl http://127.0.0.1:8000/api/health   # should return {"status":"ok"}
-curl http://127.0.0.1:5173/           # should return HTML
+cd dashboard/backend && ./run-prod.sh
 ```
 
-If curl works in WSL but Chrome on Windows fails on localhost:
-
-- **Use the WSL IP** (reliable): `http://$(hostname -I | awk '{print $1}'):5173`
-- **Do not use** `10.255.255.254` — not a server address
-- **Fix localhost forwarding** (Windows PowerShell): `wsl --shutdown`, then reopen WSL and restart servers
-- Optional `%UserProfile%\.wslconfig`:
-  ```ini
-  [wsl2]
-  localhostForwarding=true
-  ```
-- Port **5173** is the webpage; port **8000** is API-only
-- Restart both `./run.sh` scripts after a WSL/Windows reboot
-
-Static fallback (no dev server):
+Sanity checks:
 
 ```bash
-cd dashboard/frontend && npm run build
-cd ../backend/app && ../.venv/bin/uvicorn main:app --host 0.0.0.0 --port 8000
-# open http://localhost:8000 only if you mount the build; dev mode uses port 5173
+curl http://localhost:8080/api/health
+curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/teams
 ```
 
-Production frontend build output: `dashboard/artifacts/build/`
+### WSL and Windows Chrome (optional)
+
+Skip this if **localhost / 127.0.0.1 work in your browser**. When Chrome on Windows cannot reach a server running in WSL, try `http://$(hostname -I | awk '{print $1}'):PORT` (same port as usual). 
+
+Avoid `10.255.255.254` (WSL DNS, not the app). 
+
+Reset forwarding: `wsl --shutdown` in PowerShell, reopen WSL, restart servers. Optional `%UserProfile%\.wslconfig`: `localhostForwarding=true` under `[wsl2]`.
 
 ## API endpoints
 
@@ -258,6 +233,14 @@ python scripts/ingest.py && python scripts/train.py && python scripts/simulate.p
 Note: `RealBracketSimulator`'s feeder-tree construction (`build_bracket_tree`) currently assumes the **full** knockout bracket (Round of 32 through the Final) has already been played, since it derives round-to-round slot links by chaining real match participants forward. It is exercised here against the completed 2026 tournament; using the stage selector mid-tournament (before the Final has been played) would need that construction to tolerate partially-completed rounds.
 
 Knockout scores include full-time, extra-time (`et`), and penalties (`p`) when present; the bracket page highlights who advanced and shows `aet` / `p` notes as needed.
+
+
+## Deploying on Google Cloud
+
+The intended target for deployment combines the React SPA and FastAPI backend into a single Cloud Run service for simplicity. The architecture could later be split into separate frontend and backend services if independent scaling or deployment became necessary.
+
+Minimal one-time GCP project setup (APIs, Artifact Registry, Cloud Run deploy commands): [docs/gcp-setup.md](docs/gcp-setup.md).
+
 
 ## License
 
