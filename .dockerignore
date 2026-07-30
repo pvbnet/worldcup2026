@@ -1,0 +1,13 @@
+.git
+.gitignore
+**/.venv
+**/node_modules
+dashboard/artifacts/build
+**/__pycache__
+**/*.pyc
+.pytest_cache
+.env
+.env.*
+*.log
+AGENTS.md
+.cursor
