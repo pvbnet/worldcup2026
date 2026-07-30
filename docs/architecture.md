@@ -10,7 +10,7 @@ The app ranks national teams and estimates 2026 World Cup win (and stage-reach) 
 
 | Path | Role |
 |------|------|
-| [`model/`](../model/) | Pipeline: fetch → ingest → train → simulate. Source under `model/src/`. Artifacts in `model/artifacts/`; raw/processed data in `model/data/`. |
+| [`model/`](../model/) | Pipeline: fetch → ingest → train → simulate. Source under `model/src/`. Artifacts in `model/artifacts/`; raw and processed data in `model/data/`. |
 | [`dashboard/backend/`](../dashboard/backend/) | FastAPI app. [`loader.py`](../dashboard/backend/app/services/loader.py) loads artifacts and imports `model/src`. [`routes.py`](../dashboard/backend/app/api/routes.py) exposes `/api/*`. Simulations run in background threads (in-memory job store). `POST /api/refresh-data` runs model scripts via subprocess. |
 | [`dashboard/frontend/`](../dashboard/frontend/) | React + Vite. Relative `/api` calls in [`client.ts`](../dashboard/frontend/src/api/client.ts). Pages: Predictions (`/`), Teams & groups (`/teams`), Knockout (`/knockout`). |
 | [`dashboard/artifacts/build/`](../dashboard/artifacts/build/) | Production static output from `npm run build` / `./build.sh` (gitignored). |
@@ -44,12 +44,18 @@ flowchart LR
 - **Stage masking:** Groups and knockout pages hide future results in the browser; the API returns the full match/group dataset for the year.
 - **Refresh:** UI **Refresh data** (or CLI) re-fetches World Cup JSON, then ingest / train / simulate for every stage.
 
-## Deployment intent
+## Deployment on Google Cloud Platform (GCP)
 
-Target shape: **one container**, one Cloud Run service — FastAPI serves the built SPA and API on the same origin. Image build should install Python deps, build the frontend, and run fetch + ingest so parquet exists at runtime.
+Target shape: **one container**, one Cloud Run service — FastAPI serves the built SPA and API on the same origin. The root [`Dockerfile`](../Dockerfile) installs Python deps, builds the frontend, and runs fetch + ingest so parquet exists at runtime. 
+
+Local container build and smoke test are documented in: [docker-local.md](docker-local.md).
+
+GCP setup and final deployment are documented in: [gcp-setup.md](gcp-setup.md).
 
 ## Related docs
 
-- [README](../README.md) — quick start, stages, UI, API endpoints, data sources
+- [README](../README.md) — quick start, tournament model, UI, data sources
 - [NOTICE](../NOTICE.md) — third-party data and what is committed
+- [dev-setup.md](dev-setup.md) — local dev setup for app/API development
+- [docker-local.md](docker-local.md) — build and run Docker container locally
 - [gcp-setup.md](gcp-setup.md) — Artifact Registry and Cloud Run

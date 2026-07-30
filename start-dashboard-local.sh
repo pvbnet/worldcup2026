@@ -2,10 +2,18 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
-export PATH="${HOME}/.local/node-v20.18.0-linux-x64/bin:${PATH}"
+# shellcheck source=scripts/env.sh
+source "$ROOT/scripts/env.sh"
+
+UVICORN="${ROOT}/dashboard/backend/.venv/bin/uvicorn"
+if [[ ! -x "$UVICORN" ]]; then
+  echo "Missing ${UVICORN}. Create the venv and install deps:" >&2
+  echo "  cd dashboard/backend && python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt" >&2
+  exit 1
+fi
 
 echo "Starting backend at http://localhost:8000 ..."
-(cd "$ROOT/dashboard/backend/app" && ../.venv/bin/uvicorn main:app --reload --host 0.0.0.0 --port 8000) &
+(cd "$ROOT/dashboard/backend/app" && "$UVICORN" main:app --reload --host 0.0.0.0 --port 8000) &
 BACKEND_PID=$!
 
 sleep 2

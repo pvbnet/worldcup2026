@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
+# Development: Serve frontend at http://localhost:5173
 set -euo pipefail
-export PATH="${HOME}/.local/node-v20.18.0-linux-x64/bin:${PATH}"
+ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+# shellcheck source=../../scripts/env.sh
+source "$ROOT/scripts/env.sh"
 cd "$(dirname "$0")"
 exec npm run dev

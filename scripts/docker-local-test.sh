@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Local Docker demo: build image, run container, smoke-test (Step 2 of deploy plan).
+# Local Docker demo: build image, run container, smoke-test
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
