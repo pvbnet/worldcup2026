@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "site": "worldcup-dashboard",
+    "rewrites": [
+      {
+        "source": "**",
+        "run": {
+          "serviceId": "worldcup2026-dashboard",
+          "region": "us-central1"
+        }
+      }
+    ]
+  }
+}

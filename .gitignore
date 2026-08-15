@@ -10,6 +10,7 @@ dashboard/frontend/tsconfig.tsbuildinfo
 dashboard/artifacts/build/
 .env
 .env.*
+.firebase/
 *.log
 AGENTS.md
 *.parquet

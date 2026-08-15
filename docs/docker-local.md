@@ -1,6 +1,12 @@
-# Local Docker build
+# Local Docker build on WSL
 
 Build and run the dashboard container before pushing to GCP.
+
+## Start the Docker Engine if not already running
+
+```bash
+sudo service docker start
+```
 
 ## Build and run
 

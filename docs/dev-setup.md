@@ -131,3 +131,4 @@ curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/teams
 - [scripts/env.sh](../scripts/env.sh) — Node.js PATH for local run scripts
 - [docker-local.md](docker-local.md) — container build and run
 - [gcp-setup.md](gcp-setup.md) — Google Cloud setup: artifact registry and cloud run
+- [firebase-hosting.md](firebase-hosting.md) — public URL via Firebase Hosting

@@ -16,7 +16,8 @@ docker build -t "$IMAGE" .
 
 echo ""
 echo "Starting container on http://localhost:${PORT}/ (Ctrl+C to stop) ..."
-echo "In another terminal:"
+echo ""
+echo "Use the following commands to test the container (in another terminal):"
 echo "  curl http://localhost:${PORT}/api/health"
 echo "  curl -s -o /dev/null -w '%{http_code}\\n' http://localhost:${PORT}/teams"
 echo ""

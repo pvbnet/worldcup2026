@@ -1,15 +1,17 @@
 # World Cup 2026 Predictive Dashboard
 
 Interactive dashboard ranking national soccer teams and estimating 2026 World Cup win probabilities. 
-Uses game data from previous World Cup finals, continental tournaments (Euro, Copa América, AFCON), 
-and World Cup qualifiers for predicting team strength (Elo rating). Uses Monte-Carlo simulations of 
-the 2026 tournament to predict the probabilities of teams reaching knock-out stages and the 
-final WC 2026 tournament winner. 
+Uses past game data to predict team strength (Elo rating). Uses Monte-Carlo simulations of 
+the 2026 tournament to predict the probabilities of teams reaching knock-out stages and winning the tournament. 
 
-Game results from the actual 2026 World Cup tournament are used as they become available, per the main
-stages. The dashboard can be pinned to lock in results from played stages, and past results are used to
-update the Elo rating and knock-out stage win probabilities by Monte-Carlo simulations of the remaining 
-tournament. 
+The dashboard can be pinned to lock in results from played stages (group and knock-out rounds). 
+Past results are used to update the Elo rating and knock-out stage win probabilities by Monte-Carlo simulations of the remaining tournament.
+
+The site is deployed to Google Cloud Platform (Firebase Hosting and Cloud Run).
+
+Public site via Firebase: https://worldcup-dashboard.web.app/
+
+and via Cloud Run: https://worldcup2026-dashboard-840322286739.us-central1.run.app/
 
 ## Quick start
 
@@ -46,8 +48,9 @@ Open **http://localhost:5173/** in the browser.
 
 - [docs/architecture.md](docs/architecture.md) — components, runtime modes, data flow
 - [docs/dev-setup.md](docs/dev-setup.md) — model pipeline, backend, frontend, API, prod-local test
-- [docs/docker-local.md](docs/docker-local.md) — build and run the container locally
-- [docs/gcp-setup.md](docs/gcp-setup.md) — deploy to Cloud Run
+- [docs/docker-local.md](docs/docker-local.md) — build and run the Docker container locally
+- [docs/gcp-setup.md](docs/gcp-setup.md) — deploy to Cloud Run using the Docker image
+- [docs/firebase-hosting.md](docs/firebase-hosting.md) — public URL via Firebase Hosting (proxies to Cloud Run)
 
 ## Team strength and match outcome model
 

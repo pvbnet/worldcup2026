@@ -1,6 +1,6 @@
-# Google Cloud setup (minimal)
+# Google Cloud setup
 
-GCP project and tooling setup for deploying the dashboard to **Cloud Run** with **Docker** and **Artifact Registry**. Uses the root [`Dockerfile`](../Dockerfile) (same image as local Docker).
+GCP project and tooling setup for deploying the dashboard to **Cloud Run** with **Docker** and **Artifact Registry**. Uses the root [`Dockerfile`](../Dockerfile).
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ GCP project and tooling setup for deploying the dashboard to **Cloud Run** with 
 gcloud auth login
 gcloud auth application-default login   # optional; useful for local tools
 
-export PROJECT_ID=your-gcp-project-id
+export PROJECT_ID=world-cup-dashboard-v1
 export REGION=us-central1              # pick a region near you
 
 gcloud config set project "$PROJECT_ID"
@@ -42,7 +42,7 @@ For remote image builds without local Docker:
 gcloud services enable cloudbuild.googleapis.com
 ```
 
-## 3. Artifact Registry (Docker images)
+## 3. Set up Artifact Registry (for Docker images)
 
 ```bash
 export REPO=worldcup2026
@@ -65,9 +65,9 @@ Image name pattern:
 export IMAGE="${REGION}-docker.pkg.dev/${PROJECT_ID}/${REPO}/dashboard:latest"
 ```
 
-## 4. Deploy
+## 4. Build and push the Docker image
 
-Build and push (local Docker):
+Build and push image to Artifact Registry:
 
 ```bash
 docker build -t "$IMAGE" .
@@ -87,6 +87,8 @@ Or build in GCP:
 gcloud builds submit --tag "$IMAGE"
 ```
 
+## 5. Deploy the Docker image to Cloud Run
+
 Create or update the Cloud Run service:
 
 ```bash
@@ -104,7 +106,9 @@ gcloud run deploy worldcup2026-dashboard \
 
 The command prints the public HTTPS URL. Check `GET /api/health` on that host.
 
-## 5. Repeat deploys
+For the public web URL via Firebase Hosting (`worldcup-dashboard.web.app`), see [firebase-hosting.md](firebase-hosting.md).
+
+## 6. Repeat deploys
 
 After code or image changes:
 
@@ -114,6 +118,16 @@ docker build -t "$IMAGE" . && docker push "$IMAGE"
 
 gcloud run deploy worldcup2026-dashboard --image "$IMAGE" --region "$REGION"
 ```
+
+**When to rebuild the image:** Any change that should appear in the running container — Python backend, model code, frontend source, `requirements.txt`, `package.json` / lockfile, committed files under `model/artifacts/`, or the [`Dockerfile`](../Dockerfile). The image bakes in the frontend build, Python deps, and a one-time fetch/ingest at build time.
+
+**When a rebuild is not needed:**
+
+- **Cloud Run settings only** (memory, CPU, timeout, `--max-instances`, env vars) — run `gcloud run deploy` with the existing `$IMAGE` and updated flags; no `docker build` or push.
+- **New World Cup match data only** — use **Refresh data** in the dashboard or `POST /api/refresh-data`; the service re-runs fetch/ingest/train/simulate at runtime without a new image.
+- **Docs or local dev** — README, scripts used only on your machine, and `./start-dashboard-local.sh` do not affect the deployed container.
+
+If you changed code but skip rebuild/push, Cloud Run keeps serving the previous image; redeploy alone does not pick up repo changes.
 
 ## Notes
 
