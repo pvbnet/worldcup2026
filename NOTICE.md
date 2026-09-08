@@ -28,4 +28,4 @@ factual data compiled for research and modeling.
 | `model/data/raw/**/*.json` | Many continental, qualifier, and friendly raw files are committed for convenience. |
 | `model/data/raw/2018.json`, `2022.json`, `2026.json` | **Not** committed (see `.gitignore`). Run `python scripts/fetch_data.py` from `model/` after clone. |
 | `model/data/processed/matches.parquet` | **Not** committed. Produced by `python scripts/ingest.py`. |
-| `model/artifacts/` | Pre-built Elo and prediction JSON (~300 KB) so the dashboard works without re-simulating. Regenerate with `train.py` / `simulate.py` or the dashboard **Refresh data** action. |
+| `model/artifacts/` | Pre-built Elo and prediction JSON (~300 KB) so the dashboard works without re-simulating. Regenerate with `train.py` / `simulate.py`. |

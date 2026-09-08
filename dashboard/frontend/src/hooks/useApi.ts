@@ -3,7 +3,6 @@ import {
   fetchGroups,
   fetchMatches,
   pollSimulation,
-  refreshData,
   startSimulation,
   MatchRow,
   RankingsResponse,
@@ -30,29 +29,6 @@ export function useDashboard(strength: Strength, simulations: number, stage: Sta
     setGroups(groupRows);
     setStaticLoaded(true);
   }, []);
-
-  const runSimulations = useCallback(
-    async (source: Strength, n: number, forStage: Stage) => {
-      setSimulating(true);
-      setProgress(0);
-      setProgressMessage("Running Monte Carlo simulations…");
-      setError(null);
-      try {
-        const { job_id } = await startSimulation(source, forStage, n);
-        const rankings = await pollSimulation(job_id, (p, message) => {
-          setProgress(p);
-          if (message) setProgressMessage(message);
-        });
-        setPayload(rankings);
-        setProgress(1);
-      } catch (err) {
-        setError(err instanceof Error ? err.message : "Simulation failed");
-      } finally {
-        setSimulating(false);
-      }
-    },
-    [],
-  );
 
   useEffect(() => {
     loadStatic().catch((err) => {
@@ -91,17 +67,6 @@ export function useDashboard(strength: Strength, simulations: number, stage: Sta
     };
   }, [strength, simulations, stage]);
 
-  const refresh = useCallback(async () => {
-    setError(null);
-    try {
-      await refreshData();
-      await loadStatic();
-      await runSimulations(strength, simulations, stage);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Refresh failed");
-    }
-  }, [loadStatic, runSimulations, strength, simulations, stage]);
-
   return {
     teams: payload?.teams ?? [],
     meta: payload,
@@ -112,6 +77,5 @@ export function useDashboard(strength: Strength, simulations: number, stage: Sta
     progress,
     progressMessage,
     error,
-    refresh,
   };
 }

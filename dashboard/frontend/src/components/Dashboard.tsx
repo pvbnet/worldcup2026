@@ -70,9 +70,6 @@ export function StrengthToggle({
           FIFA
         </button>
       </div>
-      <p className="strength-help">
-        Simulate match outcomes using trained Elo ratings or FIFA rankings.
-      </p>
     </div>
   );
 }
@@ -135,35 +132,6 @@ function pct(value: number | undefined): string {
   return `${((value ?? 0) * 100).toFixed(1)}%`;
 }
 
-const STAGE_FOOTNOTES: Record<Stage, string> = {
-  pre_tournament:
-    "Every stage below, including the group stage, is Monte Carlo simulated " +
-    "using only pre-tournament data — no 2026 results are used.",
-  group:
-    "Group stage results are fixed to the real outcome. Round of 32 is " +
-    "resolved from the real group standings (FIFA's third-place ranking " +
-    "rules) and Round of 32 onward is simulated.",
-  r32:
-    "Group stage and Round of 32 results are fixed to the real outcome. " +
-    "Round of 16 onward is simulated.",
-  r16:
-    "Group stage through Round of 16 are fixed to the real outcome. " +
-    "Quarterfinals onward is simulated.",
-  qf:
-    "Group stage through Quarterfinals are fixed to the real outcome. " +
-    "Semifinals and the Final are simulated.",
-  sf:
-    "Group stage through Semifinals are fixed to the real outcome. Only the " +
-    "Final is simulated.",
-  complete:
-    "The tournament is over — every probability reflects the real, final " +
-    "outcome (no simulation).",
-};
-
-export function stageFootnote(stage: Stage): string {
-  return STAGE_FOOTNOTES[stage];
-}
-
 export function RankingsTable({
   teams,
   selectedTeam,
@@ -175,7 +143,7 @@ export function RankingsTable({
 }) {
   return (
     <div className="panel rankings-panel">
-      <h2>Team Rankings</h2>
+      <h2>Team Rankings and Stage Probabilities</h2>
       <div className="rankings-table-wrap">
         <table className="rankings-table">
           <thead>
@@ -183,8 +151,7 @@ export function RankingsTable({
               <th>Sim Rank</th>
               <th>Elo Rank</th>
               <th>FIFA Rank</th>
-              <th>Team</th>
-              <th>Group</th>
+              <th className="team-cell">Team</th>
               <th>Elo</th>
               <th>P(R32)</th>
               <th>P(R16)</th>
@@ -204,27 +171,14 @@ export function RankingsTable({
                 <td>{team.model_rank ?? team.rank}</td>
                 <td>{team.elo_rank}</td>
                 <td>{team.fifa_rank}</td>
-                <td>{team.team}</td>
-                <td>{groupLetter(team.group)}</td>
+                <td className="team-cell">{team.team}</td>
                 <td>{team.rating.toFixed(0)}</td>
                 <td>{pct(team.p_r32)}</td>
                 <td>{pct(team.p_r16)}</td>
                 <td>{pct(team.p_qf)}</td>
                 <td>{pct(team.p_sf)}</td>
                 <td>{pct(team.p_final)}</td>
-                <td className="win-prob-cell">
-                  <div className="win-prob-inline">
-                    <div className="bar-track">
-                      <div
-                        className="bar-fill"
-                        style={{
-                          width: `${Math.max((team.p_win ?? 0) * 100, team.p_win > 0 ? 1 : 0)}%`,
-                        }}
-                      />
-                    </div>
-                    <span className="bar-value">{pct(team.p_win)}</span>
-                  </div>
-                </td>
+                <td>{pct(team.p_win)}</td>
               </tr>
             ))}
           </tbody>

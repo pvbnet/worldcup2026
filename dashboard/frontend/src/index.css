@@ -49,13 +49,6 @@ header > div:first-child {
   margin-top: 12px;
 }
 
-.header-actions {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .top-nav {
   display: flex;
   gap: 16px;
@@ -123,10 +116,17 @@ header > div:first-child {
   color: #9fb0c9;
 }
 
-.strength-help {
-  margin: 0;
-  font-size: 0.75rem;
-  color: #7d91ad;
+.predictions-intro {
+  margin-bottom: 16px;
+}
+
+.predictions-intro p {
+  margin: 0 0 8px;
+  color: #9fb0c9;
+}
+
+.predictions-intro .page-toolbar {
+  margin: 12px 0 0;
 }
 
 .segmented {
@@ -315,14 +315,6 @@ tbody tr.selected {
   width: 100%;
 }
 
-.predictions-footnote {
-  margin: 12px 0 0;
-  max-width: 52rem;
-  font-size: 0.8rem;
-  line-height: 1.45;
-  color: #7d91ad;
-}
-
 .rankings-table-wrap {
   overflow-x: auto;
 }
@@ -331,25 +323,9 @@ tbody tr.selected {
   font-size: 0.9rem;
 }
 
-.win-prob-cell {
-  min-width: 160px;
-}
-
-.win-prob-inline {
-  display: grid;
-  grid-template-columns: 1fr 48px;
-  gap: 8px;
-  align-items: center;
-}
-
-.win-prob-inline .bar-track {
-  height: 8px;
-}
-
-.win-prob-inline .bar-value {
-  font-size: 0.85rem;
-  text-align: right;
-  font-variant-numeric: tabular-nums;
+.rankings-table .team-cell {
+  width: 1%;
+  white-space: nowrap;
 }
 
 .groups-grid {

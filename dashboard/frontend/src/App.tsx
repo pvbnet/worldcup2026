@@ -20,7 +20,6 @@ export default function App() {
     progress,
     progressMessage,
     error,
-    refresh,
   } = useDashboard(strength, simulations, stage);
 
   return (
@@ -41,11 +40,6 @@ export default function App() {
               <NavLink to="/teams">Teams &amp; groups</NavLink>
               <NavLink to="/knockout">Knockout Stage</NavLink>
             </nav>
-            <div className="header-actions">
-              <button onClick={refresh} disabled={simulating}>
-                {simulating ? "Simulating…" : "Refresh data"}
-              </button>
-            </div>
           </div>
         </div>
       </header>

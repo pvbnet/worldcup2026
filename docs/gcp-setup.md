@@ -124,7 +124,7 @@ gcloud run deploy worldcup2026-dashboard --image "$IMAGE" --region "$REGION"
 **When a rebuild is not needed:**
 
 - **Cloud Run settings only** (memory, CPU, timeout, `--max-instances`, env vars) — run `gcloud run deploy` with the existing `$IMAGE` and updated flags; no `docker build` or push.
-- **New World Cup match data only** — use **Refresh data** in the dashboard or `POST /api/refresh-data`; the service re-runs fetch/ingest/train/simulate at runtime without a new image.
+- **New World Cup match data only** — locally, re-run `fetch_data.py --force --competitions world_cup` then ingest/train/simulate; on the running service, `POST /api/refresh-data` does the same without a new image.
 - **Docs or local dev** — README, scripts used only on your machine, and `./start-dashboard-local.sh` do not affect the deployed container.
 
 If you changed code but skip rebuild/push, Cloud Run keeps serving the previous image; redeploy alone does not pick up repo changes.

@@ -92,7 +92,13 @@ A **Stage completed (played)** control in the header (default: **Pre-tournament*
 
 Knockout scores include full-time scores and results from extra-time (`aet`), and penalties (`p`) when present.
 
-As matches complete during the tournament, click **Refresh data** in the dashboard (re-fetches World Cup JSON, then ingest/train/simulate). This can also be done manually using the Python scripts. 
+To pull new World Cup results later, re-run the model pipeline (do not use the dashboard):
+
+```bash
+cd model
+python scripts/fetch_data.py --force --competitions world_cup
+python scripts/ingest.py && python scripts/train.py && python scripts/simulate.py
+``` 
 
 ## Data sources
 

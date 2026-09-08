@@ -149,7 +149,3 @@ export async function fetchGroups(): Promise<Record<string, unknown[]>> {
   const data = await res.json();
   return data.groups ?? {};
 }
-
-export async function refreshData(): Promise<void> {
-  await fetch("/api/refresh-data", { method: "POST" });
-}
