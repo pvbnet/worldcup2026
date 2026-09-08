@@ -31,11 +31,13 @@ SIM_EVENT_LABELS: dict[str, str] = {
     "final": "Reach final",
     "win": "Win tournament",
 }
+
 # Cumulative reach events from best finish to worst, used as the TRPS CDF.
 _TRPS_CUMULATIVE: list[str] = ["win", "final", "sf", "qf", "r16", "r32"]
 _P_KEY = {event: f"p_{event}" for event in SIM_EVENTS}
 _Y_KEY = {event: f"y_{event}" for event in SIM_EVENTS}
 _N_SLOTS = {"r32": 32, "r16": 16, "qf": 8, "sf": 4, "final": 2, "win": 1}
+_QF_ONWARD_EVENTS: list[str] = ["qf", "sf", "final", "win"]
 _EPS = 1e-15
 
 # Events still random at each forecast vintage (locked rounds omitted).
@@ -47,6 +49,7 @@ UNRESOLVED_EVENTS: dict[str, list[str]] = {
     STAGE_QF: ["final", "win"],
     STAGE_SF: ["win"],
 }
+
 # Team is still alive at a vintage if they reached this already-resolved event.
 _ALIVE_GATE: dict[str, str | None] = {
     STAGE_PRE_TOURNAMENT: None,
@@ -152,6 +155,23 @@ def _trps(teams: list[dict]) -> float:
     return total / len(teams)
 
 
+def _mean_brier_events(record: dict, events: list[str]) -> float:
+    if not events:
+        return 0.0
+    return sum(
+        (record[_P_KEY[event]] - record[_Y_KEY[event]]) ** 2 for event in events
+    ) / len(events)
+
+
+def _mean_log_loss_events(record: dict, events: list[str]) -> float:
+    if not events:
+        return 0.0
+    return sum(
+        _binary_log_loss(record[_P_KEY[event]], int(record[_Y_KEY[event]]))
+        for event in events
+    ) / len(events)
+
+
 def _baseline_prob(stage: str, event: str, alive: bool) -> float:
     if not alive:
         return 0.0
@@ -173,6 +193,7 @@ def _score_artifact(
     event_sq: dict[str, list[float]] = {event: [] for event in unresolved}
     event_ll: dict[str, list[float]] = {event: [] for event in unresolved}
     event_base: dict[str, list[float]] = {event: [] for event in unresolved}
+    event_ll_base: dict[str, list[float]] = {event: [] for event in unresolved}
 
     for team_row in payload.get("teams", []):
         team = str(team_row["team"])
@@ -191,22 +212,32 @@ def _score_artifact(
             record[_Y_KEY[event]] = outcome
             event_sq[event].append((p - outcome) ** 2)
             event_ll[event].append(_binary_log_loss(p, outcome))
-            event_base[event].append((_baseline_prob(stage, event, alive) - outcome) ** 2)
+            baseline_p = _baseline_prob(stage, event, alive)
+            event_base[event].append((baseline_p - outcome) ** 2)
+            event_ll_base[event].append(_binary_log_loss(baseline_p, outcome))
         # Full p_/y_ needed for TRPS even when some events are locked.
         for event in SIM_EVENTS:
             record.setdefault(_P_KEY[event], _clip01(team_row.get(_P_KEY[event], 0.0)))
             record.setdefault(_Y_KEY[event], int(y[event]))
+        qf_events = [event for event in _QF_ONWARD_EVENTS if event in unresolved]
+        record["mean_brier"] = _mean_brier_events(record, unresolved)
+        record["mean_brier_from_qf"] = _mean_brier_events(record, qf_events)
+        record["mean_log_loss"] = _mean_log_loss_events(record, unresolved)
+        record["mean_log_loss_from_qf"] = _mean_log_loss_events(record, qf_events)
         rows_out.append(record)
 
     events_metrics: dict[str, dict] = {}
     event_briers: list[float] = []
     event_baselines: list[float] = []
+    event_log_losses: list[float] = []
+    event_ll_baselines: list[float] = []
     for event in unresolved:
         sq = event_sq[event]
         n = len(sq)
         brier = sum(sq) / n if n else 0.0
         logloss = sum(event_ll[event]) / n if n else 0.0
         baseline = sum(event_base[event]) / n if n else 0.0
+        ll_baseline = sum(event_ll_base[event]) / n if n else 0.0
         events_metrics[event] = {
             "brier": brier,
             "log_loss": logloss,
@@ -214,16 +245,59 @@ def _score_artifact(
         }
         event_briers.append(brier)
         event_baselines.append(baseline)
+        event_log_losses.append(logloss)
+        event_ll_baselines.append(ll_baseline)
 
     mean_brier = sum(event_briers) / len(event_briers) if event_briers else 0.0
     mean_baseline = (
         sum(event_baselines) / len(event_baselines) if event_baselines else 0.0
     )
+    mean_log_loss = (
+        sum(event_log_losses) / len(event_log_losses) if event_log_losses else 0.0
+    )
+    mean_log_loss_baseline = (
+        sum(event_ll_baselines) / len(event_ll_baselines) if event_ll_baselines else 0.0
+    )
     skill = None if mean_baseline <= 0 else 1.0 - mean_brier / mean_baseline
+    log_loss_skill = (
+        None
+        if mean_log_loss_baseline <= 0
+        else 1.0 - mean_log_loss / mean_log_loss_baseline
+    )
+    qf_events = [event for event in _QF_ONWARD_EVENTS if event in unresolved]
+    qf_briers = [events_metrics[event]["brier"] for event in qf_events]
+    qf_log_losses = [events_metrics[event]["log_loss"] for event in qf_events]
+    qf_baselines = [
+        sum(event_base[event]) / len(event_base[event])
+        for event in qf_events
+        if event_base[event]
+    ]
+    qf_ll_baselines = [
+        sum(event_ll_base[event]) / len(event_ll_base[event])
+        for event in qf_events
+        if event_ll_base[event]
+    ]
+    mean_brier_from_qf = sum(qf_briers) / len(qf_briers) if qf_briers else 0.0
+    mean_brier_baseline_from_qf = (
+        sum(qf_baselines) / len(qf_baselines) if qf_baselines else 0.0
+    )
+    mean_log_loss_from_qf = (
+        sum(qf_log_losses) / len(qf_log_losses) if qf_log_losses else 0.0
+    )
+    mean_log_loss_baseline_from_qf = (
+        sum(qf_ll_baselines) / len(qf_ll_baselines) if qf_ll_baselines else 0.0
+    )
 
     team_public = []
     for record in rows_out:
-        public = {"team": record["team"], "group": record["group"]}
+        public = {
+            "team": record["team"],
+            "group": record["group"],
+            "mean_brier": record["mean_brier"],
+            "mean_brier_from_qf": record["mean_brier_from_qf"],
+            "mean_log_loss": record["mean_log_loss"],
+            "mean_log_loss_from_qf": record["mean_log_loss_from_qf"],
+        }
         for event in unresolved:
             public[_P_KEY[event]] = record[_P_KEY[event]]
             public[_Y_KEY[event]] = record[_Y_KEY[event]]
@@ -234,7 +308,14 @@ def _score_artifact(
         "trps": _trps(rows_out),
         "mean_brier": mean_brier,
         "mean_brier_baseline": mean_baseline,
+        "mean_brier_from_qf": mean_brier_from_qf,
+        "mean_brier_baseline_from_qf": mean_brier_baseline_from_qf,
         "brier_skill": skill,
+        "mean_log_loss": mean_log_loss,
+        "mean_log_loss_baseline": mean_log_loss_baseline,
+        "mean_log_loss_from_qf": mean_log_loss_from_qf,
+        "mean_log_loss_baseline_from_qf": mean_log_loss_baseline_from_qf,
+        "log_loss_skill": log_loss_skill,
         "teams": team_public,
     }
 
@@ -269,6 +350,49 @@ def evaluate_simulations(matches: pd.DataFrame) -> dict:
                 artifact, outcomes, groups, stage
             )
 
+    tournament_mean_brier: dict = {
+        "description": (
+            "Pre-tournament mean Brier over reach events "
+            "(equivalent to ACE Lab RPS: R32 through champion)"
+        ),
+        "stages": list(SIM_EVENTS),
+        "qf_onward_stages": list(_QF_ONWARD_EVENTS),
+    }
+    for strength in STRENGTH_SOURCES:
+        cell = payload["strengths"].get(strength, {}).get(STAGE_PRE_TOURNAMENT)
+        if not cell:
+            continue
+        tournament_mean_brier[strength] = {
+            "mean_brier": cell["mean_brier"],
+            "mean_brier_baseline": cell["mean_brier_baseline"],
+            "mean_brier_from_qf": cell["mean_brier_from_qf"],
+            "mean_brier_baseline_from_qf": cell["mean_brier_baseline_from_qf"],
+            "brier_skill": cell["brier_skill"],
+            "n_teams": len(cell.get("teams", [])),
+        }
+    payload["tournament_mean_brier"] = tournament_mean_brier
+
+    tournament_mean_log_loss: dict = {
+        "description": (
+            "Pre-tournament mean log-loss over reach events (R32 through champion)"
+        ),
+        "stages": list(SIM_EVENTS),
+        "qf_onward_stages": list(_QF_ONWARD_EVENTS),
+    }
+    for strength in STRENGTH_SOURCES:
+        cell = payload["strengths"].get(strength, {}).get(STAGE_PRE_TOURNAMENT)
+        if not cell:
+            continue
+        tournament_mean_log_loss[strength] = {
+            "mean_log_loss": cell["mean_log_loss"],
+            "mean_log_loss_baseline": cell["mean_log_loss_baseline"],
+            "mean_log_loss_from_qf": cell["mean_log_loss_from_qf"],
+            "mean_log_loss_baseline_from_qf": cell["mean_log_loss_baseline_from_qf"],
+            "log_loss_skill": cell["log_loss_skill"],
+            "n_teams": len(cell.get("teams", [])),
+        }
+    payload["tournament_mean_log_loss"] = tournament_mean_log_loss
+
     out = ARTIFACTS_EVALUATION / "simulation_metrics.json"
     out.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     return payload
@@ -276,6 +400,32 @@ def evaluate_simulations(matches: pd.DataFrame) -> dict:
 
 def print_simulation_summary(payload: dict) -> None:
     print("Simulation evaluation (2026):")
+    summary = payload.get("tournament_mean_brier", {})
+    if summary:
+        parts = []
+        for strength in STRENGTH_SOURCES:
+            cell = summary.get(strength)
+            if not cell:
+                parts.append(f"{strength}: missing")
+                continue
+            parts.append(
+                f"{strength} brier={cell['mean_brier']:.4f} "
+                f"from_qf={cell['mean_brier_from_qf']:.4f}"
+            )
+        print("  Pre-tournament mean Brier: " + " | ".join(parts))
+    ll_summary = payload.get("tournament_mean_log_loss", {})
+    if ll_summary:
+        parts = []
+        for strength in STRENGTH_SOURCES:
+            cell = ll_summary.get(strength)
+            if not cell:
+                parts.append(f"{strength}: missing")
+                continue
+            parts.append(
+                f"{strength} log_loss={cell['mean_log_loss']:.4f} "
+                f"from_qf={cell['mean_log_loss_from_qf']:.4f}"
+            )
+        print("  Pre-tournament mean log-loss: " + " | ".join(parts))
     for stage_meta in payload.get("stages", []):
         stage = stage_meta["id"]
         parts: list[str] = []
@@ -285,6 +435,7 @@ def print_simulation_summary(payload: dict) -> None:
                 parts.append(f"{strength}: missing")
                 continue
             parts.append(
-                f"{strength} trps={cell['trps']:.4f} brier={cell['mean_brier']:.4f}"
+                f"{strength} brier={cell['mean_brier']:.4f} "
+                f"log_loss={cell['mean_log_loss']:.4f} trps={cell['trps']:.4f}"
             )
         print(f"  {stage}: " + " | ".join(parts))
