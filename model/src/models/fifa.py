@@ -15,7 +15,7 @@ PSEUDO_ELO_SCALE = 25.0
 
 # Separate calibration used only for *seeding* fit_elo's initial ratings.
 # Unlike PSEUDO_ELO_BASE/SCALE above (which produce a ~1900-2100 scale used
-# for a standalone FIFA-only comparison model in evaluate.py), these constants
+# for a standalone FIFA-only comparison model in evaluate_matches.py), these constants
 # are tuned to land on the same numeric scale as our *trained* Elo ratings
 # (observed to span roughly 1330-1720, median ~1480 across a full training
 # run). Rank 1 seeds near the top of that range, and the bottom of the FIFA

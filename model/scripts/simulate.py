@@ -5,6 +5,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from config import ARTIFACTS_TRAINING, STAGE_ORDER
+from evaluate_simulation import evaluate_simulations, print_simulation_summary
 from ingest import load_matches
 from models.elo import EloModel
 from simulation.bracket import RealBracketSimulator
@@ -27,6 +28,8 @@ def main() -> None:
                 f"stage={stage} strength={strength}: top pick {top['team']} "
                 f"({top['p_win'] * 100:.1f}% win probability)"
             )
+
+    print_simulation_summary(evaluate_simulations(matches))
 
 
 if __name__ == "__main__":

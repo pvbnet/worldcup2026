@@ -48,6 +48,7 @@ Open **http://localhost:5173/** in the browser.
 
 - [docs/architecture.md](docs/architecture.md) — components, runtime modes, data flow
 - [docs/dev-setup.md](docs/dev-setup.md) — model pipeline, backend, frontend, API, prod-local test
+- [docs/evaluation.md](docs/evaluation.md) — match backtest and 2026 simulation forecast scores
 - [docs/docker-local.md](docs/docker-local.md) — build and run the Docker container locally
 - [docs/gcp-setup.md](docs/gcp-setup.md) — deploy to Cloud Run using the Docker image
 - [docs/firebase-hosting.md](docs/firebase-hosting.md) — public URL via Firebase Hosting (proxies to Cloud Run)

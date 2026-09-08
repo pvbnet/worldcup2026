@@ -57,5 +57,6 @@ GCP setup and final deployment are documented in: [gcp-setup.md](gcp-setup.md).
 - [README](../README.md) — quick start, tournament model, UI, data sources
 - [NOTICE](../NOTICE.md) — third-party data and what is committed
 - [dev-setup.md](dev-setup.md) — local dev setup for app/API development
+- [evaluation.md](evaluation.md) — match backtest and 2026 simulation forecast scores
 - [docker-local.md](docker-local.md) — build and run Docker container locally
 - [gcp-setup.md](gcp-setup.md) — Artifact Registry and Cloud Run

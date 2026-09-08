@@ -7,7 +7,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from config import ARTIFACTS_TRAINING, STAGE_ORDER
-from evaluate import evaluate_models
+from evaluate_matches import evaluate_matches
 from ingest import load_matches, normalize_matches
 from models.elo import fit_elo
 from models.fifa import seed_ratings_from_fifa
@@ -28,7 +28,7 @@ def main() -> None:
         elo.save(ARTIFACTS_TRAINING / f"elo_{stage}.json")
         print(f"Trained Elo for stage={stage}: {len(train_matches)} matches used.")
 
-    metrics = evaluate_models(matches)
+    metrics = evaluate_matches(matches)
     print("Training complete (Elo only).")
     for name, values in metrics.items():
         print(f"  {name}: log_loss={values['mean_log_loss']:.4f}")

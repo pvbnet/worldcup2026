@@ -76,7 +76,7 @@ def load_matches(year: int | None = None, played: bool | None = None) -> list[di
 
 
 def load_metrics() -> dict:
-    path = ARTIFACTS_EVALUATION / "metrics.json"
+    path = ARTIFACTS_EVALUATION / "match_metrics.json"
     if not path.exists():
         return {}
     return json.loads(path.read_text(encoding="utf-8"))

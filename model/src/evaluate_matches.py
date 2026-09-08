@@ -96,7 +96,7 @@ def _year_metrics(matches: pd.DataFrame, test_year: int) -> dict[str, dict]:
     return year_metrics
 
 
-def evaluate_models(matches: pd.DataFrame, training_frame: pd.DataFrame | None = None) -> dict:
+def evaluate_matches(matches: pd.DataFrame, training_frame: pd.DataFrame | None = None) -> dict:
     """Backtest Elo and FIFA strength sources on WC 2022 and WC 2026."""
     del training_frame  # unused; kept for call-site compatibility
 
@@ -125,6 +125,6 @@ def evaluate_models(matches: pd.DataFrame, training_frame: pd.DataFrame | None =
     if all(not payload["years"] for payload in metrics.values()):
         return {}
 
-    out = ARTIFACTS_EVALUATION / "metrics.json"
+    out = ARTIFACTS_EVALUATION / "match_metrics.json"
     out.write_text(json.dumps(metrics, indent=2), encoding="utf-8")
     return metrics
