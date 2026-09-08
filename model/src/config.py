@@ -12,6 +12,7 @@ ARTIFACTS_PREDICTIONS = MODEL_ROOT / "artifacts" / "predictions"
 HISTORICAL_YEARS = [2018, 2022]
 CURRENT_YEAR = 2026
 ALL_YEARS = HISTORICAL_YEARS + [CURRENT_YEAR]
+BACKTEST_YEARS = [2022, 2026]
 
 OPENFOOTBALL_BASE = (
     "https://raw.githubusercontent.com/openfootball/worldcup.json/master"

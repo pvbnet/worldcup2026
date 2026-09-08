@@ -336,5 +336,9 @@
     }
   },
   "tuning_snapshot": "2017-12",
-  "display_snapshot": "2026-04"
+  "display_snapshot": "2026-04",
+  "backtest_snapshots": {
+    "2022": "2022-10",
+    "2026": "2026-04"
+  }
 }

@@ -36,7 +36,7 @@ wc_qualifiers/2022.json, 2026.json
 Artifacts are written to:
 - `model/data/` — raw and processed match data, plus `wc2026_r32_bracket.json` (the hardcoded 2026 Round-of-32 slot template + Annex C third-place table)
 - `model/artifacts/training/` — one Elo model per stage, `elo_{stage}.json` (`stage` ∈ `pre_tournament, group, r32, r16, qf, sf, complete`)
-- `model/artifacts/evaluation/` — backtest metrics (Elo vs FIFA on WC 2022; always trained on data before 2022, independent of the stage selector)
+- `model/artifacts/evaluation/` — backtest metrics (Elo vs FIFA on WC 2022 and WC 2026; Elo trained only on matches before each tournament's first kickoff, FIFA uses that year's pre-tournament snapshot; independent of the stage selector)
 - `model/artifacts/predictions/` — stage-reach and win probabilities, `worldcup_{stage}_{strength}.json`
 
 Pre-built files under `model/artifacts/` are committed so the dashboard runs without re-simulating; regenerate with `train.py` / `simulate.py` or **Refresh data** in the UI.

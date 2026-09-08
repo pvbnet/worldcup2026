@@ -47,6 +47,11 @@ def load_fifa_snapshot(snapshot_id: str | None = None) -> FifaSnapshot:
     )
 
 
+def backtest_fifa_snapshot(test_year: int) -> str:
+    payload = load_fifa_data()
+    return payload["backtest_snapshots"][str(test_year)]
+
+
 def pseudo_elo_from_rank(rank: int) -> float:
     rank = max(int(rank), 1)
     return PSEUDO_ELO_BASE - PSEUDO_ELO_SCALE * math.log2(rank)
