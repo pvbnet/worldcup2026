@@ -2,6 +2,15 @@
 
 Build and run the dashboard container before pushing to GCP.
 
+## Prerequisites
+
+- Docker installed and engine running.
+- Add your user to the `docker` group (optional but recommended):
+
+```bash
+sudo usermod -aG docker $USER && newgrp docker
+```
+
 ## Start the Docker Engine if not already running
 
 ```bash
@@ -63,24 +72,7 @@ Reopen WSL in terminal, then:
 ```bash
 cat /etc/resolv.conf          # should show 8.8.8.8, not 10.255.255.254
 sudo service docker start
-sudo docker pull public.ecr.aws/docker/library/node:20-bookworm-slim
+docker pull public.ecr.aws/docker/library/node:20-bookworm-slim
 cd ~/work/repos/worldcup2026
-sudo docker build -t worldcup2026-dashboard .
+docker build -t worldcup2026-dashboard .
 ```
-
-Keep `"ipv6": false` in `/etc/docker/daemon.json` if you added it earlier.
-
-## WSL issue: `network is unreachable` on IPv6
-
-If pulls fail with an IPv6 address (`dial tcp [2606:...]:443`):
-
-```bash
-printf '%s\n' \
-  'net.ipv6.conf.all.disable_ipv6 = 1' \
-  'net.ipv6.conf.default.disable_ipv6 = 1' \
-  | sudo tee /etc/sysctl.d/99-disable-ipv6.conf
-sudo sysctl -p /etc/sysctl.d/99-disable-ipv6.conf
-sudo service docker restart
-```
-
-**Check:** `curl -4 -s -o /dev/null -w "%{http_code}\n" https://public.ecr.aws/` → 308 is OK.

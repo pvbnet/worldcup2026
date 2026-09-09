@@ -10,9 +10,24 @@ REPO="${REPO:-worldcup2026}"
 SERVICE="${SERVICE:-worldcup2026-dashboard}"
 IMAGE="${IMAGE:-${REGION}-docker.pkg.dev/${PROJECT_ID}/${REPO}/dashboard:latest}"
 
+# Check if Docker is installed and running
 if ! command -v docker >/dev/null 2>&1; then
   echo "Docker not found. Install: https://docs.docker.com/engine/install/" >&2
   exit 1
+fi
+if ! docker info >/dev/null 2>&1; then
+  echo "Docker is not running. Starting it ..."
+  sudo service docker start
+  for _ in $(seq 1 30); do
+    if docker info >/dev/null 2>&1; then
+      break
+    fi
+    sleep 1
+  done
+  if ! docker info >/dev/null 2>&1; then
+    echo "Docker did not become ready. Try: sudo service docker start" >&2
+    exit 1
+  fi
 fi
 if ! command -v gcloud >/dev/null 2>&1; then
   echo "gcloud not found. Install: https://cloud.google.com/sdk/docs/install" >&2

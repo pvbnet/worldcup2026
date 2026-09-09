@@ -38,19 +38,20 @@ The simulator reconstructs the 2026 World Cup format for every stage:
 1. **Groups** — all 72 group matches are simulated from scratch.
 2. **Round of 32** — resolved from group standings following FIFA's published Round-of-32 slot template and best-third-place table.
 3. **Round of 16 → Quarterfinals → Semifinals → Final** — a feeder tree is derived once from the completed 2026 match data. This tree correctly propagates simulated results as well as the real ones.
-4. Rounds at or before the stage cutoff use the real recorded winner; rounds after it sample a winner from the active Elo/FIFA ratings each Monte Carlo trial.
+
+Rounds at or before the selected stage cutoff use the real recorded winner; rounds after it sample a winner from the active Elo/FIFA ratings each Monte Carlo trial.
 
 From many trials the dashboard reports **P(R32), P(R16), P(QF), P(SF), P(Final), P(Win WC)**. For stages ≤ the cutoff these are exactly 0 or 1 (deterministic, since they're already known).
 
 ## Dashboard UI
 
+Main pages: **Predictions**, **Teams & groups**, **Knockout Stage**.
+
 A **Stage completed (played)** control in the header (default: **Pre-tournament**) applies to every page.
 
 - **Predictions** — Elo/FIFA toggle; Monte Carlo control (**Cached** by default, or 2500 / 5000 / 10000 / 25000 / 50000 live runs). Cached loads the committed 10,000-run artifacts; choosing a count re-simulates the current stage now. Changing stage snaps back to Cached. Rankings table shows stage-reach probabilities.
 - **Teams & groups** — group standings and team detail. A team's "Recent matches" list shows matches within the selected stage's played rounds.
-- **Knockout Stage** — actual 2026 knockout fixtures, masked to the selected stage: rounds at or before the cutoff show real scores; later rounds show placeholders.
-
-Knockout scores include full-time scores and results from extra-time (`aet`), and penalties (`p`) when present.
+- **Knockout Stage** — actual 2026 knockout fixtures, masked to the selected stage: rounds at or before the cutoff show real scores; later rounds show placeholders. Knockout scores include full-time scores and results from extra-time (`aet`), and penalties (`p`) when present.
 
 ## Data sources
 
@@ -96,12 +97,12 @@ Open **http://localhost:5173/** in the browser.
 
 ## Documentation
 
-- [docs/evaluation.md](docs/evaluation.md) — match backtest and 2026 simulation forecast scores
+- [docs/evaluation.md](docs/evaluation.md) — predictions evaluation methodology
 - [docs/architecture.md](docs/architecture.md) — overview of components, runtime modes, data flow
-- [docs/dev-setup.md](docs/dev-setup.md) — model pipeline, backend, frontend, API, prod-local test
-- [docs/docker-local.md](docs/docker-local.md) — build and run the Docker container locally
-- [docs/gcp-setup.md](docs/gcp-setup.md) — deploy to Cloud Run using the Docker image
-- [docs/firebase-hosting.md](docs/firebase-hosting.md) — public URL via Firebase Hosting
+- [docs/dev-setup.md](docs/dev-setup.md) — development setup, model pipeline, backend, frontend, API
+- [docs/docker-local.md](docs/docker-local.md) — how to build and run the Docker container locally
+- [docs/gcp-setup.md](docs/gcp-setup.md) — how to deploy to Cloud Run using the Docker image
+- [docs/firebase-hosting.md](docs/firebase-hosting.md) — how to deploy to Firebase Hosting
 
 ## License and third-party data
 
