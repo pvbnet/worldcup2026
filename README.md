@@ -72,7 +72,7 @@ git clone https://github.com/pvbnet/worldcup2026.git
 cd worldcup2026
 ```
 
-Configure Node via [`scripts/env.sh`](scripts/env.sh) if `node` is not already on your PATH.
+Configure Node via [`dashboard/env.sh`](dashboard/env.sh) if `node` is not already on your PATH.
 
 Set up the backend and frontend dependencies:
 
@@ -89,7 +89,7 @@ npm install
 Start the dashboard from the repo root:
 
 ```bash
-./start-dashboard-local.sh
+./dashboard/run-dev.sh
 ```
 
 Open **http://localhost:5173/** in the browser.

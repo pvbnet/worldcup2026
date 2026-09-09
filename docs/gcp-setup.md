@@ -108,7 +108,15 @@ The command prints the public HTTPS URL. Check `GET /api/health` on that host.
 
 ## 6. Repeat deploys
 
-After code or image changes:
+After code or image changes, from the repo root:
+
+```bash
+./scripts/gcp-deploy.sh
+```
+
+That rebuilds the image, pushes it to Artifact Registry, and deploys to Cloud Run. Override `PROJECT_ID`, `REGION`, `REPO`, `SERVICE`, or `IMAGE` if needed.
+
+Or run the steps by hand:
 
 ```bash
 docker build -t "$IMAGE" . && docker push "$IMAGE"
@@ -123,7 +131,7 @@ gcloud run deploy worldcup2026-dashboard --image "$IMAGE" --region "$REGION"
 
 - **Cloud Run settings only** (memory, CPU, timeout, `--max-instances`, env vars) — run `gcloud run deploy` with the existing `$IMAGE` and updated flags; no `docker build` or push.
 - **New World Cup match data only** — locally, re-run `fetch_data.py --force --competitions world_cup` then ingest/train/simulate, then rebuild and deploy the image so the container picks up new artifacts.
-- **Docs or local dev** — README, scripts used only on your machine, and `./start-dashboard-local.sh` do not affect the deployed container.
+- **Docs or local dev** — README, scripts used only on your machine, and `./dashboard/run-dev.sh` do not affect the deployed container.
 
 If you changed code but skip rebuild/push, Cloud Run keeps serving the previous image; redeploy alone does not pick up repo changes.
 

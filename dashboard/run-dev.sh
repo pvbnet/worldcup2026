@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
+# Development: Vite (:5173) + FastAPI (:8000).
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "$0")" && pwd)"
-# shellcheck source=scripts/env.sh
-source "$ROOT/scripts/env.sh"
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+# shellcheck source=env.sh
+source "$(dirname "$0")/env.sh"
 
 UVICORN="${ROOT}/dashboard/backend/.venv/bin/uvicorn"
 if [[ ! -x "$UVICORN" ]]; then

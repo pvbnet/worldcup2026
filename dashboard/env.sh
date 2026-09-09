@@ -1,4 +1,4 @@
-# Node.js PATH for local dev scripts (run.sh, build.sh, start-dashboard-local.sh).
+# Node.js PATH for local dashboard scripts (run-dev.sh, frontend/run.sh, frontend/build.sh).
 # Edit for your machine. Do not commit personal paths unless updating the project default.
 #
 # Default: user-local Node 20 tarball under ~/.local.

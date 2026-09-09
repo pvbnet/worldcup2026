@@ -33,15 +33,25 @@ flowchart LR
   One --> API2[same FastAPI /api]
 ```
 
-**Dev (local)** — Two processes: Vite on port **5173** (proxies `/api` to the backend) and FastAPI on **8000**. Use [`./start-dashboard-local.sh`](../start-dashboard-local.sh) from the repo root.
+**Dev (local)** — Two processes: Vite on port **5173** (proxies `/api` to the backend) and FastAPI on **8000**. Use [`./dashboard/run-dev.sh`](../dashboard/run-dev.sh) from the repo root.
 
-**Prod-style (local)** — Single process: [`run-prod.sh`](../dashboard/backend/run-prod.sh) runs uvicorn on `$PORT` (default **8080**). [`main.py`](../dashboard/backend/app/main.py) serves `/api/*`, static files, and SPA routes. Build frontend first (`dashboard/frontend/build.sh`). Same as production on Google Cloud Platform.
+**Prod-style (local)** — Single process: [`./dashboard/run-prod.sh`](../dashboard/run-prod.sh) runs uvicorn on `$PORT` (default **8080**). [`main.py`](../dashboard/backend/app/main.py) serves `/api/*`, static files, and SPA routes. Build frontend first (`dashboard/frontend/build.sh`). Same as production on Google Cloud Platform.
 
 ## Data and request flow
 
 - **Warm start:** The UI loads committed prediction JSON under `model/artifacts/predictions/` on startup (and whenever **Cached** is selected). World Cup root raw JSON (`2018`/`2022`/`2026`) and `matches.parquet` are **not** in git; run `fetch_data.py` + `ingest.py`.
-- **Rankings:** `GET /api/teams/rankings` reads those artifacts. Choosing a live run count in the UI calls `POST /api/simulations` then polls `GET /api/simulations/{job_id}`; live jobs do not overwrite the committed files. Changing stage resets the control to Cached.
+- **Live re-sim:** Choosing a Monte Carlo run count starts a background job; results are not written back to the committed files. Changing stage snaps the control back to Cached.
 - **Stage masking:** Groups and knockout pages hide future results in the browser; the API returns the full match/group dataset for the year.
+
+### API endpoints
+
+- `GET /api/teams/rankings?strength=elo&stage=pre_tournament` — cached rankings from committed artifacts (`resimulate=false`, the UI default on startup and stage change); `stage` defaults to `pre_tournament`, invalid values 400
+- `POST /api/simulations` — body `{ "strength": "elo"|"fifa", "stage": "pre_tournament", "simulations": 10000 }` → `{ "job_id" }` (`simulations` 50–50000). Live jobs do not overwrite committed prediction JSON.
+- `GET /api/simulations/{job_id}` — `{ "status", "progress", "message", "result?" }` (progress every 100 sims)
+- `GET /api/predictions/worldcup?strength=elo&stage=pre_tournament`
+- `GET /api/matches?year=2026` — always the full real dataset; stage-aware masking happens client-side
+- `GET /api/groups?year=2026` — always the full real dataset; stage-aware masking happens client-side
+- `GET /api/metrics`
 
 ## Deployment on Google Cloud Platform (GCP)
 

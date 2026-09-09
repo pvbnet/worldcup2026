@@ -77,7 +77,7 @@ curl http://localhost:8000/api/health
 
 ## 3. Dashboard frontend
 
-Node.js 18+ (Node 20 recommended). Local run scripts source [`scripts/env.sh`](../scripts/env.sh), which by default prepends a user-local Node install under `~/.local` when that directory exists. Edit that file — or comment out the block — if `node`/`npm` are already on your PATH (nvm, apt, fnm).
+Node.js 18+ (Node 20 recommended). Local run scripts source [`dashboard/env.sh`](../dashboard/env.sh), which by default prepends a user-local Node install under `~/.local` when that directory exists. Edit that file — or comment out the block — if `node`/`npm` are already on your PATH (nvm, apt, fnm).
 
 Local dev test (using Vite):
 
@@ -103,7 +103,7 @@ The production frontend build output is located at: `dashboard/artifacts/build/`
 One process serves the **built** frontend and the API at: **http://localhost:8080/**
 
 ```bash
-cd dashboard/backend && ./run-prod.sh
+./dashboard/run-prod.sh
 ```
 
 Sanity checks:
@@ -113,20 +113,23 @@ curl http://localhost:8080/api/health
 curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/teams
 ```
 
-## API endpoints
+## 5. Build Docker image and deploy to Cloud Run
 
-- `GET /api/teams/rankings?strength=elo&stage=pre_tournament` — cached rankings from committed artifacts (`resimulate=false`, the UI default on startup and stage change); `stage` defaults to `pre_tournament`, invalid values 400
-- `POST /api/simulations` — body `{ "strength": "elo"|"fifa", "stage": "pre_tournament", "simulations": 10000 }` → `{ "job_id" }` (`simulations` 50–50000). Live jobs do not overwrite committed prediction JSON.
-- `GET /api/simulations/{job_id}` — `{ "status", "progress", "message", "result?" }` (progress every 100 sims)
-- `GET /api/predictions/worldcup?strength=elo&stage=pre_tournament`
-- `GET /api/matches?year=2026` — always the full real dataset; stage-aware masking happens client-side
-- `GET /api/groups?year=2026` — always the full real dataset; stage-aware masking happens client-side
-- `GET /api/metrics`
+```bash
+./scripts/gcp-deploy.sh
+```
+That rebuilds the image, pushes it to Artifact Registry, and deploys to Cloud Run. 
 
-## See also
+## 6. Deploy Firebase Hosting
 
-- [README](../README.md) — overview, quick start, tournament model, UI
-- [architecture.md](architecture.md) — high-level architecture and dataflow
-- [docker-local.md](docker-local.md) — container build and run
-- [gcp-setup.md](gcp-setup.md) — Google Cloud setup: artifact registry and cloud run
+```bash
+./scripts/firebase-deploy.sh
+```
+This updates Firebase hosting rewrites/CDN only — it does **not** build or push the Docker image.
+
+## Further details
+
+- [architecture.md](architecture.md) — high-level architecture, dataflow, API endpoints
+- [docker-local.md](docker-local.md) — local container build and test run
+- [gcp-setup.md](gcp-setup.md) — deploy to Cloud Run using the Docker image
 - [firebase-hosting.md](firebase-hosting.md) — public URL via Firebase Hosting

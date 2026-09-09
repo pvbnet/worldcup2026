@@ -78,18 +78,9 @@ Open https://worldcup-dashboard.web.app/ in a browser.
 
 | Change | Action |
 |--------|--------|
-| App code, Docker image, deps | Rebuild/push image + `gcloud run deploy` — [gcp-setup.md §6](gcp-setup.md#6-repeat-deploys) |
-| `firebase.json` / rewrite only | `firebase deploy --only hosting` |
-| Cloud Run settings only (memory, CPU, timeout) | `gcloud run deploy` with same image — no Firebase deploy |
-
-## Hosting timeout caveat
-
-Firebase Hosting proxies requests with a **~60 second timeout**, regardless of Cloud Run’s 3600s setting.
-
-| Flow | Via Firebase URL |
-|------|------------------|
-| Pages, rankings, groups, knockout | OK |
-| `POST /api/simulations` + poll job status | OK (POST returns quickly; polls are short) |
+| App code, Docker image, deps | `./scripts/gcp-deploy.sh` |
+| Firebase `.json` / rewrite only | `./scripts/firebase-deploy.sh` |
+| Cloud Run settings only (memory, CPU, timeout) | `gcloud run deploy` with same image |
 
 ## See also
 
