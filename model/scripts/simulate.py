@@ -13,7 +13,7 @@ from simulation.bracket import RealBracketSimulator
 
 def main() -> None:
     matches = load_matches()
-    n_sims = 2000
+    n_sims = 3000
 
     for stage in STAGE_ORDER:
         elo_path = ARTIFACTS_TRAINING / f"elo_{stage}.json"

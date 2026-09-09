@@ -1,7 +1,7 @@
 {
   "strength": "fifa",
   "stage": "qf",
-  "simulations": 2000,
+  "simulations": 3000,
   "n_teams": 48,
   "teams": [
     {
@@ -10,25 +10,12 @@
       "p_r16": 1.0,
       "p_qf": 1.0,
       "p_sf": 1.0,
-      "p_final": 0.5585,
-      "p_win": 0.316,
+      "p_final": 0.5576666666666666,
+      "p_win": 0.317,
       "rating": 1764.6729872180167,
       "active_rating": 2100.0,
       "group": "Group I",
       "rank": 1
-    },
-    {
-      "team": "Spain",
-      "p_r32": 1.0,
-      "p_r16": 1.0,
-      "p_qf": 1.0,
-      "p_sf": 1.0,
-      "p_final": 0.4415,
-      "p_win": 0.2435,
-      "rating": 1757.063106355403,
-      "active_rating": 2075.0,
-      "group": "Group H",
-      "rank": 2
     },
     {
       "team": "Argentina",
@@ -36,11 +23,24 @@
       "p_r16": 1.0,
       "p_qf": 1.0,
       "p_sf": 1.0,
-      "p_final": 0.531,
-      "p_win": 0.242,
+      "p_final": 0.5296666666666666,
+      "p_win": 0.24133333333333334,
       "rating": 1750.7728297642448,
       "active_rating": 2060.375937481971,
       "group": "Group J",
+      "rank": 2
+    },
+    {
+      "team": "Spain",
+      "p_r32": 1.0,
+      "p_r16": 1.0,
+      "p_qf": 1.0,
+      "p_sf": 1.0,
+      "p_final": 0.44233333333333336,
+      "p_win": 0.24033333333333334,
+      "rating": 1757.063106355403,
+      "active_rating": 2075.0,
+      "group": "Group H",
       "rank": 3
     },
     {
@@ -49,8 +49,8 @@
       "p_r16": 1.0,
       "p_qf": 1.0,
       "p_sf": 1.0,
-      "p_final": 0.469,
-      "p_win": 0.1985,
+      "p_final": 0.4703333333333333,
+      "p_win": 0.20133333333333334,
       "rating": 1719.0456692185262,
       "active_rating": 2050.0,
       "group": "Group L",

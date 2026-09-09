@@ -1,7 +1,7 @@
 {
   "strength": "fifa",
   "stage": "sf",
-  "simulations": 2000,
+  "simulations": 3000,
   "n_teams": 48,
   "teams": [
     {
@@ -11,7 +11,7 @@
       "p_qf": 1.0,
       "p_sf": 1.0,
       "p_final": 1.0,
-      "p_win": 0.5165,
+      "p_win": 0.5146666666666667,
       "rating": 1773.413498289374,
       "active_rating": 2075.0,
       "group": "Group H",
@@ -24,7 +24,7 @@
       "p_qf": 1.0,
       "p_sf": 1.0,
       "p_final": 1.0,
-      "p_win": 0.4835,
+      "p_win": 0.48533333333333334,
       "rating": 1765.3157878654652,
       "active_rating": 2060.375937481971,
       "group": "Group J",
