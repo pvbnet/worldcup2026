@@ -1,7 +1,7 @@
 import { Navigate, NavLink, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import { useDashboard } from "./hooks/useApi";
-import { Stage, Strength } from "./api/client";
+import { SIM_MODE_CACHED, SimMode, Stage, Strength } from "./api/client";
 import { StageSelector } from "./components/Dashboard";
 import { RankingsPage } from "./pages/RankingsPage";
 import { GroupsPage } from "./pages/GroupsPage";
@@ -10,7 +10,7 @@ import { BracketPage } from "./pages/BracketPage";
 export default function App() {
   const [strength, setStrength] = useState<Strength>("elo");
   const [stage, setStage] = useState<Stage>("pre_tournament");
-  const [simulations, setSimulations] = useState(3000);
+  const [simMode, setSimMode] = useState<SimMode>(SIM_MODE_CACHED);
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
   const {
     teams,
@@ -20,7 +20,7 @@ export default function App() {
     progress,
     progressMessage,
     error,
-  } = useDashboard(strength, simulations, stage);
+  } = useDashboard(strength, simMode, stage);
 
   return (
     <div className="app">
@@ -31,7 +31,14 @@ export default function App() {
             Championship odds from Monte Carlo sims driven by either trained Elo
             ratings or FIFA rankings.
           </p>
-          <StageSelector stage={stage} onChange={setStage} disabled={simulating} />
+          <StageSelector
+            stage={stage}
+            onChange={(next) => {
+              setSimMode(SIM_MODE_CACHED);
+              setStage(next);
+            }}
+            disabled={simulating}
+          />
           <div className="header-toolbar">
             <nav className="top-nav">
               <NavLink to="/" end>
@@ -55,8 +62,8 @@ export default function App() {
                 strength={strength}
                 onStrengthChange={setStrength}
                 stage={stage}
-                simulations={simulations}
-                onSimulationsChange={setSimulations}
+                simMode={simMode}
+                onSimModeChange={setSimMode}
                 teams={teams}
                 simulating={simulating}
                 progress={progress}

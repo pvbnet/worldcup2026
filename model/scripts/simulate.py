@@ -1,21 +1,37 @@
 #!/usr/bin/env python3
 """Run Monte Carlo for every stage × strength and write prediction JSON."""
 
+import argparse
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from config import ARTIFACTS_TRAINING, STAGE_ORDER
+from config import ARTIFACTS_TRAINING, DEFAULT_SIMULATIONS, STAGE_ORDER
 from evaluate_simulation import evaluate_simulations, print_simulation_summary
 from ingest import load_matches
 from models.elo import EloModel
 from simulation.bracket import RealBracketSimulator
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Run Monte Carlo for every stage × strength and write prediction JSON."
+    )
+    parser.add_argument(
+        "-n",
+        "--simulations",
+        type=int,
+        default=DEFAULT_SIMULATIONS,
+        help=f"Monte Carlo trial count (default: {DEFAULT_SIMULATIONS})",
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
     matches = load_matches()
-    n_sims = 3000
+    n_sims = args.simulations
 
     for stage in STAGE_ORDER:
         elo_path = ARTIFACTS_TRAINING / f"elo_{stage}.json"

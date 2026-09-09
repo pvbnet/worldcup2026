@@ -1,5 +1,9 @@
 export type Strength = "elo" | "fifa";
 
+export const SIM_MODE_CACHED = "cached" as const;
+export type SimMode = typeof SIM_MODE_CACHED | number;
+export const DEFAULT_SIMULATIONS = 10000;
+
 export type Stage =
   | "pre_tournament"
   | "group"
@@ -99,7 +103,7 @@ export async function fetchRankings(
 export async function startSimulation(
   strength: Strength,
   stage: Stage,
-  simulations = 3000,
+  simulations = DEFAULT_SIMULATIONS,
 ): Promise<{ job_id: string }> {
   const res = await fetch("/api/simulations", {
     method: "POST",

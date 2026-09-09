@@ -14,6 +14,7 @@ if str(SRC) not in sys.path:
 from config import (
     ARTIFACTS_PREDICTIONS,
     ARTIFACTS_TRAINING,
+    DEFAULT_SIMULATIONS,
     DEFAULT_STAGE,
     DEFAULT_STRENGTH,
     STAGE_ORDER,
@@ -55,7 +56,7 @@ def build_rankings_payload(
     strength: str = DEFAULT_STRENGTH,
     stage: str = DEFAULT_STAGE,
     resimulate: bool = False,
-    simulations: int = 3000,
+    simulations: int = DEFAULT_SIMULATIONS,
     on_progress: ProgressCallback | None = None,
 ) -> dict:
     strength = normalize_strength(strength)
@@ -67,15 +68,19 @@ def build_rankings_payload(
     active = ratings_for_strength(pure_elo, fifa, strength, teams=teams)
 
     path = ARTIFACTS_PREDICTIONS / f"worldcup_{stage}_{strength}.json"
-    if resimulate or not path.exists():
+    if resimulate:
+        simulator = RealBracketSimulator(matches, pure_elo, strength=strength, stage=stage)
+        pred_df = simulator.run(simulations=simulations, on_progress=on_progress)
+        resimulated = True
+    elif path.exists():
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        pred_df = pd.DataFrame(payload.get("teams", []))
+        resimulated = False
+    else:
         simulator = RealBracketSimulator(matches, pure_elo, strength=strength, stage=stage)
         pred_df = simulator.run(simulations=simulations, on_progress=on_progress)
         simulator.save_predictions(pred_df, simulations=simulations)
         resimulated = True
-    else:
-        payload = json.loads(path.read_text(encoding="utf-8"))
-        pred_df = pd.DataFrame(payload.get("teams", []))
-        resimulated = False
 
     if pred_df.empty:
         return {

@@ -126,6 +126,29 @@ header > div:first-child {
 
 .predictions-intro .page-toolbar {
   margin: 12px 0 0;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.sim-count-control {
+  margin-left: auto;
+  align-items: flex-end;
+}
+
+.sim-count-control .strength-label {
+  font-size: 0.75rem;
+}
+
+.sim-count-control .segmented {
+  flex-wrap: wrap;
+  overflow: visible;
+}
+
+.sim-count-control .segmented button {
+  width: auto;
+  flex: 0 0 auto;
+  padding: 4px 8px;
+  font-size: 0.75rem;
 }
 
 .segmented {
@@ -148,11 +171,6 @@ header > div:first-child {
 .strength-toggle .segmented button {
   width: 64px;
   flex: 0 0 64px;
-}
-
-.sim-count-control .segmented button {
-  width: 72px;
-  flex: 0 0 72px;
 }
 
 .segmented button.active {

@@ -4,7 +4,7 @@ import {
   SimulationOverlay,
   StrengthToggle,
 } from "../components/Dashboard";
-import { Stage, Strength, TeamPrediction } from "../api/client";
+import { SimMode, Stage, Strength, TeamPrediction } from "../api/client";
 
 const STRENGTH_HELP =
   "Predict tournament outcomes using Monte Carlo simulations based on trained Elo ratings or FIFA rankings.";
@@ -37,8 +37,8 @@ interface Props {
   strength: Strength;
   onStrengthChange: (value: Strength) => void;
   stage: Stage;
-  simulations: number;
-  onSimulationsChange: (value: number) => void;
+  simMode: SimMode;
+  onSimModeChange: (value: SimMode) => void;
   teams: TeamPrediction[];
   simulating: boolean;
   progress: number;
@@ -51,8 +51,8 @@ export function RankingsPage({
   strength,
   onStrengthChange,
   stage,
-  simulations,
-  onSimulationsChange,
+  simMode,
+  onSimModeChange,
   teams,
   simulating,
   progress,
@@ -73,8 +73,8 @@ export function RankingsPage({
             disabled={simulating}
           />
           <SimCountControl
-            value={simulations}
-            onChange={onSimulationsChange}
+            value={simMode}
+            onChange={onSimModeChange}
             disabled={simulating}
           />
         </div>

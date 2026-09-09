@@ -18,7 +18,7 @@ pip install -r requirements.txt
 python scripts/fetch_data.py   # download World Cup + Euro/Copa/AFCON/qualifiers
 python scripts/ingest.py       # processes and normalizes raw files downloaded by fetch_data.py
 python scripts/train.py        # writes elo_{stage}.json for every stage
-python scripts/simulate.py     # writes worldcup_{stage}_{strength}.json for every stage × strength
+python scripts/simulate.py     # writes worldcup_{stage}_{strength}.json (default 10000 runs; --simulations N)
 python scripts/evaluate.py     # writes match_metrics.json and simulation_metrics.json
 ```
 
@@ -115,8 +115,8 @@ curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/teams
 
 ## API endpoints
 
-- `GET /api/teams/rankings?strength=elo&stage=pre_tournament` — cached rankings when warm (no resim); `stage` defaults to `pre_tournament`, invalid values 400
-- `POST /api/simulations` — body `{ "strength": "elo"|"fifa", "stage": "pre_tournament", "simulations": 3000 }` → `{ "job_id" }`
+- `GET /api/teams/rankings?strength=elo&stage=pre_tournament` — cached rankings from committed artifacts (`resimulate=false`, the UI default on startup and stage change); `stage` defaults to `pre_tournament`, invalid values 400
+- `POST /api/simulations` — body `{ "strength": "elo"|"fifa", "stage": "pre_tournament", "simulations": 10000 }` → `{ "job_id" }` (`simulations` 50–50000). Live jobs do not overwrite committed prediction JSON.
 - `GET /api/simulations/{job_id}` — `{ "status", "progress", "message", "result?" }` (progress every 100 sims)
 - `GET /api/predictions/worldcup?strength=elo&stage=pre_tournament`
 - `GET /api/matches?year=2026` — always the full real dataset; stage-aware masking happens client-side

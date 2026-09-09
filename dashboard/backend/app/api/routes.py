@@ -8,6 +8,7 @@ from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel, Field
 
 from services.loader import (
+    DEFAULT_SIMULATIONS,
     DEFAULT_STAGE,
     STAGE_ORDER,
     group_standings,
@@ -35,7 +36,7 @@ def _validate_stage(stage: str) -> str:
 class SimulationRequest(BaseModel):
     strength: str = "elo"
     stage: str = DEFAULT_STAGE
-    simulations: int = Field(default=3000, ge=50, le=10000)
+    simulations: int = Field(default=DEFAULT_SIMULATIONS, ge=50, le=50000)
 
 
 def _set_job(job_id: str, **updates: Any) -> None:

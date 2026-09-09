@@ -2,15 +2,18 @@ import { useCallback, useEffect, useState } from "react";
 import {
   fetchGroups,
   fetchMatches,
+  fetchRankings,
   pollSimulation,
   startSimulation,
   MatchRow,
   RankingsResponse,
+  SIM_MODE_CACHED,
+  SimMode,
   Stage,
   Strength,
 } from "../api/client";
 
-export function useDashboard(strength: Strength, simulations: number, stage: Stage) {
+export function useDashboard(strength: Strength, simMode: SimMode, stage: Stage) {
   const [payload, setPayload] = useState<RankingsResponse | null>(null);
   const [matches, setMatches] = useState<MatchRow[]>([]);
   const [groups, setGroups] = useState<Record<string, unknown[]>>({});
@@ -37,12 +40,28 @@ export function useDashboard(strength: Strength, simulations: number, stage: Sta
   useEffect(() => {
     let cancelled = false;
     (async () => {
+      setError(null);
+      if (simMode === SIM_MODE_CACHED) {
+        setSimulating(false);
+        setProgress(0);
+        setProgressMessage("");
+        try {
+          const rankings = await fetchRankings(strength, stage);
+          if (cancelled) return;
+          setPayload(rankings);
+        } catch (err) {
+          if (!cancelled) {
+            setError(err instanceof Error ? err.message : "Failed to load rankings");
+          }
+        }
+        return;
+      }
+
       setSimulating(true);
       setProgress(0);
       setProgressMessage("Running Monte Carlo simulations…");
-      setError(null);
       try {
-        const { job_id } = await startSimulation(strength, stage, simulations);
+        const { job_id } = await startSimulation(strength, stage, simMode);
         if (cancelled) return;
         const rankings = await pollSimulation(job_id, (p, message) => {
           if (cancelled) return;
@@ -63,7 +82,7 @@ export function useDashboard(strength: Strength, simulations: number, stage: Sta
     return () => {
       cancelled = true;
     };
-  }, [strength, simulations, stage]);
+  }, [strength, simMode, stage]);
 
   return {
     teams: payload?.teams ?? [],

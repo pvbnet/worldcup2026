@@ -63,6 +63,9 @@ COMPETITION_WEIGHTS: dict[str, float] = {
 DEFAULT_STRENGTH = "elo"
 STRENGTH_SOURCES = ("elo", "fifa")
 
+# Default Monte Carlo trial count for simulate.py, the rankings API, and the UI.
+DEFAULT_SIMULATIONS = 10000
+
 # Tournament-stage cutoff: which real 2026 World Cup results are "known" (used
 # for training + locked in as fixed outcomes) vs. left for Monte Carlo
 # simulation. Ordered from earliest to latest.

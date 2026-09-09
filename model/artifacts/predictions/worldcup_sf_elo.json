@@ -1,7 +1,7 @@
 {
   "strength": "elo",
   "stage": "sf",
-  "simulations": 3000,
+  "simulations": 10000,
   "n_teams": 48,
   "teams": [
     {
@@ -11,7 +11,7 @@
       "p_qf": 1.0,
       "p_sf": 1.0,
       "p_final": 1.0,
-      "p_win": 0.5043333333333333,
+      "p_win": 0.5118,
       "rating": 1773.413498289374,
       "active_rating": 1773.413498289374,
       "group": "Group H",
@@ -24,7 +24,7 @@
       "p_qf": 1.0,
       "p_sf": 1.0,
       "p_final": 1.0,
-      "p_win": 0.49566666666666664,
+      "p_win": 0.4882,
       "rating": 1765.3157878654652,
       "active_rating": 1765.3157878654652,
       "group": "Group J",

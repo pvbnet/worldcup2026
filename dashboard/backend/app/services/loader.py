@@ -17,7 +17,7 @@ DATA_PROCESSED = MODEL_ROOT / "data" / "processed"
 if str(MODEL_SRC) not in sys.path:
     sys.path.insert(0, str(MODEL_SRC))
 
-from config import DEFAULT_STAGE, STAGE_ORDER  # noqa: E402
+from config import DEFAULT_SIMULATIONS, DEFAULT_STAGE, STAGE_ORDER  # noqa: E402
 from rankings_api import (  # noqa: E402
     ProgressCallback,
     build_rankings_payload,
@@ -39,7 +39,7 @@ def load_rankings(
     strength: str = "elo",
     stage: str = DEFAULT_STAGE,
     resimulate: bool = False,
-    simulations: int = 3000,
+    simulations: int = DEFAULT_SIMULATIONS,
     on_progress: ProgressCallback | None = None,
 ) -> dict:
     return build_rankings_payload(

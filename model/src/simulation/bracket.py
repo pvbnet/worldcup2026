@@ -32,6 +32,7 @@ import pandas as pd
 from config import (
     ARTIFACTS_PREDICTIONS,
     CURRENT_YEAR,
+    DEFAULT_SIMULATIONS,
     DEFAULT_STRENGTH,
     KNOCKOUT_ROUND_ORDER,
     STAGE_INCLUDED_MATCH_STAGES,
@@ -456,7 +457,7 @@ class RealBracketSimulator:
 
     def run(
         self,
-        simulations: int = 3000,
+        simulations: int = DEFAULT_SIMULATIONS,
         seed: int = 42,
         on_progress: ProgressCallback | None = None,
         progress_every: int = 100,

@@ -1,6 +1,8 @@
 import {
   STAGE_INCLUDED_MATCH_STAGES,
   STAGE_OPTIONS,
+  SIM_MODE_CACHED,
+  SimMode,
   Stage,
   Strength,
   TeamPrediction,
@@ -51,7 +53,7 @@ export function StrengthToggle({
 }) {
   return (
     <div className="strength-toggle" role="group" aria-label="Strength source">
-      <span className="strength-label">Match outcomes</span>
+      <span className="strength-label">Team strength model</span>
       <div className="segmented">
         <button
           type="button"
@@ -74,21 +76,29 @@ export function StrengthToggle({
   );
 }
 
-const SIM_COUNTS = [1000, 2000, 3000, 4000, 5000] as const;
+const SIM_COUNTS = [2500, 5000, 10000, 25000, 50000] as const;
 
 export function SimCountControl({
   value,
   onChange,
   disabled,
 }: {
-  value: number;
-  onChange: (value: number) => void;
+  value: SimMode;
+  onChange: (value: SimMode) => void;
   disabled?: boolean;
 }) {
   return (
     <div className="sim-count-control" role="group" aria-label="Simulation count">
-      <span className="strength-label">Monte Carlo runs</span>
+      <span className="strength-label">Use cached results or re-run Monte Carlo simulations</span>
       <div className="segmented">
+        <button
+          type="button"
+          className={value === SIM_MODE_CACHED ? "active" : ""}
+          onClick={() => onChange(SIM_MODE_CACHED)}
+          disabled={disabled}
+        >
+          Cached
+        </button>
         {SIM_COUNTS.map((n) => (
           <button
             key={n}

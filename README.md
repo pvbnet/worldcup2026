@@ -46,7 +46,7 @@ From many trials the dashboard reports **P(R32), P(R16), P(QF), P(SF), P(Final),
 
 A **Stage completed (played)** control in the header (default: **Pre-tournament**) applies to every page.
 
-- **Predictions** — Elo/FIFA toggle; Monte Carlo run count (1000–5000, default **3000**); rankings table with stage-reach probabilities.
+- **Predictions** — Elo/FIFA toggle; Monte Carlo control (**Cached** by default, or 2500 / 5000 / 10000 / 25000 / 50000 live runs). Cached loads the committed 10,000-run artifacts; choosing a count re-simulates the current stage now. Changing stage snaps back to Cached. Rankings table shows stage-reach probabilities.
 - **Teams & groups** — group standings and team detail. A team's "Recent matches" list shows matches within the selected stage's played rounds.
 - **Knockout Stage** — actual 2026 knockout fixtures, masked to the selected stage: rounds at or before the cutoff show real scores; later rounds show placeholders.
 

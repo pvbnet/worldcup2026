@@ -39,8 +39,8 @@ flowchart LR
 
 ## Data and request flow
 
-- **Warm start:** Committed Elo and prediction JSON under `model/artifacts/` let the UI load rankings without re-simulating. World Cup root raw JSON (`2018`/`2022`/`2026`) and `matches.parquet` are **not** in git; run `fetch_data.py` + `ingest.py`.
-- **Rankings:** Cached from artifacts when available; live Monte Carlo via `POST /api/simulations` then poll `GET /api/simulations/{job_id}`.
+- **Warm start:** The UI loads committed prediction JSON under `model/artifacts/predictions/` on startup (and whenever **Cached** is selected). World Cup root raw JSON (`2018`/`2022`/`2026`) and `matches.parquet` are **not** in git; run `fetch_data.py` + `ingest.py`.
+- **Rankings:** `GET /api/teams/rankings` reads those artifacts. Choosing a live run count in the UI calls `POST /api/simulations` then polls `GET /api/simulations/{job_id}`; live jobs do not overwrite the committed files. Changing stage resets the control to Cached.
 - **Stage masking:** Groups and knockout pages hide future results in the browser; the API returns the full match/group dataset for the year.
 
 ## Deployment on Google Cloud Platform (GCP)
