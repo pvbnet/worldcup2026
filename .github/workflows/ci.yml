@@ -25,6 +25,11 @@ jobs:
       - name: Compile model sources
         run: python -m compileall model/src
 
+      - name: Check predictions markdown is current
+        run: |
+          python model/scripts/write_predictions_md.py
+          git diff --exit-code docs/predictions.md
+
       - uses: actions/setup-node@v4
         with:
           node-version: "20"

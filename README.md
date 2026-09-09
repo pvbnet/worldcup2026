@@ -97,6 +97,7 @@ Open **http://localhost:5173/** in the browser.
 
 ## Documentation
 
+- [docs/predictions.md](docs/predictions.md) — pre-tournament rankings and stage-reach probabilities
 - [docs/evaluation.md](docs/evaluation.md) — predictions evaluation methodology
 - [docs/architecture.md](docs/architecture.md) — overview of components, runtime modes, data flow
 - [docs/dev-setup.md](docs/dev-setup.md) — development setup, model pipeline, backend, frontend, API
