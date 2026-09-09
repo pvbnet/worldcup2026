@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Normalize raw match files into model/data/processed/matches.parquet."""
+
 import sys
 from pathlib import Path
 

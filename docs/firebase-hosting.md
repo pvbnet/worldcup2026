@@ -90,9 +90,6 @@ Firebase Hosting proxies requests with a **~60 second timeout**, regardless of C
 |------|------------------|
 | Pages, rankings, groups, knockout | OK |
 | `POST /api/simulations` + poll job status | OK (POST returns quickly; polls are short) |
-| `POST /api/refresh-data` | May **504** — can run many minutes on Cloud Run |
-
-For long refresh jobs, use the direct Cloud Run `*.run.app` URL or accept the limitation on the public Firebase URL.
 
 ## See also
 

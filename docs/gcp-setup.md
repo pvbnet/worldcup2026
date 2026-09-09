@@ -106,8 +106,6 @@ gcloud run deploy worldcup2026-dashboard \
 
 The command prints the public HTTPS URL. Check `GET /api/health` on that host.
 
-For the public web URL via Firebase Hosting (`worldcup-dashboard.web.app`), see [firebase-hosting.md](firebase-hosting.md).
-
 ## 6. Repeat deploys
 
 After code or image changes:
@@ -124,7 +122,7 @@ gcloud run deploy worldcup2026-dashboard --image "$IMAGE" --region "$REGION"
 **When a rebuild is not needed:**
 
 - **Cloud Run settings only** (memory, CPU, timeout, `--max-instances`, env vars) — run `gcloud run deploy` with the existing `$IMAGE` and updated flags; no `docker build` or push.
-- **New World Cup match data only** — locally, re-run `fetch_data.py --force --competitions world_cup` then ingest/train/simulate; on the running service, `POST /api/refresh-data` does the same without a new image.
+- **New World Cup match data only** — locally, re-run `fetch_data.py --force --competitions world_cup` then ingest/train/simulate, then rebuild and deploy the image so the container picks up new artifacts.
 - **Docs or local dev** — README, scripts used only on your machine, and `./start-dashboard-local.sh` do not affect the deployed container.
 
 If you changed code but skip rebuild/push, Cloud Run keeps serving the previous image; redeploy alone does not pick up repo changes.
@@ -133,4 +131,3 @@ If you changed code but skip rebuild/push, Cloud Run keeps serving the previous 
 
 - **Costs:** Cloud Run, Artifact Registry, and Cloud Build usage are billable; use [pricing calculators](https://cloud.google.com/products/calculator) and delete unused services/repos if you are experimenting.
 - **Simulation jobs:** In-memory job state is per Cloud Run instance; `--max-instances 1` keeps polling reliable for background sim jobs on a small public demo.
-- **Refresh data:** `POST /api/refresh-data` can run for a long time; keep request timeout at or below Cloud Run’s maximum (3600s).

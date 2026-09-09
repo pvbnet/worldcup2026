@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Fit Elo for every tournament stage and write match-evaluation metrics."""
+
 import sys
 from pathlib import Path
 
@@ -28,11 +30,11 @@ def main() -> None:
         elo.save(ARTIFACTS_TRAINING / f"elo_{stage}.json")
         print(f"Trained Elo for stage={stage}: {len(train_matches)} matches used.")
 
+    # This call evaluates Elo predictions on held-out/test matches (future to the training window).
     metrics = evaluate_matches(matches)
     print("Training complete (Elo only).")
     for name, values in metrics.items():
         print(f"  {name}: log_loss={values['mean_log_loss']:.4f}")
-
 
 if __name__ == "__main__":
     main()

@@ -3,7 +3,6 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass
 
-import numpy as np
 import pandas as pd
 
 from config import ARTIFACTS_TRAINING
@@ -81,13 +80,3 @@ def fit_elo(
         model.ratings[t2] = r2 + k * (s2 - (1.0 - e1))
 
     return model
-
-
-def rankings_from_elo(model: EloModel) -> pd.DataFrame:
-    rows = [
-        {"team": team, "rating": rating}
-        for team, rating in model.ratings.items()
-    ]
-    df = pd.DataFrame(rows).sort_values("rating", ascending=False)
-    df["rank"] = np.arange(1, len(df) + 1)
-    return df.reset_index(drop=True)

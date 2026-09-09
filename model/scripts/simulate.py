@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Run Monte Carlo for every stage × strength and write prediction JSON."""
+
 import sys
 from pathlib import Path
 

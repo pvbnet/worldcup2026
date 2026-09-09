@@ -115,7 +115,6 @@ curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/teams
 
 ## API endpoints
 
-- `GET /api/config` — `{ "default_strength", "strength_sources", "default_stage", "stages": [{ "id", "label" }, ...] }`
 - `GET /api/teams/rankings?strength=elo&stage=pre_tournament` — cached rankings when warm (no resim); `stage` defaults to `pre_tournament`, invalid values 400
 - `POST /api/simulations` — body `{ "strength": "elo"|"fifa", "stage": "pre_tournament", "simulations": 3000 }` → `{ "job_id" }`
 - `GET /api/simulations/{job_id}` — `{ "status", "progress", "message", "result?" }` (progress every 100 sims)
@@ -123,14 +122,11 @@ curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/teams
 - `GET /api/matches?year=2026` — always the full real dataset; stage-aware masking happens client-side
 - `GET /api/groups?year=2026` — always the full real dataset; stage-aware masking happens client-side
 - `GET /api/metrics`
-- `POST /api/refresh-data` — force-fetch World Cup raw data, ingest, retrain Elo for every stage, re-simulate every stage × strength
 
 ## See also
 
 - [README](../README.md) — overview, quick start, tournament model, UI
 - [architecture.md](architecture.md) — high-level architecture and dataflow
-- [evaluation.md](evaluation.md) — match backtest and 2026 simulation forecast scores
-- [scripts/env.sh](../scripts/env.sh) — Node.js PATH for local run scripts
 - [docker-local.md](docker-local.md) — container build and run
 - [gcp-setup.md](gcp-setup.md) — Google Cloud setup: artifact registry and cloud run
 - [firebase-hosting.md](firebase-hosting.md) — public URL via Firebase Hosting

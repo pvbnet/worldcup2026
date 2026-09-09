@@ -96,10 +96,8 @@ def _year_metrics(matches: pd.DataFrame, test_year: int) -> dict[str, dict]:
     return year_metrics
 
 
-def evaluate_matches(matches: pd.DataFrame, training_frame: pd.DataFrame | None = None) -> dict:
+def evaluate_matches(matches: pd.DataFrame) -> dict:
     """Backtest Elo and FIFA strength sources on WC 2022 and WC 2026."""
-    del training_frame  # unused; kept for call-site compatibility
-
     metrics: dict[str, dict] = {
         strength: {"years": {}} for strength in ("elo", "fifa")
     }

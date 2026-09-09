@@ -11,12 +11,10 @@ from services.loader import (
     DEFAULT_STAGE,
     STAGE_ORDER,
     group_standings,
-    load_config,
     load_matches,
     load_metrics,
     load_predictions,
     load_rankings,
-    refresh_pipeline,
 )
 
 router = APIRouter(prefix="/api")
@@ -97,11 +95,6 @@ def _run_simulation_job(job_id: str, strength: str, stage: str, simulations: int
 @router.get("/health")
 def health() -> dict:
     return {"status": "ok"}
-
-
-@router.get("/config")
-def config() -> dict:
-    return load_config()
 
 
 @router.get("/teams/rankings")
@@ -186,11 +179,3 @@ def all_groups(year: int = Query(default=2026)) -> dict:
 @router.get("/metrics")
 def metrics() -> dict:
     return {"metrics": load_metrics()}
-
-
-@router.post("/refresh-data")
-def refresh_data() -> dict:
-    try:
-        return refresh_pipeline()
-    except Exception as exc:
-        raise HTTPException(status_code=500, detail=str(exc)) from exc

@@ -18,7 +18,6 @@ export function useDashboard(strength: Strength, simulations: number, stage: Sta
   const [progress, setProgress] = useState(0);
   const [progressMessage, setProgressMessage] = useState("");
   const [error, setError] = useState<string | null>(null);
-  const [staticLoaded, setStaticLoaded] = useState(false);
 
   const loadStatic = useCallback(async () => {
     const [matchRows, groupRows] = await Promise.all([
@@ -27,7 +26,6 @@ export function useDashboard(strength: Strength, simulations: number, stage: Sta
     ]);
     setMatches(matchRows);
     setGroups(groupRows);
-    setStaticLoaded(true);
   }, []);
 
   useEffect(() => {
@@ -69,10 +67,8 @@ export function useDashboard(strength: Strength, simulations: number, stage: Sta
 
   return {
     teams: payload?.teams ?? [],
-    meta: payload,
     matches,
     groups,
-    loading: !staticLoaded && !payload,
     simulating,
     progress,
     progressMessage,

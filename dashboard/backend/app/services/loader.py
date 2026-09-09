@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-import subprocess
 import sys
 from pathlib import Path
 
@@ -18,7 +17,7 @@ DATA_PROCESSED = MODEL_ROOT / "data" / "processed"
 if str(MODEL_SRC) not in sys.path:
     sys.path.insert(0, str(MODEL_SRC))
 
-from config import DEFAULT_STAGE, STAGE_LABELS, STAGE_ORDER  # noqa: E402
+from config import DEFAULT_STAGE, STAGE_ORDER  # noqa: E402
 from rankings_api import (  # noqa: E402
     ProgressCallback,
     build_rankings_payload,
@@ -50,15 +49,6 @@ def load_rankings(
         simulations=simulations,
         on_progress=on_progress,
     )
-
-
-def load_config() -> dict:
-    return {
-        "default_strength": "elo",
-        "strength_sources": ["elo", "fifa"],
-        "default_stage": DEFAULT_STAGE,
-        "stages": [{"id": stage, "label": STAGE_LABELS[stage]} for stage in STAGE_ORDER],
-    }
 
 
 def load_matches(year: int | None = None, played: bool | None = None) -> list[dict]:
@@ -137,19 +127,3 @@ def group_standings(year: int = 2026) -> dict[str, list[dict]]:
             reverse=True,
         )
     return groups
-
-
-def refresh_pipeline() -> dict:
-    model_dir = MODEL_ROOT
-    steps = [
-        [sys.executable, "scripts/fetch_data.py", "--force", "--competitions", "world_cup"],
-        [sys.executable, "scripts/ingest.py"],
-        [sys.executable, "scripts/train.py"],
-        [sys.executable, "scripts/simulate.py"],
-    ]
-    for cmd in steps:
-        subprocess.run(cmd, cwd=model_dir, check=True)
-    return {
-        "status": "ok",
-        "message": "World Cup data fetched, ingested, Elo trained, simulations updated.",
-    }

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Score WC match backtests and 2026 simulation artifacts; write evaluation JSON."""
+
 import sys
 from pathlib import Path
 
@@ -6,14 +8,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from evaluate_matches import evaluate_matches
 from evaluate_simulation import evaluate_simulations, print_simulation_summary
-from features.build import build_training_frame
 from ingest import load_matches
 
 
 def main() -> None:
     matches = load_matches()
-    training_frame = build_training_frame(matches)
-    metrics = evaluate_matches(matches, training_frame)
+    metrics = evaluate_matches(matches)
     print("Evaluation complete.")
     for model, values in metrics.items():
         print(

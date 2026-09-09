@@ -51,20 +51,6 @@ def load_stage_elo(stage: str) -> EloModel:
     return EloModel.load()
 
 
-def run_simulation(
-    strength: str = DEFAULT_STRENGTH,
-    stage: str = DEFAULT_STAGE,
-    simulations: int = 3000,
-    on_progress: ProgressCallback | None = None,
-) -> pd.DataFrame:
-    strength = normalize_strength(strength)
-    stage = normalize_stage(stage)
-    matches = load_matches()
-    pure_elo = load_stage_elo(stage)
-    simulator = RealBracketSimulator(matches, pure_elo, strength=strength, stage=stage)
-    return simulator.run(simulations=simulations, on_progress=on_progress)
-
-
 def build_rankings_payload(
     strength: str = DEFAULT_STRENGTH,
     stage: str = DEFAULT_STAGE,

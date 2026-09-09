@@ -7,46 +7,6 @@ the 2026 tournament to predict the probabilities of teams reaching knock-out sta
 The site is deployed using the Google Cloud Platform (Firebase Hosting and Cloud Run)
 and live at: https://worldcup2026-dashboard.web.app/
 
-## Quick start
-
-**Requirements:** Python 3.12.3 (pyenv recommended), Node.js 18+ (20 recommended).
-
-```bash
-git clone https://github.com/pvbnet/worldcup2026.git
-# SSH: git clone git@github.com:pvbnet/worldcup2026.git
-cd worldcup2026
-```
-
-Configure Node via [`scripts/env.sh`](scripts/env.sh) if `node` is not already on your PATH.
-
-Set up the backend and frontend dependencies:
-
-```bash
-cd dashboard/backend
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-cd ../frontend
-npm install
-```
-
-Start the dashboard from the repo root:
-
-```bash
-./start-dashboard-local.sh
-```
-
-Open **http://localhost:5173/** in the browser.
-
-## Documentation
-
-- [docs/architecture.md](docs/architecture.md) — components, runtime modes, data flow
-- [docs/dev-setup.md](docs/dev-setup.md) — model pipeline, backend, frontend, API, prod-local test
-- [docs/evaluation.md](docs/evaluation.md) — match backtest and 2026 simulation forecast scores
-- [docs/docker-local.md](docs/docker-local.md) — build and run the Docker container locally
-- [docs/gcp-setup.md](docs/gcp-setup.md) — deploy to Cloud Run using the Docker image
-- [docs/firebase-hosting.md](docs/firebase-hosting.md) — public URL via Firebase Hosting (proxies to Cloud Run)
-
 ## Team strength and match outcome model
 
 There is a single match-outcome engine: Elo win probabilities (either trained or from FIFA ranking).
@@ -86,23 +46,13 @@ From many trials the dashboard reports **P(R32), P(R16), P(QF), P(SF), P(Final),
 
 A **Stage completed (played)** control in the header (default: **Pre-tournament**) applies to every page.
 
-- **Predictions** — Elo/FIFA toggle; Monte Carlo run count (1000–5000, default **3000**); rankings table with stage-reach probabilities and an inline win-probability bar.
+- **Predictions** — Elo/FIFA toggle; Monte Carlo run count (1000–5000, default **3000**); rankings table with stage-reach probabilities.
 - **Teams & groups** — group standings and team detail. A team's "Recent matches" list shows matches within the selected stage's played rounds.
 - **Knockout Stage** — actual 2026 knockout fixtures, masked to the selected stage: rounds at or before the cutoff show real scores; later rounds show placeholders.
 
 Knockout scores include full-time scores and results from extra-time (`aet`), and penalties (`p`) when present.
 
-To pull new World Cup results later, re-run the model pipeline (do not use the dashboard):
-
-```bash
-cd model
-python scripts/fetch_data.py --force --competitions world_cup
-python scripts/ingest.py && python scripts/train.py && python scripts/simulate.py
-``` 
-
 ## Data sources
-
-See [NOTICE.md](NOTICE.md) for third-party data licensing and what is (and is not) committed to git.
 
 | Competition | Source | Editions / cycles |
 |---|---|---|
@@ -112,8 +62,47 @@ See [NOTICE.md](NOTICE.md) for third-party data licensing and what is (and is no
 | AFCON | same | 2021, 2023, 2025 |
 | WC qualifiers | same | 2022 cycle, 2026 cycle |
 
-## License
+## Quick start for development
+
+**Requirements:** Python 3.12.3 (pyenv recommended), Node.js 18+ (20 recommended).
+
+```bash
+git clone https://github.com/pvbnet/worldcup2026.git
+# SSH: git clone git@github.com:pvbnet/worldcup2026.git
+cd worldcup2026
+```
+
+Configure Node via [`scripts/env.sh`](scripts/env.sh) if `node` is not already on your PATH.
+
+Set up the backend and frontend dependencies:
+
+```bash
+cd dashboard/backend
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+cd ../frontend
+npm install
+```
+
+Start the dashboard from the repo root:
+
+```bash
+./start-dashboard-local.sh
+```
+
+Open **http://localhost:5173/** in the browser.
+
+## Documentation
+
+- [docs/evaluation.md](docs/evaluation.md) — match backtest and 2026 simulation forecast scores
+- [docs/architecture.md](docs/architecture.md) — overview of components, runtime modes, data flow
+- [docs/dev-setup.md](docs/dev-setup.md) — model pipeline, backend, frontend, API, prod-local test
+- [docs/docker-local.md](docs/docker-local.md) — build and run the Docker container locally
+- [docs/gcp-setup.md](docs/gcp-setup.md) — deploy to Cloud Run using the Docker image
+- [docs/firebase-hosting.md](docs/firebase-hosting.md) — public URL via Firebase Hosting
+
+## License and third-party data
 
 MIT — see [LICENSE](LICENSE). Third-party data terms are described in [NOTICE.md](NOTICE.md).
-
-Contributing: [CONTRIBUTING.md](CONTRIBUTING.md). Security: [SECURITY.md](SECURITY.md).
