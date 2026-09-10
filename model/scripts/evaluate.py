@@ -4,11 +4,14 @@
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+_SCRIPTS = Path(__file__).resolve().parent
+sys.path.insert(0, str(_SCRIPTS))
+sys.path.insert(0, str(_SCRIPTS.parent / "src"))
 
 from evaluate_matches import evaluate_matches
 from evaluate_simulation import evaluate_simulations, print_simulation_summary
 from ingest import load_matches
+from write_evaluation_md import write_evaluation_md
 
 
 def main() -> None:
@@ -22,6 +25,8 @@ def main() -> None:
         )
     sim_metrics = evaluate_simulations(matches)
     print_simulation_summary(sim_metrics)
+    for path in write_evaluation_md():
+        print(f"Wrote {path}")
 
 
 if __name__ == "__main__":

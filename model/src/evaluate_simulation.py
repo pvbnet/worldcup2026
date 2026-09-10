@@ -137,22 +137,37 @@ def _rank_masses(probs: dict[str, float]) -> list[float]:
     return [mass / total for mass in masses]
 
 
-def _trps(teams: list[dict]) -> float:
-    """Ekstrøm et al. TRPS (eq. 2) over the 7 partial ranks."""
+def _team_trps(row: dict) -> float:
+    """Ekstrøm et al. TRPS (eq. 2) for one team over the 7 partial ranks."""
     n_ranks_minus_1 = len(_TRPS_CUMULATIVE)
+    masses = _rank_masses({event: row[_P_KEY[event]] for event in SIM_EVENTS})
+    observed = [int(row[_Y_KEY[event]]) for event in _TRPS_CUMULATIVE]
+    cdf_pred = 0.0
+    team_sum = 0.0
+    for idx in range(n_ranks_minus_1):
+        cdf_pred += masses[idx]
+        team_sum += (observed[idx] - cdf_pred) ** 2
+    return team_sum / n_ranks_minus_1
+
+
+def _trps(teams: list[dict]) -> float:
+    """Mean over teams of `_team_trps`."""
     if not teams:
         return 0.0
-    total = 0.0
-    for row in teams:
-        masses = _rank_masses({event: row[_P_KEY[event]] for event in SIM_EVENTS})
-        observed = [int(row[_Y_KEY[event]]) for event in _TRPS_CUMULATIVE]
-        cdf_pred = 0.0
-        team_sum = 0.0
-        for idx in range(n_ranks_minus_1):
-            cdf_pred += masses[idx]
-            team_sum += (observed[idx] - cdf_pred) ** 2
-        total += team_sum / n_ranks_minus_1
-    return total / len(teams)
+    return sum(_team_trps(row) for row in teams) / len(teams)
+
+
+def _baseline_trps_record(record: dict, stage: str) -> dict:
+    unresolved = UNRESOLVED_EVENTS[stage]
+    gate = _ALIVE_GATE[stage]
+    alive = True if gate is None else bool(record[_Y_KEY[gate]])
+    out = dict(record)
+    for event in SIM_EVENTS:
+        if event in unresolved:
+            out[_P_KEY[event]] = _baseline_prob(stage, event, alive)
+        else:
+            out[_P_KEY[event]] = float(record[_Y_KEY[event]])
+    return out
 
 
 def _mean_brier_events(record: dict, events: list[str]) -> float:
@@ -224,6 +239,7 @@ def _score_artifact(
         record["mean_brier_from_qf"] = _mean_brier_events(record, qf_events)
         record["mean_log_loss"] = _mean_log_loss_events(record, unresolved)
         record["mean_log_loss_from_qf"] = _mean_log_loss_events(record, qf_events)
+        record["trps"] = _team_trps(record)
         rows_out.append(record)
 
     events_metrics: dict[str, dict] = {}
@@ -297,6 +313,7 @@ def _score_artifact(
             "mean_brier_from_qf": record["mean_brier_from_qf"],
             "mean_log_loss": record["mean_log_loss"],
             "mean_log_loss_from_qf": record["mean_log_loss_from_qf"],
+            "trps": record["trps"],
         }
         for event in unresolved:
             public[_P_KEY[event]] = record[_P_KEY[event]]
@@ -306,6 +323,9 @@ def _score_artifact(
     return {
         "events": events_metrics,
         "trps": _trps(rows_out),
+        "trps_baseline": _trps(
+            [_baseline_trps_record(record, stage) for record in rows_out]
+        ),
         "mean_brier": mean_brier,
         "mean_brier_baseline": mean_baseline,
         "mean_brier_from_qf": mean_brier_from_qf,

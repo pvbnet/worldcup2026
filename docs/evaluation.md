@@ -110,10 +110,13 @@ Note: Averaging Brier score over reach events is equivalent to the Ranked Probab
 - `P(r32_exit) = p_r32 − p_r16`
 - `P(group_exit) = 1 − p_r32`
 
-Tiny negative diffs from Monte Carlo noise are clipped to 0 and the column is renormalized. TRPS is the mean over teams of the mean squared CDF error on that ranking. Zero is perfect. Unlike Brier/log-loss, TRPS still uses the full ranking at every vintage.
+Tiny negative diffs from Monte Carlo noise are clipped to 0 and the column is renormalized. TRPS is the mean over teams of the mean squared CDF error on that ranking. Zero is perfect. Unlike Brier/log-loss, TRPS still uses the full ranking at every vintage. Each `teams[]` row also stores that team’s TRPS (`trps`). `trps_baseline` is the same score under equal-share reach probabilities.
 
-**Output:** [`model/artifacts/evaluation/simulation_metrics.json`](../model/artifacts/evaluation/simulation_metrics.json)  
+**Output:** [`model/artifacts/evaluation/simulation_metrics.json`](../model/artifacts/evaluation/simulation_metrics.json)
+
+Generated score tables (including an ACE-style headline comparison) are in [evaluation-results.md](evaluation-results.md).
 
 ## See also
 
+- [evaluation-results.md](evaluation-results.md) — generated match and simulation scores
 - [architecture.md](architecture.md) — artifacts and data flow

@@ -18,8 +18,8 @@ pip install -r requirements.txt
 python scripts/fetch_data.py   # download World Cup + Euro/Copa/AFCON/qualifiers
 python scripts/ingest.py       # processes and normalizes raw files downloaded by fetch_data.py
 python scripts/train.py        # writes elo_{stage}.json for every stage
-python scripts/simulate.py     # writes worldcup_{stage}_{strength}.json (default 10000 runs; --simulations N) and docs/predictions.md
-python scripts/evaluate.py     # writes match_metrics.json and simulation_metrics.json
+python scripts/simulate.py     # writes worldcup_{stage}_{strength}.json (default 10000 runs; --simulations N), docs/predictions.md, and docs/evaluation-results.md
+python scripts/evaluate.py     # writes match_metrics.json, simulation_metrics.json, and docs/evaluation-results.md
 ```
 
 Raw layout under `model/data/raw/`:

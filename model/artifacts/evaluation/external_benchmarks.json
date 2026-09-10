@@ -1,0 +1,39 @@
+{
+  "source": "https://ac3lab.github.io/blog/2026/model_comparison_en/",
+  "source_title": "Comparing the Performance of Predictive Models – 2026 World Cup (ACE Laboratory)",
+  "notes": "Stage Briers transcribed from Figure 3 (brier_by_stage_en.png). Tournament RPS and log-loss from Figure 4; QF-onward RPS and log-loss from Figure 5. Null means not published.",
+  "models": [
+    {
+      "id": "ace_classic",
+      "label": "ACE Classic",
+      "brier": {
+        "r32": 0.1277,
+        "r16": 0.1233,
+        "qf": 0.0944,
+        "sf": 0.05,
+        "final": 0.03,
+        "win": 0.0166
+      },
+      "rps": 0.07332,
+      "rps_qf": 0.04755,
+      "log_loss": 0.23775,
+      "log_loss_qf": 0.15772
+    },
+    {
+      "id": "ace_bayesian",
+      "label": "ACE Bayesian",
+      "brier": {
+        "r32": 0.1666,
+        "r16": 0.1466,
+        "qf": 0.0888,
+        "sf": 0.0444,
+        "final": 0.0277,
+        "win": 0.0144
+      },
+      "rps": 0.08007,
+      "rps_qf": 0.04332,
+      "log_loss": 0.25344,
+      "log_loss_qf": 0.14446
+    }
+  ]
+}

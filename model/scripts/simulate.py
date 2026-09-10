@@ -6,14 +6,15 @@ import sys
 from pathlib import Path
 
 _SCRIPTS = Path(__file__).resolve().parent
-sys.path.insert(0, str(_SCRIPTS.parents[0] / "src"))
 sys.path.insert(0, str(_SCRIPTS))
+sys.path.insert(0, str(_SCRIPTS.parents[0] / "src"))
 
 from config import ARTIFACTS_TRAINING, DEFAULT_SIMULATIONS, STAGE_ORDER
 from evaluate_simulation import evaluate_simulations, print_simulation_summary
 from ingest import load_matches
 from models.elo import EloModel
 from simulation.bracket import RealBracketSimulator
+from write_evaluation_md import write_evaluation_md
 from write_predictions_md import write_predictions_md
 
 
@@ -52,6 +53,8 @@ def main() -> None:
 
     print_simulation_summary(evaluate_simulations(matches))
     print(f"Wrote {write_predictions_md()}")
+    for path in write_evaluation_md():
+        print(f"Wrote {path}")
 
 
 if __name__ == "__main__":

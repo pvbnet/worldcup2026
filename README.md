@@ -7,6 +7,8 @@ the 2026 tournament to predict the probabilities of teams reaching knock-out sta
 The site is deployed using the Google Cloud Platform (Firebase Hosting and Cloud Run)
 and live at: https://worldcup2026-dashboard.web.app/
 
+Pre-tournament predicted rankings and stage-reach probabilities are shown here: [docs/predictions.md](docs/predictions.md).
+
 ## Team strength and match outcome model
 
 There is a single match-outcome engine: Elo win probabilities (either trained or from FIFA ranking).
@@ -98,6 +100,7 @@ Open **http://localhost:5173/** in the browser.
 ## Documentation
 
 - [docs/predictions.md](docs/predictions.md) — pre-tournament rankings and stage-reach probabilities
+- [docs/evaluation-results.md](docs/evaluation-results.md) — match and 2026 simulation evaluation scores
 - [docs/evaluation.md](docs/evaluation.md) — predictions evaluation methodology
 - [docs/architecture.md](docs/architecture.md) — overview of components, runtime modes, data flow
 - [docs/dev-setup.md](docs/dev-setup.md) — development setup, model pipeline, backend, frontend, API

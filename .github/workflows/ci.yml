@@ -30,6 +30,11 @@ jobs:
           python model/scripts/write_predictions_md.py
           git diff --exit-code docs/predictions.md
 
+      - name: Check evaluation markdown is current
+        run: |
+          python model/scripts/write_evaluation_md.py
+          git diff --exit-code docs/evaluation-results.md docs/evaluation-headline.svg docs/evaluation-elo-teams.svg
+
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
