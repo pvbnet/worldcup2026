@@ -28,7 +28,7 @@ jobs:
       - name: Check predictions markdown is current
         run: |
           python model/scripts/write_predictions_md.py
-          git diff --exit-code docs/predictions.md
+          git diff --exit-code docs/predictions.md docs/predictions-elo.svg
 
       - name: Check evaluation markdown is current
         run: |

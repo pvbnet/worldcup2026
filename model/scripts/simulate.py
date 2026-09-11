@@ -52,7 +52,8 @@ def main() -> None:
             )
 
     print_simulation_summary(evaluate_simulations(matches))
-    print(f"Wrote {write_predictions_md()}")
+    for path in write_predictions_md():
+        print(f"Wrote {path}")
     for path in write_evaluation_md():
         print(f"Wrote {path}")
 
