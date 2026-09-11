@@ -101,7 +101,7 @@ Open **http://localhost:5173/** in the browser.
 
 ## Documentation
 
-- [docs/evaluation.md](docs/evaluation.md) — predictions evaluation methodology
+- [docs/evaluation-metrics.md](docs/evaluation-metrics.md) — predictions evaluation methodology
 - [docs/architecture.md](docs/architecture.md) — overview of repo components, runtime modes, data flow
 - [docs/dev-setup.md](docs/dev-setup.md) — development setup, model pipeline, backend, frontend, API
 - [docs/docker-local.md](docs/docker-local.md) — how to build and run the Docker container locally

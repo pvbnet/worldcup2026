@@ -170,11 +170,28 @@ def _baseline_trps_record(record: dict, stage: str) -> dict:
     return out
 
 
+def _ratio_skill(score: float, baseline: float) -> float | None:
+    if baseline <= 0:
+        return None
+    return 1.0 - score / baseline
+
+
 def _mean_brier_events(record: dict, events: list[str]) -> float:
     if not events:
         return 0.0
     return sum(
         (record[_P_KEY[event]] - record[_Y_KEY[event]]) ** 2 for event in events
+    ) / len(events)
+
+
+def _mean_baseline_brier_events(
+    record: dict, events: list[str], stage: str, alive: bool
+) -> float:
+    if not events:
+        return 0.0
+    return sum(
+        (_baseline_prob(stage, event, alive) - record[_Y_KEY[event]]) ** 2
+        for event in events
     ) / len(events)
 
 
@@ -237,6 +254,18 @@ def _score_artifact(
         qf_events = [event for event in _QF_ONWARD_EVENTS if event in unresolved]
         record["mean_brier"] = _mean_brier_events(record, unresolved)
         record["mean_brier_from_qf"] = _mean_brier_events(record, qf_events)
+        record["mean_brier_baseline"] = _mean_baseline_brier_events(
+            record, unresolved, stage, alive
+        )
+        record["mean_brier_baseline_from_qf"] = _mean_baseline_brier_events(
+            record, qf_events, stage, alive
+        )
+        record["brier_skill"] = _ratio_skill(
+            record["mean_brier"], record["mean_brier_baseline"]
+        )
+        record["brier_skill_from_qf"] = _ratio_skill(
+            record["mean_brier_from_qf"], record["mean_brier_baseline_from_qf"]
+        )
         record["mean_log_loss"] = _mean_log_loss_events(record, unresolved)
         record["mean_log_loss_from_qf"] = _mean_log_loss_events(record, qf_events)
         record["trps"] = _team_trps(record)
@@ -311,6 +340,10 @@ def _score_artifact(
             "group": record["group"],
             "mean_brier": record["mean_brier"],
             "mean_brier_from_qf": record["mean_brier_from_qf"],
+            "mean_brier_baseline": record["mean_brier_baseline"],
+            "mean_brier_baseline_from_qf": record["mean_brier_baseline_from_qf"],
+            "brier_skill": record["brier_skill"],
+            "brier_skill_from_qf": record["brier_skill_from_qf"],
             "mean_log_loss": record["mean_log_loss"],
             "mean_log_loss_from_qf": record["mean_log_loss_from_qf"],
             "trps": record["trps"],

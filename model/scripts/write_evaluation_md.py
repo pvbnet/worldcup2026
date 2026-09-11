@@ -41,13 +41,6 @@ HEADLINE_HEADERS = [
     "Log-loss",
     "Log-loss QF→",
 ]
-MD_HEADLINE_HEADERS = [
-    *(f"Brier {EVENT_LABELS[e]}" for e in EVENTS),
-    "RPS (avg Brier)",
-    "RPS QF→",
-    "Log-loss",
-    "Log-loss QF→",
-]
 N_STAGE_COLS = len(EVENTS)
 # Pre-tournament equal-share: remaining slots split uniformly over 48 teams.
 _BASELINE_SLOTS = {"r32": 32, "r16": 16, "qf": 8, "sf": 4, "final": 2, "win": 1}
@@ -183,6 +176,8 @@ def _team_rows(sim: dict) -> list[dict]:
             "elo": round(values[team]),
             "rps": row["mean_brier"],
             "rps_qf": row["mean_brier_from_qf"],
+            "rps_skill": row.get("brier_skill"),
+            "rps_qf_skill": row.get("brier_skill_from_qf"),
         }
         for event in EVENTS:
             p = float(row[f"p_{event}"])
@@ -193,28 +188,6 @@ def _team_rows(sim: dict) -> list[dict]:
     return rows
 
 
-def _headline_md(rows: list[dict]) -> str:
-    sep = "│"
-    headers = [
-        "Model",
-        *MD_HEADLINE_HEADERS[:N_STAGE_COLS],
-        sep,
-        *MD_HEADLINE_HEADERS[N_STAGE_COLS:],
-    ]
-    body = []
-    for row in rows:
-        body.append(
-            [
-                row["label"],
-                *(_fmt(row[col]) for col in HEADLINE_COLS[:N_STAGE_COLS]),
-                sep,
-                *(_fmt(row[col]) for col in HEADLINE_COLS[N_STAGE_COLS:]),
-            ]
-        )
-    align = [":---"] + [":---:"] * (len(headers) - 1)
-    return _md_table(headers, body, align)
-
-
 def _lerp(a: tuple[int, int, int], b: tuple[int, int, int], t: float) -> tuple[int, int, int]:
     return tuple(int(round(x + (y - x) * t)) for x, y in zip(a, b))
 
@@ -223,12 +196,14 @@ def _hex(rgb: tuple[int, int, int]) -> str:
     return "#{:02x}{:02x}{:02x}".format(*rgb)
 
 
-def _cell_color(value: float | None, lo: float, hi: float) -> str:
+def _cell_color(value: float | None, lo: float, hi: float, *, invert: bool = False) -> str:
     if value is None:
         return "#f3f4f6"
     if hi <= lo:
         return "#eef2e6"
     t = (value - lo) / (hi - lo)
+    if invert:
+        t = 1.0 - t
     green = (198, 230, 201)
     mid = (245, 243, 238)
     red = (255, 205, 210)
@@ -248,6 +223,8 @@ def _write_grid_svg(
     score_headers: list[str],
     groups: list[tuple[str, int, int]],
     sep_cols: list[int],
+    higher_better: frozenset[str] = frozenset(),
+    legend: str = "Lower is better (green). Red is worse in that column.",
 ) -> None:
     n_meta = 1 + len(info_cols)
     col_w = [196] + [114] * (len(info_cols) + len(score_cols))
@@ -275,8 +252,8 @@ def _write_grid_svg(
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" aria-label="{escape(aria)}">',
         '<rect width="100%" height="100%" fill="#ffffff"/>',
-        '<text x="16" y="22" font-size="13" fill="#6b7280" '
-        'font-family="system-ui,sans-serif">Lower is better (green). Red is worse in that column.</text>',
+        f'<text x="16" y="22" font-size="13" fill="#6b7280" '
+        f'font-family="system-ui,sans-serif">{escape(legend)}</text>',
     ]
     for title, start, end in groups:
         x0 = xs[start]
@@ -319,7 +296,7 @@ def _write_grid_svg(
             w = col_w[n_meta + i]
             value = row[col]
             lo, hi = ranges[col]
-            fill = _cell_color(value, lo, hi)
+            fill = _cell_color(value, lo, hi, invert=col in higher_better)
             parts.append(
                 f'<rect x="{x}" y="{y}" width="{w}" height="{row_h}" fill="{fill}" '
                 f'stroke="#e5e7eb"/>'
@@ -371,17 +348,26 @@ def _write_team_svg(rows: list[dict]) -> None:
     _write_grid_svg(
         TEAM_SVG_PATH,
         rows,
-        aria="Per-team Elo simulation Brier and RPS, lower is better",
+        aria="Per-team Elo simulation Brier, RPS, and RPS skill",
         label_header="Team",
         info_cols=[("elo_rank", "Elo rank"), ("elo", "Elo")],
-        score_cols=[*EVENTS, "rps", "rps_qf"],
-        score_headers=[*(EVENT_LABELS[e] for e in EVENTS), "RPS", "RPS QF→"],
+        score_cols=[*EVENTS, "rps", "rps_qf", "rps_skill", "rps_qf_skill"],
+        score_headers=[
+            *(EVENT_LABELS[e] for e in EVENTS),
+            "RPS",
+            "RPS QF→",
+            "RPS skill",
+            "QF→ skill",
+        ],
         groups=[
             ("Elo", 1, 3),
             ("Brier (per stage)", 3, 3 + N_STAGE_COLS),
             ("RPS = avg Brier", 3 + N_STAGE_COLS, 5 + N_STAGE_COLS),
+            ("RPS skill", 5 + N_STAGE_COLS, 7 + N_STAGE_COLS),
         ],
-        sep_cols=[3, 3 + N_STAGE_COLS],
+        sep_cols=[3, 3 + N_STAGE_COLS, 5 + N_STAGE_COLS],
+        higher_better=frozenset({"rps_skill", "rps_qf_skill"}),
+        legend="Green is better (lower Brier/RPS; higher skill).",
     )
 
 
@@ -396,7 +382,7 @@ def write_evaluation_md() -> tuple[Path, Path, Path]:
 
     body = f"""# Evaluation results
 
-Scores for the 2026 World Cup forecasts in this repo. Metric definitions: [evaluation.md](evaluation.md). 
+Scores for the 2026 World Cup forecasts in this repo. Metric definitions: [evaluation-metrics.md](evaluation-metrics.md). 
 
 Match and simulation numbers come from committed `match_metrics.json` and `simulation_metrics.json`. ACE Laboratory rows are transcribed from [their 2026 model comparison]({ACE_URL}) (Figures 3–5). Regenerate with `python scripts/write_evaluation_md.py` from `model/`.
 
@@ -410,18 +396,13 @@ Pre-tournament strength models scored on all World Cup matches (three-way win/dr
 
 ## Full tournament simulation results
 
-Naive baseline is equal-share chance (each of the 48 teams has probability *k*/48 of occupying one of *k* remaining slots). Our sim rows use pre-tournament Monte Carlo results. Stage columns are Brier; RPS is average Brier. 
-
-{_headline_md(rows)}
-
-The following diagram shows the same results in a color-coded visual grid.
-The color scale is column-wise (green = best / lowest among shown models).
+Naive baseline is equal-share chance (each of the 48 teams has probability *k*/48 of occupying one of *k* remaining slots). Our sim rows use pre-tournament Monte Carlo results. Stage columns are Brier; RPS is average Brier. The color scale is column-wise (green = best / lowest among shown models).
 
 ![Pre-tournament simulation scores](evaluation-headline.svg)
 
 ## Per-team RPS (Our sim - Elo)
 
-Pre-tournament Elo simulation scored per country. Stage columns are that team’s Brier for each reach event. RPS is the average of those Briers (R32 through champion); RPS QF→ averages QF through champion. Teams are ordered by Elo rank. Color scale is column-wise (green = best / lowest among the 48 teams).
+Pre-tournament Elo simulation scored per country. Stage columns are that team’s Brier for each reach event. RPS is the average of those Briers (R32 through champion); RPS QF→ averages QF through champion. RPS skill is `1 − team RPS / team equal-share RPS` (higher is better). Teams are ordered by Elo rank. Color scale is column-wise (green = best among the 48 teams).
 
 ![Per-team Elo simulation RPS](evaluation-elo-teams.svg)
 """

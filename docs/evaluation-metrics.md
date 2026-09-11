@@ -63,11 +63,18 @@ For each strength source and year:
 
 ## 2. Tournament simulation evaluation
 
+This scores the **tournament simulator**, not the per-match engine.
+
 **Code:** [`model/src/evaluate_simulation.py`](../model/src/evaluate_simulation.py)  
 **Year:** 2026 only  
 **Inputs:** committed [`model/artifacts/predictions/worldcup_{stage}_{strength}.json`](../model/artifacts/predictions/) files — the same forecasts the dashboard shows
 
-This scores the **tournament simulator**, not the per-match engine.
+**Baseline** — We compare our model and simulator against a naive baseline where remaining teams share remaining slots equally: 
+- pre-tournament `p_win = 1/48`; 
+- after group stage, the 32 survivors share `p_r16 = 16/32`; 
+- after round of 16, the 16 survivors share `p_qf = 8/16`; 
+- and so on. 
+Eliminated teams have baseline 0. 
 
 ### Realized 2026 outcomes
 
@@ -98,7 +105,7 @@ Note: Averaging Brier score over reach events is equivalent to the Ranked Probab
 
 **Log-loss** — binary `−[y log p + (1 − y) log(1 − p)]`, with `p` clipped to `[1e-15, 1 − 1e-15]`. The same averaging as Brier: per-event `log_loss`, then `mean_log_loss`, `mean_log_loss_from_qf`, per-team rows, and top-level `tournament_mean_log_loss`.
 
-**Baseline and skill** — remaining teams share remaining slots equally (pre-tournament `p_win = 1/48`; after groups, the 32 survivors share `p_r16 = 16/32`; and so on). Eliminated teams have baseline 0. `mean_brier_baseline` / `mean_log_loss_baseline` (and the `_from_qf` variants) use those probabilities. Skill is `1 − score / baseline` on the unresolved-event mean (`brier_skill`, `log_loss_skill`). Positive skill means the forecast beat equal-share chance.
+**Skill** — Skill is `1 − model score / baseline score`. Vintage-level `brier_skill` / `log_loss_skill` use the unresolved-event mean over all teams. Each `teams[]` row also stores that team’s RPS skill (`brier_skill`, `brier_skill_from_qf`) against that team’s own equal-share Brier (`mean_brier_baseline`, `mean_brier_baseline_from_qf`). Positive skill means the forecast beat equal-share chance.
 
 **TRPS** — Tournament Rank Probability Score (Ekstrøm et al., eq. 2). Reach probabilities are converted to seven partial-rank masses (2026 slot sizes 1 / 1 / 2 / 4 / 8 / 16 / 16):
 
