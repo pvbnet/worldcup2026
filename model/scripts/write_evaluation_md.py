@@ -225,14 +225,20 @@ def _write_grid_svg(
     sep_cols: list[int],
     higher_better: frozenset[str] = frozenset(),
     legend: str = "Lower is better (green). Red is worse in that column.",
+    col_w: list[int] | None = None,
+    font_legend: int = 15,
+    font_group: int = 20,
+    font_header: int = 20,
+    font_data: int = 18,
+    row_h: int = 52,
+    group_h: int = 40,
+    header_h: int = 54,
+    legend_h: int = 30,
 ) -> None:
     n_meta = 1 + len(info_cols)
-    col_w = [196] + [114] * (len(info_cols) + len(score_cols))
-    row_h = 48
-    group_h = 36
-    header_h = 50
+    if col_w is None:
+        col_w = [196] + [114] * (len(info_cols) + len(score_cols))
     pad = 16
-    legend_h = 28
     width = pad * 2 + sum(col_w)
     height = pad * 2 + legend_h + group_h + header_h + row_h * len(rows)
     ranges: dict[str, tuple[float, float]] = {}
@@ -252,22 +258,23 @@ def _write_grid_svg(
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" aria-label="{escape(aria)}">',
         '<rect width="100%" height="100%" fill="#ffffff"/>',
-        f'<text x="16" y="22" font-size="13" fill="#6b7280" '
+        f'<text x="16" y="{8 + font_legend}" font-size="{font_legend}" fill="#6b7280" '
         f'font-family="system-ui,sans-serif">{escape(legend)}</text>',
     ]
     for title, start, end in groups:
         x0 = xs[start]
         x1 = x_end if end >= len(xs) else xs[end]
         parts.append(
-            f'<text x="{(x0 + x1) / 2}" y="{y_group + 24}" text-anchor="middle" '
-            f'font-size="18" font-weight="600" fill="#374151" '
+            f'<text x="{(x0 + x1) / 2}" y="{y_group + round(group_h * 0.67)}" text-anchor="middle" '
+            f'font-size="{font_group}" font-weight="600" fill="#374151" '
             f'font-family="system-ui,sans-serif">{escape(title)}</text>'
         )
     headers = [label_header, *(header for _, header in info_cols), *score_headers]
     for header, x, w in zip(headers, xs, col_w):
         parts.append(
-            f'<text x="{x + w / 2}" y="{y_header + 32}" text-anchor="middle" font-size="18" '
-            f'font-weight="600" fill="#111827" font-family="system-ui,sans-serif">{escape(header)}</text>'
+            f'<text x="{x + w / 2}" y="{y_header + round(header_h * 0.67)}" text-anchor="middle" '
+            f'font-size="{font_header}" font-weight="600" fill="#111827" '
+            f'font-family="system-ui,sans-serif">{escape(header)}</text>'
         )
     meta_keys = [key for key, _ in info_cols]
     for r, row in enumerate(rows):
@@ -277,7 +284,7 @@ def _write_grid_svg(
             f'stroke="#e5e7eb"/>'
         )
         parts.append(
-            f'<text x="{xs[0] + 12}" y="{y + 31}" font-size="16" fill="#111827" '
+            f'<text x="{xs[0] + 12}" y="{y + round(row_h * 0.65)}" font-size="{font_data}" fill="#111827" '
             f'font-family="system-ui,sans-serif">{escape(row["label"])}</text>'
         )
         for i, key in enumerate(meta_keys):
@@ -288,8 +295,9 @@ def _write_grid_svg(
                 f'stroke="#e5e7eb"/>'
             )
             parts.append(
-                f'<text x="{x + w / 2}" y="{y + 31}" text-anchor="middle" font-size="16" '
-                f'fill="#111827" font-family="system-ui,sans-serif">{escape(str(row[key]))}</text>'
+                f'<text x="{x + w / 2}" y="{y + round(row_h * 0.65)}" text-anchor="middle" '
+                f'font-size="{font_data}" fill="#111827" font-family="system-ui,sans-serif">'
+                f'{escape(str(row[key]))}</text>'
             )
         for i, col in enumerate(score_cols):
             x = xs[n_meta + i]
@@ -302,8 +310,9 @@ def _write_grid_svg(
                 f'stroke="#e5e7eb"/>'
             )
             parts.append(
-                f'<text x="{x + w / 2}" y="{y + 31}" text-anchor="middle" font-size="16" '
-                f'fill="#111827" font-family="system-ui,sans-serif">{escape(_fmt(value))}</text>'
+                f'<text x="{x + w / 2}" y="{y + round(row_h * 0.65)}" text-anchor="middle" '
+                f'font-size="{font_data}" fill="#111827" font-family="system-ui,sans-serif">'
+                f'{escape(_fmt(value, 3))}</text>'
             )
     y_line_bottom = y_data + row_h * len(rows)
     table_w = sum(col_w)
@@ -350,24 +359,30 @@ def _write_team_svg(rows: list[dict]) -> None:
         rows,
         aria="Per-team Elo simulation Brier, RPS, and RPS skill",
         label_header="Team",
-        info_cols=[("elo_rank", "Elo rank"), ("elo", "Elo")],
+        info_cols=[("elo", "Elo")],
         score_cols=[*EVENTS, "rps", "rps_qf", "rps_skill", "rps_qf_skill"],
         score_headers=[
             *(EVENT_LABELS[e] for e in EVENTS),
             "RPS",
             "RPS QF→",
-            "RPS skill",
-            "QF→ skill",
+            "Skill",
+            "Skill QF→",
         ],
         groups=[
-            ("Elo", 1, 3),
-            ("Brier (per stage)", 3, 3 + N_STAGE_COLS),
-            ("RPS = avg Brier", 3 + N_STAGE_COLS, 5 + N_STAGE_COLS),
-            ("RPS skill", 5 + N_STAGE_COLS, 7 + N_STAGE_COLS),
+            ("Brier (per stage)", 2, 2 + N_STAGE_COLS),
         ],
-        sep_cols=[3, 3 + N_STAGE_COLS, 5 + N_STAGE_COLS],
+        sep_cols=[2, 2 + N_STAGE_COLS, 4 + N_STAGE_COLS],
         higher_better=frozenset({"rps_skill", "rps_qf_skill"}),
         legend="Green is better (lower Brier/RPS; higher skill).",
+        col_w=[176, 114] + [114] * N_STAGE_COLS + [156] * 4,
+        font_legend=17,
+        font_group=22,
+        font_header=22,
+        font_data=21,
+        row_h=58,
+        group_h=44,
+        header_h=60,
+        legend_h=32,
     )
 
 

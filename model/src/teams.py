@@ -1,5 +1,6 @@
 TEAM_ALIASES: dict[str, str] = {
-    "Bosnia and Herzegovina": "Bosnia & Herzegovina",
+    "Bosnia and Herzegovina": "Bosnia",
+    "Bosnia & Herzegovina": "Bosnia",
     "Côte d'Ivoire": "Ivory Coast",
     "Cote d'Ivoire": "Ivory Coast",
     "Korea Republic": "South Korea",

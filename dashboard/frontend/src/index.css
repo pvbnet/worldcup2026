@@ -299,12 +299,32 @@ tbody tr.selected {
 }
 
 .rankings-table {
+  table-layout: fixed;
+  width: 100%;
+  min-width: 960px;
   font-size: 0.9rem;
 }
 
+.rankings-table .rank-cell {
+  width: 5%;
+  text-align: center;
+  white-space: normal;
+  line-height: 1.2;
+}
+
 .rankings-table .team-cell {
-  width: 1%;
+  width: 14%;
   white-space: nowrap;
+}
+
+.rankings-table .elo-cell {
+  width: 6%;
+  text-align: center;
+}
+
+.rankings-table .prob-cell {
+  width: 11%;
+  text-align: center;
 }
 
 .groups-grid {

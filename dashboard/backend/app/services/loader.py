@@ -18,6 +18,7 @@ if str(MODEL_SRC) not in sys.path:
     sys.path.insert(0, str(MODEL_SRC))
 
 from config import DEFAULT_SIMULATIONS, DEFAULT_STAGE, STAGE_ORDER  # noqa: E402
+from ingest import apply_team_aliases  # noqa: E402
 from rankings_api import (  # noqa: E402
     ProgressCallback,
     build_rankings_payload,
@@ -55,7 +56,7 @@ def load_matches(year: int | None = None, played: bool | None = None) -> list[di
     path = DATA_PROCESSED / "matches.parquet"
     if not path.exists():
         return []
-    df = pd.read_parquet(path)
+    df = apply_team_aliases(pd.read_parquet(path))
     if "competition" in df.columns:
         df = df[df["competition"] == "world_cup"]
     if year is not None:

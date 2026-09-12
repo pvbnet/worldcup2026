@@ -12,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from config import ARTIFACTS_PREDICTIONS, ARTIFACTS_TRAINING, PROJECT_ROOT
 from models.elo import EloModel
-from models.fifa import load_fifa_snapshot, rank_lookup, rank_table_from_values
+from models.fifa import rank_table_from_values
 
 OUT_PATH = PROJECT_ROOT / "docs" / "predictions.md"
 ELO_SVG_PATH = PROJECT_ROOT / "docs" / "predictions-elo.svg"
@@ -30,43 +30,9 @@ SKY_MID = (91, 163, 217)
 SKY_NAVY = (30, 77, 140)
 
 
-def _pct(value: float) -> str:
-    return f"{value * 100:.1f}%"
-
-
 def _load_predictions(strength: str) -> dict:
     path = ARTIFACTS_PREDICTIONS / f"worldcup_pre_tournament_{strength}.json"
     return json.loads(path.read_text(encoding="utf-8"))
-
-
-def _table(payload: dict, elo: EloModel, fifa) -> str:
-    teams = [row["team"] for row in payload.get("teams", [])]
-    elo_ranks = rank_table_from_values(
-        {team: elo.ratings.get(team, 1500.0) for team in teams}
-    )
-    rows = sorted(payload.get("teams", []), key=lambda r: int(r.get("rank", 999)))
-    lines = [
-        "| Sim Rank | Elo Rank | FIFA Rank | Team | Elo | P(R32) | P(R16) | P(QF) | P(SF) | P(Final) | P(Win WC) |",
-        "| ---: | ---: | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
-    ]
-    for row in rows:
-        team = row["team"]
-        lines.append(
-            "| {sim} | {elo_rank} | {fifa_rank} | {team} | {elo} | {p_r32} | {p_r16} | {p_qf} | {p_sf} | {p_final} | {p_win} |".format(
-                sim=int(row.get("rank", 0)),
-                elo_rank=elo_ranks.get(team, 999),
-                fifa_rank=rank_lookup(fifa, team),
-                team=team,
-                elo=round(float(row.get("rating", 1500.0))),
-                p_r32=_pct(float(row.get("p_r32", 0.0))),
-                p_r16=_pct(float(row.get("p_r16", 0.0))),
-                p_qf=_pct(float(row.get("p_qf", 0.0))),
-                p_sf=_pct(float(row.get("p_sf", 0.0))),
-                p_final=_pct(float(row.get("p_final", 0.0))),
-                p_win=_pct(float(row.get("p_win", 0.0))),
-            )
-        )
-    return "\n".join(lines)
 
 
 def _lerp(a: tuple[int, int, int], b: tuple[int, int, int], t: float) -> tuple[int, int, int]:
@@ -103,15 +69,15 @@ def _write_elo_svg(payload: dict, elo: EloModel) -> Path:
         for key, _ in PROB_COLS
     }
 
-    label_w = 220
+    label_w = 148
     meta_w = 90
-    prob_w = 102
+    prob_w = 114
     col_w = [label_w, meta_w, meta_w] + [prob_w] * len(PROB_COLS)
-    row_h = 40
-    group_h = 36
-    header_h = 44
+    row_h = 44
+    group_h = 40
+    header_h = 48
     pad = 16
-    legend_h = 28
+    legend_h = 30
     width = pad * 2 + sum(col_w)
     height = pad * 2 + legend_h + group_h + header_h + row_h * len(rows)
 
@@ -129,21 +95,21 @@ def _write_elo_svg(payload: dict, elo: EloModel) -> Path:
         f'viewBox="0 0 {width} {height}" role="img" '
         f'aria-label="Pre-tournament Elo stage-reach and win probabilities">',
         '<rect width="100%" height="100%" fill="#ffffff"/>',
-        '<text x="16" y="22" font-size="13" fill="#6b7280" '
+        '<text x="16" y="24" font-size="15" fill="#6b7280" '
         'font-family="system-ui,sans-serif">'
         "Darker blue is more likely. Each column is scaled from 0% to that column’s max."
         "</text>",
-        f'<text x="{(xs[1] + xs[3]) / 2}" y="{y_group + 24}" '
-        'text-anchor="middle" font-size="18" font-weight="600" fill="#374151" '
+        f'<text x="{(xs[1] + xs[3]) / 2}" y="{y_group + 27}" '
+        'text-anchor="middle" font-size="20" font-weight="600" fill="#374151" '
         'font-family="system-ui,sans-serif">Elo</text>',
-        f'<text x="{xs[3] + (sum(col_w[3:]) / 2)}" y="{y_group + 24}" '
-        'text-anchor="middle" font-size="18" font-weight="600" fill="#374151" '
+        f'<text x="{xs[3] + (sum(col_w[3:]) / 2)}" y="{y_group + 27}" '
+        'text-anchor="middle" font-size="20" font-weight="600" fill="#374151" '
         'font-family="system-ui,sans-serif">Stage-reach probability</text>',
     ]
     headers = ["Team", "Elo rank", "Elo", *(label for _, label in PROB_COLS)]
     for header, x, w in zip(headers, xs, col_w):
         parts.append(
-            f'<text x="{x + w / 2}" y="{y_header + 30}" text-anchor="middle" font-size="16" '
+            f'<text x="{x + w / 2}" y="{y_header + 32}" text-anchor="middle" font-size="18" '
             f'font-weight="600" fill="#111827" font-family="system-ui,sans-serif">'
             f"{escape(header)}</text>"
         )
@@ -156,7 +122,7 @@ def _write_elo_svg(payload: dict, elo: EloModel) -> Path:
             f'fill="#f8fafc" stroke="#e5e7eb"/>'
         )
         parts.append(
-            f'<text x="{xs[0] + 12}" y="{y + 26}" font-size="15" fill="#111827" '
+            f'<text x="{xs[0] + 10}" y="{y + 29}" font-size="17" fill="#111827" '
             f'font-family="system-ui,sans-serif">{escape(team)}</text>'
         )
         meta = (
@@ -171,7 +137,7 @@ def _write_elo_svg(payload: dict, elo: EloModel) -> Path:
                 f'stroke="#e5e7eb"/>'
             )
             parts.append(
-                f'<text x="{x + w / 2}" y="{y + 26}" text-anchor="middle" font-size="15" '
+                f'<text x="{x + w / 2}" y="{y + 29}" text-anchor="middle" font-size="17" '
                 f'fill="#111827" font-family="system-ui,sans-serif">{escape(value)}</text>'
             )
         for i, (key, _) in enumerate(PROB_COLS):
@@ -184,7 +150,7 @@ def _write_elo_svg(payload: dict, elo: EloModel) -> Path:
                 f'stroke="#e5e7eb"/>'
             )
             parts.append(
-                f'<text x="{x + w / 2}" y="{y + 26}" text-anchor="middle" font-size="15" '
+                f'<text x="{x + w / 2}" y="{y + 29}" text-anchor="middle" font-size="17" '
                 f'fill="{text}" font-family="system-ui,sans-serif">{p * 100:.1f}%</text>'
             )
 
@@ -208,29 +174,21 @@ def _write_elo_svg(payload: dict, elo: EloModel) -> Path:
 
 def write_predictions_md() -> tuple[Path, Path]:
     elo_payload = _load_predictions("elo")
-    fifa_payload = _load_predictions("fifa")
     elo = EloModel.load(ARTIFACTS_TRAINING / "elo_pre_tournament.json")
-    fifa = load_fifa_snapshot()
-    n_sims = int(elo_payload.get("simulations") or fifa_payload.get("simulations") or 0)
+    n_sims = int(elo_payload.get("simulations") or 0)
+    svg_path = _write_elo_svg(elo_payload, elo)
 
     body = f"""# Pre-tournament predictions
 
-Monte Carlo stage-reach and win probabilities **before any 2026 match**. 
+Monte Carlo stage-reach and win probabilities **before any 2026 match**, from the Elo strength model.
 
-Same table as the Predictions page in the live dashboard app at: [{DASHBOARD_URL}]({DASHBOARD_URL}). 
+The live dashboard also has these numbers (plus FIFA rankings) at: [{DASHBOARD_URL}]({DASHBOARD_URL}).
 
-Generated from committed `worldcup_pre_tournament_{{elo,fifa}}.json` ({n_sims:,} runs). Regenerate with `python scripts/write_predictions_md.py` from `model/`.
+Generated from committed `worldcup_pre_tournament_elo.json` ({n_sims:,} runs). Regenerate with `python scripts/write_predictions_md.py` from `model/`.
 
-## Elo ratings
-
-{_table(elo_payload, elo, fifa)}
-
-## FIFA rankings
-
-{_table(fifa_payload, elo, fifa)}
+![Pre-tournament Elo stage-reach and win probabilities](predictions-elo.svg)
 """
     OUT_PATH.write_text(body, encoding="utf-8")
-    svg_path = _write_elo_svg(elo_payload, elo)
     return OUT_PATH, svg_path
 
 

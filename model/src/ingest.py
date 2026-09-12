@@ -202,8 +202,25 @@ def normalize_matches(years: list[int] | None = None) -> pd.DataFrame:
     return df
 
 
+_TEAM_NAME_COLS = ("team1", "team2", "advancer")
+
+
+def apply_team_aliases(df: pd.DataFrame) -> pd.DataFrame:
+    """Re-apply current TEAM_ALIASES so stale parquet stays in sync."""
+    if df.empty:
+        return df
+    out = df.copy()
+    for col in _TEAM_NAME_COLS:
+        if col not in out.columns:
+            continue
+        out[col] = out[col].map(
+            lambda value: canonicalize(str(value)) if pd.notna(value) else value
+        )
+    return out
+
+
 def load_matches() -> pd.DataFrame:
     path = DATA_PROCESSED / "matches.parquet"
     if not path.exists():
-        return normalize_matches()
-    return pd.read_parquet(path)
+        return apply_team_aliases(normalize_matches())
+    return apply_team_aliases(pd.read_parquet(path))

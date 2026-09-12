@@ -111,3 +111,9 @@ Open **http://localhost:5173/** in the browser.
 ## License and third-party data
 
 MIT — see [LICENSE](LICENSE). Third-party data terms are described in [NOTICE.md](NOTICE.md).
+
+## To Do
+
+- Use earlier FIFA rankings to warm start the Elo ratings (currently Elo starts from 2017).
+- Add Glicko-2 rating system and compare to Elo rating system.
+- Update for Euro 2028 and WC 2030.

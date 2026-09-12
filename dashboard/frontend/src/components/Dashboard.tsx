@@ -158,17 +158,17 @@ export function RankingsTable({
         <table className="rankings-table">
           <thead>
             <tr>
-              <th>Sim Rank</th>
-              <th>Elo Rank</th>
-              <th>FIFA Rank</th>
+              <th className="rank-cell">Sim Rank</th>
+              <th className="rank-cell">Elo Rank</th>
+              <th className="rank-cell">FIFA Rank</th>
               <th className="team-cell">Team</th>
-              <th>Elo</th>
-              <th>P(R32)</th>
-              <th>P(R16)</th>
-              <th>P(QF)</th>
-              <th>P(SF)</th>
-              <th>P(Final)</th>
-              <th>P(Win WC)</th>
+              <th className="elo-cell">Elo</th>
+              <th className="prob-cell">P(R32)</th>
+              <th className="prob-cell">P(R16)</th>
+              <th className="prob-cell">P(QF)</th>
+              <th className="prob-cell">P(SF)</th>
+              <th className="prob-cell">P(Final)</th>
+              <th className="prob-cell">P(Win WC)</th>
             </tr>
           </thead>
           <tbody>
@@ -178,17 +178,17 @@ export function RankingsTable({
                 className={selectedTeam === team.team ? "selected" : ""}
                 onClick={() => onSelect(team.team)}
               >
-                <td>{team.model_rank ?? team.rank}</td>
-                <td>{team.elo_rank}</td>
-                <td>{team.fifa_rank}</td>
+                <td className="rank-cell">{team.model_rank ?? team.rank}</td>
+                <td className="rank-cell">{team.elo_rank}</td>
+                <td className="rank-cell">{team.fifa_rank}</td>
                 <td className="team-cell">{team.team}</td>
-                <td>{team.rating.toFixed(0)}</td>
-                <td>{pct(team.p_r32)}</td>
-                <td>{pct(team.p_r16)}</td>
-                <td>{pct(team.p_qf)}</td>
-                <td>{pct(team.p_sf)}</td>
-                <td>{pct(team.p_final)}</td>
-                <td>{pct(team.p_win)}</td>
+                <td className="elo-cell">{team.rating.toFixed(0)}</td>
+                <td className="prob-cell">{pct(team.p_r32)}</td>
+                <td className="prob-cell">{pct(team.p_r16)}</td>
+                <td className="prob-cell">{pct(team.p_qf)}</td>
+                <td className="prob-cell">{pct(team.p_sf)}</td>
+                <td className="prob-cell">{pct(team.p_final)}</td>
+                <td className="prob-cell">{pct(team.p_win)}</td>
               </tr>
             ))}
           </tbody>
